@@ -5,7 +5,16 @@ abstract public class Adventurer {
 
     public void performTurn(Dice dice) {
             move();
-            fight(dice);
+            if(getClass() == Sneaker.class)
+            {
+                int min = 0;
+                int max = 1;
+                int chance= (int)Math.floor(Math.random()*(max-min+1)+min);
+                if(chance==1) fight(dice);
+            }
+            else{
+                fight(dice);
+            }
             findTreasure(dice);
         //TODO creature check to be added after room class created
     }
@@ -69,10 +78,7 @@ class Sneaker extends Adventurer {
     }
 
     public int fight(Dice dice) {
-        int min = 0;
-        int max = 1;
-        int chance= (int)Math.floor(Math.random()*(max-min+1)+min);
-        return chance * dice.getRandoms();
+        return dice.getRandoms();
     }
 
 }
