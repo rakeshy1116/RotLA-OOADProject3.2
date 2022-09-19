@@ -1,6 +1,5 @@
 
 abstract public class Adventurer {
-    private int damage;
     private int noOfDamages;
     private Room room;
 
@@ -23,8 +22,7 @@ abstract public class Adventurer {
         this.room = room;
     }
 
-    Adventurer(Room room, int damage, int noOfDamages){
-        this.damage=damage;
+    Adventurer(Room room, int noOfDamages){
         this.room=room;
         this.noOfDamages=noOfDamages;
     }
@@ -42,8 +40,8 @@ abstract public class Adventurer {
 
 class Brawler extends Adventurer {
 
-    Brawler(Room room, int damage, int noOfDamages) {
-        super(room,damage,noOfDamages);
+    Brawler(Room room, int noOfDamages) {
+        super(room,noOfDamages);
     }
 
     public int fight(Dice dice) {
@@ -54,8 +52,8 @@ class Brawler extends Adventurer {
 
 class Runner extends Adventurer {
 
-    Runner(Room room, int damage, int noOfDamages) {
-        super(room,damage,noOfDamages);
+    Runner(Room room, int noOfDamages) {
+        super(room,noOfDamages);
     }
 
     public int fight(Dice dice) {
@@ -66,8 +64,8 @@ class Runner extends Adventurer {
 
 class Sneaker extends Adventurer {
 
-    Sneaker(Room room, int damage, int noOfDamages) {
-        super(room,damage,noOfDamages);
+    Sneaker(Room room, int noOfDamages) {
+        super(room,noOfDamages);
     }
 
     public int fight(Dice dice) {
@@ -81,8 +79,8 @@ class Sneaker extends Adventurer {
 
 class Thieves extends Adventurer {
 
-    Thieves(Room room, int damage, int noOfDamages) {
-        super(room,damage,noOfDamages);
+    Thieves(Room room, int noOfDamages) {
+        super(room,noOfDamages);
     }
 
     public int fight(Dice dice) {
