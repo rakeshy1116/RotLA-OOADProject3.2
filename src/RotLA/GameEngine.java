@@ -1,7 +1,10 @@
 package RotLA;
 
 import RotLA.Adventurers.*;
+import RotLA.Creatures.Blinker;
 import RotLA.Creatures.Creature;
+import RotLA.Creatures.Orbiter;
+import RotLA.Creatures.Seeker;
 
 import java.util.ArrayList;
 
@@ -24,13 +27,26 @@ public class GameEngine {
         adventurers.add(new Sneaker());
 
         this.creatures = new ArrayList<Creature>();
+        for(int i=0;i<4;i++)
+        {
+            creatures.add(new Blinker());
+            creatures.add(new Orbiter());
+            creatures.add(new Seeker());
+        }
         this.boardRenderer = new BoardRenderer(adventurers,creatures);
-
-
         this.dice = new Dice();
 
     }
 
+//    public void startSimulation() {
+//        while(checkTermination()) {
+//
+//        }
+//    }
+//
+//    public boolean checkTermination() {
+//
+//    }
 //    public static void main  (String args[]) {
 //
 //        System.out.println("Game Engine");

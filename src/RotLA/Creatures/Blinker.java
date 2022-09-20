@@ -4,7 +4,7 @@ import RotLA.Room;
 
 public class Blinker extends Creature {
 
-    Blinker() {
+    public Blinker() {
         this.alive = true;
     }
 

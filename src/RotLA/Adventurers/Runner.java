@@ -6,7 +6,7 @@ import RotLA.Room;
 public class Runner extends Adventurer {
 
     public Runner( ) {
-
+        this.noOfDamages = 0;
     }
 
 }

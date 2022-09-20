@@ -2,7 +2,7 @@ package RotLA.Creatures;
 
 public class Seeker extends Creature {
 
-    Seeker() {
+    public Seeker() {
         this.alive = true;
     }
 

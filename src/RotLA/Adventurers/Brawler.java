@@ -6,7 +6,7 @@ import RotLA.Room;
 public class Brawler extends Adventurer {
 
     public Brawler() {
-        super();
+        this.noOfDamages = 0;
     }
 
     @Override

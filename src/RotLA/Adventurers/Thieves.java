@@ -6,7 +6,7 @@ import RotLA.Room;
 public class Thieves extends Adventurer {
 
     public Thieves() {
-
+        this.noOfDamages = 0;
     }
 
     @Override

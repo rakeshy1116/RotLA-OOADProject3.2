@@ -4,7 +4,7 @@ import RotLA.Room;
 
 public class Orbiter extends Creature {
 
-    Orbiter() {
+    public Orbiter() {
         this.alive = true;
     }
 

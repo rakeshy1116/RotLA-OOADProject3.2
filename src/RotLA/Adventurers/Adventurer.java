@@ -6,12 +6,9 @@ import RotLA.Room;
 import java.util.ArrayList;
 
 abstract public class Adventurer {
-    private int noOfDamages;
+    protected int noOfDamages;
     private Room room;
 
-    Adventurer() {
-        this.noOfDamages = 0;
-    }
 
     public void performTurn(Dice dice) {
         move();
