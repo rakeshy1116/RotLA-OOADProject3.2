@@ -5,8 +5,8 @@ import RotLA.Room;
 
 public class Runner extends Adventurer {
 
-    Runner(Room room, int noOfDamages) {
-        super(room, noOfDamages);
+    public Runner( ) {
+        this.noOfDamages = 0;
     }
 
 }

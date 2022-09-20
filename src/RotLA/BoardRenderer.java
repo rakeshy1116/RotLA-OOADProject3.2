@@ -23,7 +23,7 @@ public class BoardRenderer {
     private static final int TOPMOST_ROOM = 1;
     private static final int BOTTOM_MOST_ROOM = 4;
 
-    public BoardRenderer() {
+    public BoardRenderer(List<Adventurer> adventurers,List<Creature> creatures) {
         //initializing rooms
         ArrayList<Room> boardList = new ArrayList<>();
         for (int level = TOPMOST_ROOM; level <= BOTTOM_MOST_ROOM; level++) {
@@ -38,7 +38,7 @@ public class BoardRenderer {
 
         //initializing spawn positions for adventurers
         starterRoom = new Room(0, 1, 1);
-        starterRoom.setConnectedRooms(List.of(findRoom(new Triplet<>(1, 1, 1))));
+        starterRoom.setConnectedRooms(new ArrayList(List.of(findRoom(new Triplet<>(1, 1, 1)))));
         adventurers.forEach(adventurer -> {
             adventurer.setRoom(starterRoom);
             starterRoom.addAdventurer(adventurer);

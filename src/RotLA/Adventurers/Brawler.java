@@ -5,8 +5,8 @@ import RotLA.Room;
 
 public class Brawler extends Adventurer {
 
-    Brawler(Room room, int noOfDamages) {
-        super(room, noOfDamages);
+    public Brawler() {
+        this.noOfDamages = 0;
     }
 
     @Override

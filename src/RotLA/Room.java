@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Room {
     private Triplet<Integer, Integer, Integer> roomId;
-    private List<Room> connectedRooms;
+    private ArrayList<Room> connectedRooms;
 
     private ArrayList<Adventurer> adventurers;
 
@@ -20,11 +20,11 @@ public class Room {
         creatures = new ArrayList<>();
     }
 
-    public void setConnectedRooms(List<Room> connectedRooms) {
+    public void setConnectedRooms(ArrayList<Room> connectedRooms) {
         this.connectedRooms = connectedRooms;
     }
 
-    public List<Room> getConnectedRooms() {
+    public ArrayList<Room> getConnectedRooms() {
         return connectedRooms;
     }
 
@@ -38,6 +38,14 @@ public class Room {
 
     public void addCreature(Creature creature) {
         creatures.add(creature);
+    }
+
+    public void removeAdventurer(Adventurer adventurer) {
+        for(int i=0;i<adventurers.size();i++)
+        {
+            if(adventurers.get(i).equals(adventurer))
+                adventurers.remove(i);
+        }
     }
 
     public ArrayList<Adventurer> getAdventurers() {
