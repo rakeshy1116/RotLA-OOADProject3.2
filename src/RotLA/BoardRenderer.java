@@ -76,18 +76,21 @@ public class BoardRenderer {
         int roomSouth = Integer.min(SOUTHMOST_ROOM, roomCoordinates.getValue1() + 1);
         int roomLevel = roomCoordinates.getValue0();
         for (int row = roomNorth; row <= roomSouth; row++) {
-            for (int column = roomWest; column <= roomEast; column++) {
-                if (row != roomCoordinates.getValue1() || column != roomCoordinates.getValue2()) {
-                    neighbors.add(findRoom(new Triplet<>(roomLevel, row, column)));
-                    if (row == column) {
-                        int roomAbove = Integer.max(TOPMOST_ROOM, roomLevel - 1);
-                        int roomBelow = Integer.min(BOTTOM_MOST_ROOM, roomLevel + 1);
-                        for (int level = roomAbove; level <= roomBelow; level++) {
-                            if (level != roomLevel) {
-                                neighbors.add(findRoom(new Triplet<>(level, row, column)));
-                            }
-                        }
-                    }
+            if (row != roomCoordinates.getValue1()) {
+                neighbors.add(findRoom(new Triplet<>(roomLevel, row, roomCoordinates.getValue2())));
+            }
+        }
+        for (int column = roomWest; column <= roomEast; column++) {
+            if (column != roomCoordinates.getValue2()) {
+                neighbors.add(findRoom(new Triplet<>(roomLevel, roomCoordinates.getValue1(), column)));
+            }
+        }
+        if (roomCoordinates.getValue2() == 1 && roomCoordinates.getValue1() == 1) {
+            int roomAbove = Integer.max(TOPMOST_ROOM, roomLevel - 1);
+            int roomBelow = Integer.min(BOTTOM_MOST_ROOM, roomLevel + 1);
+            for (int level = roomAbove; level <= roomBelow; level++) {
+                if (level != roomLevel) {
+                    neighbors.add(findRoom(new Triplet<>(level, roomCoordinates.getValue1(), roomCoordinates.getValue2())));
                 }
             }
         }
