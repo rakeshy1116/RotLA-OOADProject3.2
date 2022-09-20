@@ -40,7 +40,7 @@ public class GameEngine {
 
 //    public void startSimulation() {
 //        while(checkTermination()) {
-//
+//              // pass boardList as argument while calling creatures move method
 //        }
 //    }
 //

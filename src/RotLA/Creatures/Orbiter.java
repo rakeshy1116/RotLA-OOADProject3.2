@@ -10,6 +10,11 @@ public class Orbiter extends Creature {
 
     public void move() {
         //TODO after room
+        // orbiter also
+        Room oldRoom = this.getRoom();
+        if(oldRoom.getAdventurers().size()==0){
+
+        }
     }
 
 }

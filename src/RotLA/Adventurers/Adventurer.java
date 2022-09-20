@@ -12,17 +12,11 @@ abstract public class Adventurer {
 
     public void performTurn(Dice dice) {
         move();
-        //TODO override this in sneaker
-        if (getClass() == Sneaker.class) {
-            int min = 0;
-            int max = 1;
-            int chance = (int) Math.floor(Math.random() * (max - min + 1) + min);
-            if (chance == 1) fight(dice);
-        } else {
+        Room currentRoom = this.getRoom();
+        if(currentRoom.getCreatures().size()>0)
             fight(dice);
-        }
-        findTreasure(dice);
-        //TODO creature check to be added after room class created
+        else
+            findTreasure(dice);
     }
 
     public int fight(Dice dice) {
@@ -47,7 +41,6 @@ abstract public class Adventurer {
 
     public void move() {
         // TODO will add the method after room is added
-
         Room oldRoom = this.room;
        ArrayList<Room> rooms= room.getConnectedRooms();
        int noOfConnectedRooms = rooms.size();
