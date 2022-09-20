@@ -1,9 +1,14 @@
+package RotLA.Creatures;
+
+import RotLA.Dice;
+import RotLA.Room;
+
 public class Creature {
 
     private Room room;
     private boolean alive;
 
-    Creature(Room room,boolean alive) {
+    Creature(Room room, boolean alive) {
         this.alive=true;
         this.room=room;
     }
@@ -37,40 +42,4 @@ public class Creature {
     }
 }
 
-
-class Orbiter extends Creature {
-
-    Orbiter(Room room,boolean alive) {
-        super(room,alive);
-    }
-
-    public void move() {
-       //TODO after room
-    }
-
-}
-
-class Blinker extends Creature {
-
-    Blinker(Room room,boolean alive) {
-        super(room,alive);
-    }
-
-    public void move() {
-        //TODO after room
-    }
-
-}
-
-class Seeker extends Creature {
-
-    Seeker(Room room,boolean alive) {
-        super(room,alive);
-    }
-
-    public void move() {
-        //TODO after room
-    }
-
-}
 

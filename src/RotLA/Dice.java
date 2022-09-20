@@ -1,3 +1,5 @@
+package RotLA;
+
 public class Dice {
 
     public int getRandoms() {
