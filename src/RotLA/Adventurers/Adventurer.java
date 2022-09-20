@@ -1,5 +1,6 @@
 package RotLA.Adventurers;
 
+import RotLA.Creatures.Creature;
 import RotLA.Dice;
 import RotLA.Room;
 
@@ -8,7 +9,15 @@ import java.util.ArrayList;
 abstract public class Adventurer {
     protected int noOfDamages;
     private Room room;
+    private int noOfTreasure;
 
+    public int getNoOfTreasure() {
+        return noOfTreasure;
+    }
+
+    public void setNoOfTreasure(int noOfTreasure) {
+        this.noOfTreasure = noOfTreasure;
+    }
 
     public void performTurn(Dice dice) {
         move();
@@ -19,12 +28,32 @@ abstract public class Adventurer {
             findTreasure(dice);
     }
 
-    public int fight(Dice dice) {
+    public int fightVal(Dice dice) {
         return dice.getRandoms();
     }
+    public void fight(Dice dice) {
+        ArrayList<Creature> creatures = getRoom().getCreatures();
+        for(int i=0;i<creatures.size();i++)
+        {
+           int advVal = fightVal(dice);
+           int creatVal = dice.getRandoms();
+           if(advVal>creatVal) {
+               creatures.get(i).setAlive(false);
+               getRoom().removeCreature(creatures.get(i));
+           }
+           else {
+               this.noOfDamages+=1;
+               if(this.noOfDamages==3)
+               {
+                   getRoom().removeAdventurer(this);
+               }
+           }
+        }
+    }
 
-    public int findTreasure(Dice dice) {
-        return dice.getRandoms();
+    public void findTreasure(Dice dice) {
+        int currentIncrease=dice.getRandoms();
+        setNoOfTreasure(getNoOfTreasure()+currentIncrease);
     }
 
     public boolean isAlive() {

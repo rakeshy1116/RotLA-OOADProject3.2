@@ -10,7 +10,7 @@ public class Brawler extends Adventurer {
     }
 
     @Override
-    public int fight(Dice dice) {
+    public int fightVal(Dice dice) {
         return 2 + dice.getRandoms();
     }
 

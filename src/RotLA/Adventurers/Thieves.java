@@ -10,13 +10,14 @@ public class Thieves extends Adventurer {
     }
 
     @Override
-    public int fight(Dice dice) {
+    public int fightVal(Dice dice) {
         return 1 + dice.getRandoms();
     }
 
     @Override
-    public int findTreasure(Dice dice) {
-        return 1 + dice.getRandoms();
+    public void findTreasure(Dice dice) {
+        int currentIncrease=dice.getRandoms()+1;
+        setNoOfTreasure(getNoOfTreasure()+currentIncrease);
     }
 
 }

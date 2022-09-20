@@ -48,6 +48,14 @@ public class Room {
         }
     }
 
+    public void removeCreature(Creature creature) {
+        for(int i=0;i<creatures.size();i++)
+        {
+            if(creatures.get(i).equals(creature))
+                creatures.remove(i);
+        }
+    }
+
     public ArrayList<Adventurer> getAdventurers() {
         return adventurers;
     }

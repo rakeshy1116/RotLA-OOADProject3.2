@@ -12,7 +12,9 @@ public abstract class Creature {
 
     public void performTurn(Dice dice) {
         move();
-        fight(dice);
+        Room currentRoom = this.getRoom();
+        if(currentRoom.getAdventurers().size()>0)
+            fight(dice);
     }
 
     public int fight(Dice dice) {
