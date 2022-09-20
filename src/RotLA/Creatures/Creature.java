@@ -3,18 +3,12 @@ package RotLA.Creatures;
 import RotLA.Dice;
 import RotLA.Room;
 
-public class Creature {
+public abstract class Creature {
 
     private Room room;
-    private boolean alive;
+    protected boolean alive;
 
-    Creature(Room room, boolean alive) {
-        this.alive=true;
-        this.room=room;
-    }
-    public void move() {
-        // TODO will add the method after room is added
-    }
+    abstract void move();
 
     public void performTurn(Dice dice) {
         move();

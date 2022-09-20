@@ -2,10 +2,10 @@ package RotLA.Creatures;
 
 import RotLA.Room;
 
-class Blinker extends Creature {
+public class Blinker extends Creature {
 
-    Blinker(Room room, boolean alive) {
-        super(room, alive);
+    Blinker() {
+        this.alive = true;
     }
 
     public void move() {

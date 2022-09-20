@@ -3,7 +3,7 @@ package RotLA.Adventurers;
 import RotLA.Dice;
 import RotLA.Room;
 
-class Brawler extends Adventurer {
+public class Brawler extends Adventurer {
 
     Brawler(Room room, int noOfDamages) {
         super(room, noOfDamages);

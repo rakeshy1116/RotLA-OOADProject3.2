@@ -2,10 +2,10 @@ package RotLA.Creatures;
 
 import RotLA.Room;
 
-class Orbiter extends Creature {
+public class Orbiter extends Creature {
 
-    Orbiter(Room room, boolean alive) {
-        super(room, alive);
+    Orbiter() {
+        this.alive = true;
     }
 
     public void move() {

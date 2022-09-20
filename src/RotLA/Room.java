@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Room {
     private Triplet<Integer, Integer, Integer> roomId;
-    private List<Room> neighbours;
+    private List<Room> connectedRooms;
 
     private ArrayList<Adventurer> adventurers;
 
@@ -20,12 +20,12 @@ public class Room {
         creatures = new ArrayList<>();
     }
 
-    public void setNeighbours(List<Room> neighbours) {
-        this.neighbours = neighbours;
+    public void setConnectedRooms(List<Room> connectedRooms) {
+        this.connectedRooms = connectedRooms;
     }
 
-    public List<Room> getNeighbours() {
-        return neighbours;
+    public List<Room> getConnectedRooms() {
+        return connectedRooms;
     }
 
     public Triplet<Integer, Integer, Integer> getRoomId() {

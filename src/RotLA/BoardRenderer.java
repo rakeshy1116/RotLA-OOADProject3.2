@@ -1,7 +1,9 @@
 package RotLA;
 
 import RotLA.Adventurers.Adventurer;
+import RotLA.Creatures.Blinker;
 import RotLA.Creatures.Creature;
+import RotLA.Creatures.Orbiter;
 import org.javatuples.Triplet;
 
 import java.util.ArrayList;
@@ -22,6 +24,7 @@ public class BoardRenderer {
     private static final int BOTTOM_MOST_ROOM = 4;
 
     public BoardRenderer() {
+        //initializing rooms
         ArrayList<Room> boardList = new ArrayList<>();
         for (int level = TOPMOST_ROOM; level <= BOTTOM_MOST_ROOM; level++) {
             for (int row = WESTMOST_ROOM; row <= EASTMOST_ROOM; row++) {
@@ -30,19 +33,42 @@ public class BoardRenderer {
                 }
             }
         }
+        //setting connected rooms
         boardList.forEach(this::getNeighbours);
 
+        //initializing spawn positions for adventurers
         starterRoom = new Room(0, 1, 1);
-        starterRoom.setNeighbours(List.of(findRoom(new Triplet<>(1, 1, 1))));
+        starterRoom.setConnectedRooms(List.of(findRoom(new Triplet<>(1, 1, 1))));
         adventurers.forEach(adventurer -> {
             adventurer.setRoom(starterRoom);
             starterRoom.addAdventurer(adventurer);
         });
-        //TODO: set initial positions for creatures
+
+        //initializing spawn positions for creatures
+        creatures.forEach(creature -> {
+            Integer level, verticalDir = null, horizontalDir = null;
+            if (creature instanceof Orbiter) {
+                level = getRandomInRange(TOPMOST_ROOM, BOTTOM_MOST_ROOM);
+                // To avoid the possibility of random generator allocating central room to orbiters, hardcoding spawn rooms
+                verticalDir = 2;
+                horizontalDir = 2;
+            } else if (creature instanceof Blinker) {
+                level = 4;
+                verticalDir = getRandomInRange(NORTHMOST_ROOM, SOUTHMOST_ROOM);
+                horizontalDir = getRandomInRange(WESTMOST_ROOM, EASTMOST_ROOM);
+            } else {
+                level = getRandomInRange(TOPMOST_ROOM, BOTTOM_MOST_ROOM);
+                verticalDir = getRandomInRange(NORTHMOST_ROOM, SOUTHMOST_ROOM);
+                horizontalDir = getRandomInRange(WESTMOST_ROOM, EASTMOST_ROOM);
+            }
+            Room room = findRoom(new Triplet<>(level, verticalDir, horizontalDir));
+            room.addCreature(creature);
+            creature.setRoom(room);
+        });
     }
 
     private void getNeighbours(Room room) {
-        ArrayList<Room> neighbors = new ArrayList();
+        ArrayList<Room> neighbors = new ArrayList<>();
         Triplet<Integer, Integer, Integer> roomCoordinates = room.getRoomId();
         int roomWest = Integer.max(WESTMOST_ROOM, roomCoordinates.getValue2() - 1);
         int roomEast = Integer.min(EASTMOST_ROOM, roomCoordinates.getValue2() + 1);
@@ -65,7 +91,7 @@ public class BoardRenderer {
                 }
             }
         }
-        room.setNeighbours(neighbors);
+        room.setConnectedRooms(neighbors);
     }
 
     public Room findRoom(Triplet<Integer, Integer, Integer> roomID) {
@@ -73,6 +99,15 @@ public class BoardRenderer {
                 .filter(room -> room.getRoomId().compareTo(roomID) == 0)
                 .findFirst()
                 .orElse(null);
+    }
+
+    //TODO complete the method at the end
+    public void printGameStatus() {
+
+    }
+
+    public int getRandomInRange(int min, int max) {
+        return (int) Math.floor(Math.random() * (max - min + 1) + min);
     }
 
 }

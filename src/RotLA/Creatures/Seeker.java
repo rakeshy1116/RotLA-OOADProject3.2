@@ -1,11 +1,9 @@
 package RotLA.Creatures;
 
-import RotLA.Room;
+public class Seeker extends Creature {
 
-class Seeker extends Creature {
-
-    Seeker(Room room, boolean alive) {
-        super(room, alive);
+    Seeker() {
+        this.alive = true;
     }
 
     public void move() {
