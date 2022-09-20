@@ -23,7 +23,7 @@ public class BoardRenderer {
     private static final int TOPMOST_ROOM = 1;
     private static final int BOTTOM_MOST_ROOM = 4;
 
-    public BoardRenderer() {
+    public BoardRenderer(List<Adventurer> adventurers,List<Creature> creatures) {
         //initializing rooms
         ArrayList<Room> boardList = new ArrayList<>();
         for (int level = TOPMOST_ROOM; level <= BOTTOM_MOST_ROOM; level++) {

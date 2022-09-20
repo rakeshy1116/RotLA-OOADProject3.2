@@ -5,8 +5,8 @@ import RotLA.Room;
 
 public class Thieves extends Adventurer {
 
-    Thieves(Room room, int noOfDamages) {
-        super(room, noOfDamages);
+    public Thieves() {
+
     }
 
     @Override

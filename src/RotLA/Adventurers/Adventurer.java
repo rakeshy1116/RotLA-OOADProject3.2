@@ -9,9 +9,8 @@ abstract public class Adventurer {
     private int noOfDamages;
     private Room room;
 
-    Adventurer(Room room, int noOfDamages) {
-        this.room = room;
-        this.noOfDamages = noOfDamages;
+    Adventurer() {
+        this.noOfDamages = 0;
     }
 
     public void performTurn(Dice dice) {
