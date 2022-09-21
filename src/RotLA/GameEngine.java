@@ -42,7 +42,7 @@ public class GameEngine {
                     adventurer.performTurn(dice);
                 }
             });
-
+            if (checkTermination()) break;
             creatures.forEach(creature -> {
                 if (creature.isAlive()) {
                     creature.performTurn(dice);
@@ -78,5 +78,11 @@ public class GameEngine {
         } else {
             return false;
         }
+    }
+
+    public static void main(String[] args) {
+        GameEngine gm = new GameEngine();
+        gm.initialize();
+        gm.startSimulation();
     }
 }

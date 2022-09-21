@@ -4,9 +4,11 @@ import RotLA.Adventurers.Adventurer;
 import RotLA.Creatures.Blinker;
 import RotLA.Creatures.Creature;
 import RotLA.Creatures.Orbiter;
+import org.javatuples.Pair;
 import org.javatuples.Triplet;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class BoardRenderer {
@@ -28,21 +30,23 @@ public class BoardRenderer {
     public BoardRenderer(List<Adventurer> adventurers, List<Creature> creatures) {
         roomFinder = this::findRoom;
         //initializing rooms
-        ArrayList<Room> boardList = new ArrayList<>();
+      boardRoomList = new ArrayList<>();
         for (int level = TOPMOST_ROOM; level <= BOTTOM_MOST_ROOM; level++) {
             for (int row = WESTMOST_ROOM; row <= EASTMOST_ROOM; row++) {
                 for (int column = NORTHMOST_ROOM; column <= SOUTHMOST_ROOM; column++) {
-                    boardList.add(new Room(level, row, column));
+                    boardRoomList.add(new Room(level, row, column));
                 }
             }
         }
         //setting connected rooms
-        boardList.forEach(this::getNeighbours);
+        boardRoomList.forEach(this::getNeighbours);
 
+        this.adventurers=adventurers;
+        this.creatures=creatures;
         //initializing spawn positions for adventurers
         Room starterRoom = new Room(0, 1, 1);
         starterRoom.setConnectedRooms(new ArrayList(List.of(findRoom(new Triplet<>(1, 1, 1)))));
-        boardList.add(0, starterRoom);
+        boardRoomList.add(0, starterRoom);
 
         adventurers.forEach(adventurer -> {
             adventurer.setRoom(starterRoom);
@@ -73,7 +77,7 @@ public class BoardRenderer {
             creature.setRoom(room);
             creature.setRoomFinder(roomFinder);
         });
-        boardRoomList = boardList;
+
     }
 
     private void getNeighbours(Room room) {
@@ -113,10 +117,27 @@ public class BoardRenderer {
                 .orElse(null);
     }
 
-    //TODO complete the method at the end
     public void printGameStatus() {
         System.out.println("Turn : " + turnCounter);
         //TODO: print rooms, adventurers, creatures
+
+        for(Adventurer adventurer: adventurers) {
+            System.out.println(adventurer.getAdventurerStatus());
+        }
+        HashMap<String,Integer> creatureStatus = new HashMap<>();
+        for(Creature creature: creatures) {
+            String name=creature.getAbbrv();
+            if(creature.isAlive()) {
+                if(name.equals("O"))
+                   creatureStatus.put("Orbiter", creatureStatus.getOrDefault("Orbiter",1));
+                else if(name.equals("B"))
+                    creatureStatus.put("Blinker", creatureStatus.getOrDefault("Blinker",1));
+                else
+                    creatureStatus.put("Seeker", creatureStatus.getOrDefault("Seeker",1));
+            }
+        creatureStatus.forEach((key,value) ->
+                System.out.println(key + " - " + String.valueOf(4-value) + " Remaining"));
+        }
     }
 
 
