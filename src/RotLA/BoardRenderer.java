@@ -18,7 +18,7 @@ public class BoardRenderer {
     private List<Creature> creatures;
     private RoomFinder roomFinder;
 
-    private int turnCounter = 0;
+    private int turnCounter = 1;
 
     static final int WESTMOST_ROOM = 0;
     static final int EASTMOST_ROOM = 2;
