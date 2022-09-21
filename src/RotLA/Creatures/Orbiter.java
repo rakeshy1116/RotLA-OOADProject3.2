@@ -2,42 +2,62 @@ package RotLA.Creatures;
 
 import RotLA.GameUtility;
 import RotLA.Room;
-import org.javatuples.Pair;
 import org.javatuples.Triplet;
-
-import java.util.ArrayList;
 
 public class Orbiter extends Creature {
 
+    Boolean isClockWise;
+
     public Orbiter() {
         this.alive = true;
+        isClockWise = GameUtility.getRandomInRange(0, 1) == 1;
+        abbrv = "O";
     }
 
     public void move() {
-        //TODO after room
-        // orbiter also
-        Room oldRoom = this.getRoom();
-        if(oldRoom.getAdventurers().size()==0){
-            Triplet<Integer, Integer, Integer> roomCoordinates = oldRoom.getRoomId();
-            int level = roomCoordinates.getValue0();
-            ArrayList<Pair<Integer,Integer>> possibleRooms = new ArrayList<>();
-            for(int i=0;i<2;i++)
-            {
-                for(int j=0;j<2;j++)
-                {
-                    if(!(i==1 && j==1))
-                        possibleRooms.add(new Pair(i,j));
-                }
+        Room oldRoom = this.room;
+        if (oldRoom.getAdventurers().isEmpty()) {
+            Triplet<Integer, Integer, Integer> newRoomCoordinates;
+            if (isClockWise) {
+                newRoomCoordinates = getClockWiseNext(oldRoom.getRoomCoordinates());
+            } else {
+                newRoomCoordinates = getAntiClockWiseNext(oldRoom.getRoomCoordinates());
             }
-            int value = GameUtility.getRandomInRange(0, possibleRooms.size()-1);
-            Pair<Integer,Integer> p = possibleRooms.get(value);
-            Room newRoom=getRoomFinder().findRoom(new Triplet<>(level,p.getValue0(),p.getValue1()));
+            Room newRoom = roomFinder.findRoom(newRoomCoordinates);
             oldRoom.removeCreature(this);
             newRoom.addCreature(this);
-            this.setRoom(newRoom);
+            this.room = newRoom;
         }
     }
 
+    private Triplet<Integer, Integer, Integer> getClockWiseNext(Triplet<Integer, Integer, Integer> roomCoordinate) {
+        int row = roomCoordinate.getValue1();
+        int column = roomCoordinate.getValue2();
+        if (row == 0 && column >= 0 && column < 2) {
+            column++;
+        } else if (row == 2 && column <= 2 && column > 0) {
+            column--;
+        } else if (column == 0 && row <= 2 && row > 0) {
+            row--;
+        } else if (column == 2 && row < 2 && row >= 0) {
+            row++;
+        }
+        return new Triplet<>(roomCoordinate.getValue0(), row, column);
+    }
 
+    private Triplet<Integer, Integer, Integer> getAntiClockWiseNext(Triplet<Integer, Integer, Integer> roomCoordinate) {
+        int row = roomCoordinate.getValue1();
+        int column = roomCoordinate.getValue2();
+        if (row == 0 && column > 0 && column <= 2) {
+            column--;
+        } else if (row == 2 && column < 2 && column >= 0) {
+            column++;
+        } else if (column == 0 && row < 2 && row >= 0) {
+            row++;
+        } else if (column == 2 && row <= 2 && row > 0) {
+            row--;
+        }
+        return new Triplet<>(roomCoordinate.getValue0(), row, column);
+    }
 
 }

@@ -1,10 +1,10 @@
 package RotLA;
 
 public class Dice {
-    public int getRandoms() {
-        int min = 2;
-        int max = 12;
-        return (int)Math.floor(Math.random()*(max-min+1)+min);
+    public int getDiceRoll() {
+        int die1Roll = GameUtility.getRandomInRange(1, 6);
+        int die2Roll = GameUtility.getRandomInRange(1, 6);
+        return die2Roll + die1Roll;
     }
 
 
