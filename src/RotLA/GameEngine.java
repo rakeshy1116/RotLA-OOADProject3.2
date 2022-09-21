@@ -45,9 +45,41 @@ public class GameEngine {
 //        }
 //    }
 //
-//    public boolean checkTermination() {
-//
-//    }
+    public boolean checkTermination() {
+        boolean allAdvDied=false;
+        boolean allCreatDied=false;
+        int totalTreasure=0;
+        for(int i=0;i<adventurers.size();i++)
+        {
+            totalTreasure += adventurers.get(i).getNoOfTreasure();
+        }
+
+        for(int i=0;i<adventurers.size();i++)
+        {
+            if(!adventurers.get(i).isAlive())
+            {
+                allAdvDied=true;
+            }
+            else {
+                allAdvDied=false;
+                break;
+            }
+        }
+
+        for(int i=0;i<creatures.size();i++)
+        {
+            if(!creatures.get(i).isAlive())
+            {
+                allCreatDied=true;
+            }
+            else {
+                allCreatDied=false;
+                break;
+            }
+        }
+        return totalTreasure>=10 || allAdvDied || allCreatDied;
+
+    }
 //    public static void main  (String args[]) {
 //
 //        System.out.println("Game Engine");
