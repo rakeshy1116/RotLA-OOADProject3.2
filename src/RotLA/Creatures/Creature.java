@@ -9,13 +9,10 @@ import java.util.ArrayList;
 
 public abstract class Creature {
 
-    private Room room;
+    protected Room room;
     protected boolean alive;
-    private RoomFinder roomFinder;
-
-    public RoomFinder getRoomFinder() {
-        return roomFinder;
-    }
+    protected RoomFinder roomFinder;
+    protected String abbrv;
 
     public void setRoomFinder(RoomFinder roomFinder) {
         this.roomFinder = roomFinder;
@@ -25,35 +22,31 @@ public abstract class Creature {
 
     public void performTurn(Dice dice) {
         move();
-        Room currentRoom = this.getRoom();
-        if(currentRoom.getAdventurers().size()>0)
+        Room currentRoom = this.room;
+        if (!currentRoom.getAdventurers().isEmpty())
             fight(dice);
     }
 
-    public void fight(Dice dice) {
-
-        ArrayList<Adventurer> adventurers = getRoom().getAdventurers();
-        for(int i=0;i<adventurers.size();i++)
-        {
-            int advVal = adventurers.get(i).fightVal(dice);
-            int creatVal = dice.getRandoms();
-            if(advVal>creatVal) {
-                this.setAlive(false);
-                getRoom().removeCreature(this);
-            }
-            else {
-                adventurers.get(i).setNoOfDamages(adventurers.get(i).getNoOfDamages()+1);
-                if(adventurers.get(i).getNoOfDamages()==3)
-                {
-                    getRoom().removeAdventurer(adventurers.get(i));
-                }
-            }
-        }
-
+    public int rollDice(Dice dice) {
+        return dice.getDiceRoll();
     }
 
-    public Room getRoom() {
-        return room;
+    public void fight(Dice dice) {
+        ArrayList<Adventurer> adventurers = room.getAdventurers();
+        adventurers.forEach(adventurer -> {
+            int adventureRolls = adventurer.rollDiceFight(dice);
+            int creatureRolls = this.rollDice(dice);
+            if (adventureRolls > creatureRolls) {
+                this.alive = false;
+            } else if (creatureRolls > adventureRolls) {
+                adventurer.takeDamage();
+                if (!adventurer.isAlive()) {
+                    room.removeAdventurer(adventurer);
+                }
+            } else {
+                //do nothing
+            }
+        });
     }
 
     public void setRoom(Room room) {
@@ -64,8 +57,12 @@ public abstract class Creature {
         return alive;
     }
 
-    public void setAlive(boolean alive) {
-        this.alive = alive;
+    public void die() {
+        this.alive = false;
+    }
+
+    public String getAbbrv() {
+        return abbrv;
     }
 }
 
