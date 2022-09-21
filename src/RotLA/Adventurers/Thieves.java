@@ -16,8 +16,9 @@ public class Thieves extends Adventurer {
 
     @Override
     public void findTreasure(Dice dice) {
-        int currentIncrease=dice.getRandoms()+1;
-        setNoOfTreasure(getNoOfTreasure()+currentIncrease);
+        int currentDiceVal=dice.getRandoms()+1;
+        if(currentDiceVal>=10)
+            setNoOfTreasure(getNoOfTreasure()+1);
     }
 
 }

@@ -14,6 +14,7 @@ public class BoardRenderer {
     private List<Room> boardMatrix;
     private List<Adventurer> adventurers;
     private List<Creature> creatures;
+    private RoomFinder roomFinder;
     private Room starterRoom;
 
     private static final int WESTMOST_ROOM = 0;
@@ -24,6 +25,7 @@ public class BoardRenderer {
     private static final int BOTTOM_MOST_ROOM = 4;
 
     public BoardRenderer(List<Adventurer> adventurers,List<Creature> creatures) {
+        roomFinder = this::findRoom;
         //initializing rooms
         ArrayList<Room> boardList = new ArrayList<>();
         for (int level = TOPMOST_ROOM; level <= BOTTOM_MOST_ROOM; level++) {
@@ -44,26 +46,30 @@ public class BoardRenderer {
             starterRoom.addAdventurer(adventurer);
         });
 
+
         //initializing spawn positions for creatures
         creatures.forEach(creature -> {
             Integer level, verticalDir = null, horizontalDir = null;
             if (creature instanceof Orbiter) {
-                level = getRandomInRange(TOPMOST_ROOM, BOTTOM_MOST_ROOM);
+                level = GameUtility.getRandomInRange(TOPMOST_ROOM, BOTTOM_MOST_ROOM);
                 // To avoid the possibility of random generator allocating central room to orbiters, hardcoding spawn rooms
+               //TODO add similar to move of orbiter
+
                 verticalDir = 2;
                 horizontalDir = 2;
             } else if (creature instanceof Blinker) {
                 level = 4;
-                verticalDir = getRandomInRange(NORTHMOST_ROOM, SOUTHMOST_ROOM);
-                horizontalDir = getRandomInRange(WESTMOST_ROOM, EASTMOST_ROOM);
+                verticalDir = GameUtility.getRandomInRange(NORTHMOST_ROOM, SOUTHMOST_ROOM);
+                horizontalDir = GameUtility.getRandomInRange(WESTMOST_ROOM, EASTMOST_ROOM);
             } else {
-                level = getRandomInRange(TOPMOST_ROOM, BOTTOM_MOST_ROOM);
-                verticalDir = getRandomInRange(NORTHMOST_ROOM, SOUTHMOST_ROOM);
-                horizontalDir = getRandomInRange(WESTMOST_ROOM, EASTMOST_ROOM);
+                level = GameUtility.getRandomInRange(TOPMOST_ROOM, BOTTOM_MOST_ROOM);
+                verticalDir = GameUtility.getRandomInRange(NORTHMOST_ROOM, SOUTHMOST_ROOM);
+                horizontalDir = GameUtility.getRandomInRange(WESTMOST_ROOM, EASTMOST_ROOM);
             }
             Room room = findRoom(new Triplet<>(level, verticalDir, horizontalDir));
             room.addCreature(creature);
             creature.setRoom(room);
+            creature.setRoomFinder(roomFinder);
         });
     }
 
@@ -109,8 +115,5 @@ public class BoardRenderer {
 
     }
 
-    public int getRandomInRange(int min, int max) {
-        return (int) Math.floor(Math.random() * (max - min + 1) + min);
-    }
 
 }
