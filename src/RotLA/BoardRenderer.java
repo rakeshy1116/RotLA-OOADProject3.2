@@ -118,26 +118,46 @@ public class BoardRenderer {
     }
 
     public void printGameStatus() {
-        System.out.println("Turn : " + turnCounter);
+        System.out.println("Turn : " + turnCounter++);
         //TODO: print rooms, adventurers, creatures
+        System.out.println("Board Status : ");
 
+        System.out.println(findRoom(new Triplet<>(0,1,1)).getRoomDetails());
+        for (int level = TOPMOST_ROOM; level <= BOTTOM_MOST_ROOM; level++) {
+            for (int row = WESTMOST_ROOM; row <= EASTMOST_ROOM; row++) {
+                for (int column = NORTHMOST_ROOM; column <= SOUTHMOST_ROOM; column++) {
+                    System.out.print(findRoom(new Triplet<>(level,row,column)).getRoomDetails()+ '\t');
+                }
+                System.out.println();
+            }
+        }
+
+
+        System.out.println("Adventurers Status : ");
         for(Adventurer adventurer: adventurers) {
             System.out.println(adventurer.getAdventurerStatus());
         }
+
+        System.out.println("Creatures Status : ");
         HashMap<String,Integer> creatureStatus = new HashMap<>();
+        creatureStatus.put("Orbiter", 0);
+        creatureStatus.put("Blinker", 0);
+        creatureStatus.put("Seeker", 0);
         for(Creature creature: creatures) {
             String name=creature.getAbbrv();
             if(creature.isAlive()) {
                 if(name.equals("O"))
-                   creatureStatus.put("Orbiter", creatureStatus.getOrDefault("Orbiter",1));
+                   creatureStatus.put("Orbiter", 1+creatureStatus.getOrDefault("Orbiter",0));
                 else if(name.equals("B"))
-                    creatureStatus.put("Blinker", creatureStatus.getOrDefault("Blinker",1));
+                    creatureStatus.put("Blinker", 1+creatureStatus.getOrDefault("Blinker",0));
                 else
-                    creatureStatus.put("Seeker", creatureStatus.getOrDefault("Seeker",1));
+                    creatureStatus.put("Seeker", 1+creatureStatus.getOrDefault("Seeker",0));
             }
-        creatureStatus.forEach((key,value) ->
-                System.out.println(key + " - " + String.valueOf(4-value) + " Remaining"));
+
         }
+        creatureStatus.forEach((key,value) ->
+                System.out.println(key + " - " + String.valueOf(value) + " Remaining"));
+
     }
 
 

@@ -74,6 +74,6 @@ public class Room {
         }
         if (creatureString.isBlank()) creatureString = "-";
 
-        return roomLocationString + " : " + adventurerString + " : " + creatureString;
+        return roomLocationString + " : " + adventurerString + " : " + creatureString + " ";
     }
 }
