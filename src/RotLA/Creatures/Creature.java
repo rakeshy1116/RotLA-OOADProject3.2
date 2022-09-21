@@ -11,14 +11,14 @@ public abstract class Creature {
 
     protected Room room;
     protected boolean alive;
-    protected RoomFinder roomFinder;
+    protected RoomFinder roomFinder; //roomFinder is used to find a particular room from boardList
     protected String abbrv;
 
     public void setRoomFinder(RoomFinder roomFinder) {
         this.roomFinder = roomFinder;
     }
 
-    abstract void move();
+    abstract void move();  //each creature has different move so all of them will override this abstract method
 
     public void performTurn(Dice dice) {
         move();
@@ -31,7 +31,8 @@ public abstract class Creature {
         return dice.getDiceRoll();
     }
 
-    public void fight(Dice dice) {
+    public void fight(Dice dice) {   // during fight, creature will get the list of adventurers present in the same room
+        // and fight with each of them
         ArrayList<Adventurer> adventurers = room.getAdventurers();
         for(int i=0;i<adventurers.size();i++) {
 
@@ -43,10 +44,10 @@ public abstract class Creature {
             } else if (creatureRolls > adventureRolls) {
                 adventurer.takeDamage();
                 if (!adventurer.isAlive()) {
-                    room.removeAdventurer(adventurer);
+                    room.removeAdventurer(adventurer); // loser gets removed from the room
                 }
             } else {
-                //do nothing
+                //in case of tie, do nothing
             }
         }
     }
