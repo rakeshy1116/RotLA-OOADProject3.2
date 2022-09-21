@@ -9,6 +9,15 @@ import java.util.ArrayList;
 abstract public class Adventurer {
     protected int noOfDamages;
     private Room room;
+
+    public int getNoOfDamages() {
+        return noOfDamages;
+    }
+
+    public void setNoOfDamages(int noOfDamages) {
+        this.noOfDamages = noOfDamages;
+    }
+
     private int noOfTreasure;
 
     public int getNoOfTreasure() {
@@ -52,8 +61,9 @@ abstract public class Adventurer {
     }
 
     public void findTreasure(Dice dice) {
-        int currentIncrease=dice.getRandoms();
-        setNoOfTreasure(getNoOfTreasure()+currentIncrease);
+        int currentDiceVal=dice.getRandoms();
+        if(currentDiceVal>=10)
+        setNoOfTreasure(getNoOfTreasure()+1);
     }
 
     public boolean isAlive() {
@@ -77,6 +87,7 @@ abstract public class Adventurer {
        Room newRoom = rooms.get(movement);
        oldRoom.removeAdventurer(this);
        newRoom.addAdventurer(this);
+       this.setRoom(newRoom);
      //  newRoom.addAdventurer();
     }
 
