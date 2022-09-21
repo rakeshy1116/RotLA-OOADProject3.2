@@ -13,13 +13,15 @@ public class Runner extends Adventurer {
 
     public void performTurn(Dice dice) {
         for (int i = 0; i < 2; i++) {
-            move();
-            Room currentRoom = this.room;
-            if (currentRoom.getCreatures().size() > 0)
-                fight(dice);
-            else
-                findTreasure(dice);
+            if (this.isAlive()) {
+                move();
+                Room currentRoom = this.room;
+                if (currentRoom.getCreatures().size() > 0)
+                    fight(dice);
+                else
+                    findTreasure(dice);
 
+            }
         }
     }
 

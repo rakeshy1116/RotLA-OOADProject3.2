@@ -52,7 +52,9 @@ abstract public class Adventurer {
 
     protected void fight(Dice dice) {
         ArrayList<Creature> creatures = this.room.getCreatures();
-        creatures.forEach(creature -> {
+        for(int i=0;i<creatures.size();i++)
+        {
+            Creature creature= creatures.get(i);
             int adventurerRoll = rollDiceFight(dice);
             int creatureRoll = creature.rollDice(dice);
             if (adventurerRoll > creatureRoll) {
@@ -66,7 +68,7 @@ abstract public class Adventurer {
             } else {
                 //do nothing
             }
-        });
+        };
     }
 
     protected void findTreasure(Dice dice) {
@@ -91,7 +93,7 @@ abstract public class Adventurer {
     }
 
     public String getAdventurerStatus() {
-        return adventurerName + " - " + noOfTreasure + " Treasure(s)" + " - " + noOfDamages + "Damage";
+        return adventurerName + " - " + noOfTreasure + " Treasure(s)" + " - " + noOfDamages + " Damage";
     }
 }
 

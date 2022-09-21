@@ -33,7 +33,9 @@ public abstract class Creature {
 
     public void fight(Dice dice) {
         ArrayList<Adventurer> adventurers = room.getAdventurers();
-        adventurers.forEach(adventurer -> {
+        for(int i=0;i<adventurers.size();i++) {
+
+            Adventurer adventurer=adventurers.get(i);
             int adventureRolls = adventurer.rollDiceFight(dice);
             int creatureRolls = this.rollDice(dice);
             if (adventureRolls > creatureRolls) {
@@ -46,7 +48,7 @@ public abstract class Creature {
             } else {
                 //do nothing
             }
-        });
+        }
     }
 
     public void setRoom(Room room) {
