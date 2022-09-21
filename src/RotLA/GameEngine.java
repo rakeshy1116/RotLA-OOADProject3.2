@@ -49,7 +49,7 @@ public class GameEngine {
                 }
             });
 
-            boardRenderer.printGameStatus();
+           // boardRenderer.printGameStatus();
             if (checkTermination()) break;
         }
     }
@@ -82,7 +82,12 @@ public class GameEngine {
 
     public static void main(String[] args) {
         GameEngine gm = new GameEngine();
-        gm.initialize();
-        gm.startSimulation();
+
+        for(int i=0;i<30;i++) {
+            System.out.print("Run " + String.valueOf(i+1) + ": ");
+            gm.initialize();
+            gm.startSimulation();
+        }
+
     }
 }
