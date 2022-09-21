@@ -38,13 +38,25 @@ public class GameEngine {
 
     }
 
-//    public void startSimulation() {
-//        while(checkTermination()) {
-//              // pass boardList as argument while calling creatures move method
-                //check alive status before calling performTurn
-//        }
-//    }
-//
+    public void startSimulation() {
+        while(!checkTermination()) {
+
+               // check alive status before calling performTurn
+            for(int i=0;i<adventurers.size();i++)
+            {
+                if(adventurers.get(i).isAlive())
+                    adventurers.get(i).performTurn(dice);
+            }
+            if(checkTermination()) break;
+            for(int i=0;i<creatures.size();i++)
+            {
+                if(creatures.get(i).isAlive())
+                    creatures.get(i).performTurn(dice);
+            }
+            if(checkTermination()) break;
+        }
+    }
+
     public boolean checkTermination() {
         boolean allAdvDied=false;
         boolean allCreatDied=false;
@@ -80,8 +92,4 @@ public class GameEngine {
         return totalTreasure>=10 || allAdvDied || allCreatDied;
 
     }
-//    public static void main  (String args[]) {
-//
-//        System.out.println("Game Engine");
-//    }
 }
