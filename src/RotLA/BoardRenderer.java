@@ -58,16 +58,25 @@ public class BoardRenderer {
             Integer level, verticalDir = null, horizontalDir = null;
             if (creature instanceof Orbiter) {
                 level = GameUtility.getRandomInRange(TOPMOST_ROOM, BOTTOM_MOST_ROOM);
-                // To avoid the possibility of random generator allocating central room to orbiters, hardcoding spawn rooms
-                //TODO add similar to move of orbiter
-
-                verticalDir = 2;
-                horizontalDir = 2;
-            } else if (creature instanceof Blinker) {
+                // Orbiters start randomly in the outer rooms of any level
+                ArrayList<Pair<Integer,Integer>> possibleStaringRooms = new ArrayList<>();
+                for(int i=0;i<2;i++)
+                {
+                    for(int j=0;j<2;j++)
+                    {
+                        if(!(i==1 && j==1))
+                            possibleStaringRooms.add(new Pair(i,j));
+                    }
+                }
+                int value = GameUtility.getRandomInRange(0, possibleStaringRooms.size()-1);
+                Pair<Integer,Integer> p = possibleStaringRooms.get(value);
+                verticalDir = p.getValue0();
+                horizontalDir = p.getValue1();
+            } else if (creature instanceof Blinker) { //blinkers start in a random room on 4th level
                 level = 4;
                 verticalDir = GameUtility.getRandomInRange(NORTHMOST_ROOM, SOUTHMOST_ROOM);
                 horizontalDir = GameUtility.getRandomInRange(WESTMOST_ROOM, EASTMOST_ROOM);
-            } else {
+            } else { //Seeker start randomly in any of the levels
                 level = GameUtility.getRandomInRange(TOPMOST_ROOM, BOTTOM_MOST_ROOM);
                 verticalDir = GameUtility.getRandomInRange(NORTHMOST_ROOM, SOUTHMOST_ROOM);
                 horizontalDir = GameUtility.getRandomInRange(WESTMOST_ROOM, EASTMOST_ROOM);
