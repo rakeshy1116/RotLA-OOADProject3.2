@@ -93,7 +93,7 @@ public class GameEngine {
         GameEngine gm = new GameEngine();
         gm.initialize();
         gm.startSimulation();
-// Uncomment for multiple game run
+ //Uncomment for multiple game run
 //        for(int i=0;i<30;i++) {
 //            System.out.print("Run " + String.valueOf(i+1) + ": ");
 //            gm.initialize();
