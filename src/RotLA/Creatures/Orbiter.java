@@ -4,6 +4,9 @@ import RotLA.GameUtility;
 import RotLA.Room;
 import org.javatuples.Triplet;
 
+import static RotLA.GameUtility.*;
+
+// CONCEPT: INHERITANCE - A type of Creature that inherits variables and behaviour from Creature
 public class Orbiter extends Creature {
 
     Boolean isClockWise;
@@ -11,54 +14,61 @@ public class Orbiter extends Creature {
     public Orbiter() {
         this.alive = true;
         isClockWise = GameUtility.getRandomInRange(0, 1) == 1; //each orbiter during instantization are
-        // assigned clockwise-or-anticlockwise
+        // assigned clockwise-or-anticlockwise initially
         abbrv = "O";
         this.name = "Orbiter";
     }
 
+    //implementing the abstract move method for Orbiters, Always move in a direction on the outer rooms
     public void move() {
         Room oldRoom = this.room;
-        if (oldRoom.getAdventurers().isEmpty()) { //orbiter like other creatures move only if there are no adventurers in current room
-            Triplet<Integer, Integer, Integer> newRoomCoordinates;
-            if (isClockWise) {
-                newRoomCoordinates = getClockWiseNext(oldRoom.getRoomCoordinates()); //clockwise movement
-            } else {
-                newRoomCoordinates = getAntiClockWiseNext(oldRoom.getRoomCoordinates()); //anticlockwise movement
-            }
-            Room newRoom = roomFinder.findRoom(newRoomCoordinates);
-            oldRoom.removeCreature(this);
-            newRoom.addCreature(this);
-            this.room = newRoom;
+        Triplet<Integer, Integer, Integer> newRoomCoordinates;
+        if (isClockWise) {
+            newRoomCoordinates = getClockWiseNext(oldRoom.getRoomCoordinates()); //if clockwise, find next room in clockwise directiom
+        } else {
+            newRoomCoordinates = getAntiClockWiseNext(oldRoom.getRoomCoordinates()); //if anticlockwise, find next room in anticlockwise directiom
         }
+        Room newRoom = roomFinder.findRoom(newRoomCoordinates);
+        oldRoom.removeCreature(this);
+        newRoom.addCreature(this);
+        this.room = newRoom;
     }
 
+    // returns coordinates of next room in clockwise direction, given rooms coordinates
     private Triplet<Integer, Integer, Integer> getClockWiseNext(Triplet<Integer, Integer, Integer> roomCoordinate) {
-        //returns new room coordinates which is one step away in clockwise direction
         int row = roomCoordinate.getValue1();
         int column = roomCoordinate.getValue2();
-        if (row == 0 && column >= 0 && column < 2) {
+        if (row == NORTHMOST_ROOM && column >= WESTMOST_ROOM && column < EASTMOST_ROOM) {
+            //if first row, move east
             column++;
-        } else if (row == 2 && column <= 2 && column > 0) {
+        } else if (row == SOUTHMOST_ROOM && column <= EASTMOST_ROOM && column > WESTMOST_ROOM) {
+            //if last row, move west
             column--;
-        } else if (column == 0 && row <= 2 && row > 0) {
+        } else if (column == WESTMOST_ROOM && row <= SOUTHMOST_ROOM && row > NORTHMOST_ROOM) {
+            //if first column, move noeth
             row--;
-        } else if (column == 2 && row < 2 && row >= 0) {
+        } else if (column == EASTMOST_ROOM && row < SOUTHMOST_ROOM && row >= NORTHMOST_ROOM) {
+            //if last column, move south
             row++;
         }
         return new Triplet<>(roomCoordinate.getValue0(), row, column);
     }
 
+    // returns coordinates of next room in anti-clockwise direction, given rooms coordinates
     private Triplet<Integer, Integer, Integer> getAntiClockWiseNext(Triplet<Integer, Integer, Integer> roomCoordinate) {
-        //returns new room coordinates which is one step away in anticlockwise direction
         int row = roomCoordinate.getValue1();
         int column = roomCoordinate.getValue2();
-        if (row == 0 && column > 0 && column <= 2) {
+        if (row == NORTHMOST_ROOM && column > WESTMOST_ROOM && column <= EASTMOST_ROOM) {
+            // if first row, move west
             column--;
-        } else if (row == 2 && column < 2 && column >= 0) {
+        } else if (row == SOUTHMOST_ROOM && column < EASTMOST_ROOM && column >= WESTMOST_ROOM) {
+            // if last row, move east
             column++;
-        } else if (column == 0 && row < 2 && row >= 0) {
+        } else if (column == WESTMOST_ROOM && row < SOUTHMOST_ROOM && row >= NORTHMOST_ROOM) {
+            // if first column, move south
             row++;
-        } else if (column == 2 && row <= 2 && row > 0) {
+        } else if (column == EASTMOST_ROOM && row <= SOUTHMOST_ROOM && row > NORTHMOST_ROOM) {
+            // last column, move north
             row--;
         }
         return new Triplet<>(roomCoordinate.getValue0(), row, column);

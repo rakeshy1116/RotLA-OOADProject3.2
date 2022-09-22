@@ -10,20 +10,11 @@ import java.util.List;
 
 import static RotLA.GameUtility.TREASURES_MIN_ROLL;
 
-//------------CONCEPTS EXPLAINED IN THIS CLASS ----------------
-// Inheritance
-// Encapsulation
-// Polymorphism
-// Abstraction
-// Identity
-// Cohesion
-//------------------------------------------------------------
-
 //Adventurer is an abstract class, it is extended by different subclass types - Brawler, Runner, Sneaker, Thief
-// CONCEPT INHERITANCE - Each of these subclasses inherit several instance variable and method implementations pertaining to adventurer behaviour
+// CONCEPT INHERITANCE, COHESION - Each of these subclasses inherit several instance variable and method implementations pertaining to adventurer behaviour
 abstract public class Adventurer {
-    // CONCEPT POLYMORPHISM - The following instance variables and some methods are marked protected, which means they are encapsulated
-// from other classes. They are only visible in the inheritance heirarchy. Exposed to other classes through getter/setter methods
+    // CONCEPT ENCAPSULATION - The following instance variables and some methods are marked protected, which means they are encapsulated
+    // from other classes. They are only visible in the inheritance heirarchy. Exposed to other classes through getter/setter methods
     protected int noOfDamages;  //represents number of damage instances taken by an Adventurer
     protected Room room; //the room instance where the object is currently located
     protected int noOfTreasure; //total number of treasures found by an Adventurer

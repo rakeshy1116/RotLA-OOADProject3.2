@@ -1,5 +1,6 @@
 package RotLA;
 
+//A utility class that holds static constants and methods that can be reused in code
 public class GameUtility {
 
     public static final int WESTMOST_ROOM = 0;
