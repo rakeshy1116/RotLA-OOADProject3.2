@@ -28,14 +28,15 @@ public class GameEngine {
             creatures.add(new Orbiter());
             creatures.add(new Seeker());
         }
-        this.boardRenderer = new BoardRenderer(adventurers, creatures);
+        this.boardRenderer = new BoardRenderer();
+        boardRenderer.initialiseBoardForGame(adventurers, creatures);
         this.dice = new Dice();
 
     }
 
     public void startSimulation() {
+        boardRenderer.printGameStatus();
         while (true) {
-
             // check alive status before calling performTurn
             adventurers.forEach(adventurer -> {
                 if (adventurer.isAlive()) {
@@ -48,7 +49,6 @@ public class GameEngine {
                     creature.performTurn(dice);
                 }
             });
-
             boardRenderer.printGameStatus();
             if (checkTermination()) break;
         }

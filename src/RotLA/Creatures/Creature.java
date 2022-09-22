@@ -14,6 +14,12 @@ public abstract class Creature {
     protected RoomFinder roomFinder; //roomFinder is used to find a particular room from boardList
     protected String abbrv;
 
+    protected String name;
+
+    public String getName() {
+        return name;
+    }
+
     public void setRoomFinder(RoomFinder roomFinder) {
         this.roomFinder = roomFinder;
     }

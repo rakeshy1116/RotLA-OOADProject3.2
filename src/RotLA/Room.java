@@ -5,10 +5,11 @@ import RotLA.Creatures.Creature;
 import org.javatuples.Triplet;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Room {
     private Triplet<Integer, Integer, Integer> roomCoordinates;
-    private ArrayList<Room> connectedRooms;
+    private List<Room> connectedRooms;
 
     private ArrayList<Adventurer> adventurers;
 
@@ -20,11 +21,11 @@ public class Room {
         creatures = new ArrayList<>();
     }
 
-    public void setConnectedRooms(ArrayList<Room> connectedRooms) {
+    public void setConnectedRooms(List<Room> connectedRooms) {
         this.connectedRooms = connectedRooms;
     }
 
-    public ArrayList<Room> getConnectedRooms() {
+    public List<Room> getConnectedRooms() {
         return connectedRooms;
     }
 

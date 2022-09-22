@@ -4,18 +4,20 @@ import RotLA.GameUtility;
 import RotLA.Room;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Seeker extends Creature {
 
     public Seeker() {
         this.alive = true;
         this.abbrv = "S";
+        this.name = "Seeker";
     }
 
     public void move() {  //seeker moves only is there are no adventures are in current room or adventurers are present in adjacent room
         Room oldRoom = this.room;
         if (oldRoom.getAdventurers().isEmpty()) {
-            ArrayList<Room> neighbourRooms = oldRoom.getConnectedRooms();
+            List<Room> neighbourRooms = oldRoom.getConnectedRooms();
             ArrayList<Room> possibleRooms = new ArrayList<>();
             neighbourRooms.forEach(room -> {   //checking if adjacent rooms have adventurers or not, if they have adventurers
                 // adding them to possible rooms

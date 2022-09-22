@@ -8,6 +8,7 @@ public class Blinker extends Creature {
     public Blinker() {
         this.alive = true;
         this.abbrv = "B";
+        this.name = "Blinker";
     }
 
     public void move() {

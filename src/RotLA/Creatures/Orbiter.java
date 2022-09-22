@@ -13,6 +13,7 @@ public class Orbiter extends Creature {
         isClockWise = GameUtility.getRandomInRange(0, 1) == 1; //each orbiter during instantization are
         // assigned clockwise-or-anticlockwise
         abbrv = "O";
+        this.name = "Orbiter";
     }
 
     public void move() {
