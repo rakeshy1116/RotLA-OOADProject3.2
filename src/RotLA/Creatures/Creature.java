@@ -27,6 +27,8 @@ public abstract class Creature {
         if (currentAdventuresInRoom.isEmpty())
             //creatures move only if current room has no adventurers
             move();
+        //room gets updated after creatures move
+        currentAdventuresInRoom = this.room.getAdventurers();
         if (!currentAdventuresInRoom.isEmpty())
             //if any adventurer in room fight
             fight(dice, currentAdventuresInRoom);

@@ -8,6 +8,8 @@ import RotLA.Creatures.Seeker;
 
 import java.util.ArrayList;
 
+import static RotLA.GameUtility.TREASURES_WINNING_NUMBER;
+
 // The main Game simulation performer class, initializes all components, performs turns and checks for termination
 public class GameEngine {
 
@@ -74,7 +76,7 @@ public class GameEngine {
         }
 
         //Game ends if Adventures found 10 treasures or Adventures killed all creatures or Creatures killed all adventurers
-        if (totalTreasure >= 10) {
+        if (totalTreasure >= TREASURES_WINNING_NUMBER) {
             System.out.println("Adventurers win by finding " + String.valueOf(totalTreasure) + " treasures");
             return true;
         } else if (isAdventurerAlive && !isCreatureAlive) {

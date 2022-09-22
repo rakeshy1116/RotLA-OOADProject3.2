@@ -20,13 +20,6 @@ public class Runner extends Adventurer {
         for (int i = 0; i < 2; i++) {
             if (this.isAlive()) {
                 super.performTurn(dice);
-//                move();
-//                List<Creature> creaturesInRoom = room.getCreatures();
-//                //After moving if the room has any creatures, fight them other wise find treasure
-//                if (!creaturesInRoom.isEmpty())
-//                    fight(dice, creaturesInRoom);
-//                else
-//                    findTreasure(dice);
             }
         }
     }

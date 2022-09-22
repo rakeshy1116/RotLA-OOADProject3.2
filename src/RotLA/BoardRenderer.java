@@ -53,8 +53,6 @@ public class BoardRenderer {
         //i.e An Orbiter instance is an instance of both Orbiter and Creature
         //initializing spawn positions for adventurers, always start at 0-1-1
         Room starterRoom = boardRoomList.get(0);
-        boardRoomList.add(0, starterRoom);
-
         adventurers.forEach(adventurer -> {
             adventurer.setRoom(starterRoom);
             starterRoom.addAdventurer(adventurer);
