@@ -1,578 +1,578 @@
 Turn : 0
-Board Status :
-0-1-1 : BRTS : -
-1-0-0 : - : S 	1-0-1 : - : - 	1-0-2 : - : -
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
-1-2-0 : - : S 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : OO 	2-0-2 : - : -
-2-1-0 : - : O 	2-1-1 : - : S 	2-1-2 : - : -
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : O 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : B
-4-1-0 : - : - 	4-1-1 : - : B 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : BB 	4-2-2 : - : -
-Adventurers Status :
+Board Status : 
+0-1-1 : BRTS : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : OO 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : SO 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : S 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : O 	4-1-1 : - : B 	4-1-2 : - : B 	
+4-2-0 : - : B 	4-2-1 : - : B 	4-2-2 : - : S 	
+Adventurers Status : 
 Brawler - 0 Treasure(s) - 0 Damage
 Runner - 0 Treasure(s) - 0 Damage
 Thief - 0 Treasure(s) - 0 Damage
 Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status :
+Creatures Status : 
 Seeker - 4 Remaining
 Blinker - 4 Remaining
 Orbiter - 4 Remaining
 
 Turn : 1
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : B 	1-0-1 : - : - 	1-0-2 : - : -
-1-1-0 : R : SS 	1-1-1 : BTS : S 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : OOO 	2-0-1 : - : - 	2-0-2 : - : -
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : B
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : B 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : O 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : B 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : BB 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : BTS : - 	1-1-2 : - : - 	
+1-2-0 : - : - 	1-2-1 : R : - 	1-2-2 : - : - 	
+2-0-0 : - : OO 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : S 	3-0-2 : - : O 	
+3-1-0 : - : - 	3-1-1 : - : B 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : S 	
+4-0-0 : - : - 	4-0-1 : - : B 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
 Brawler - 0 Treasure(s) - 0 Damage
-Runner - 0 Treasure(s) - 0 Damage
+Runner - 1 Treasure(s) - 0 Damage
 Thief - 1 Treasure(s) - 0 Damage
 Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status :
+Creatures Status : 
 Seeker - 4 Remaining
 Blinker - 4 Remaining
 Orbiter - 4 Remaining
 
 Turn : 2
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : R : - 	1-0-2 : - : -
-1-1-0 : T : S 	1-1-1 : - : - 	1-1-2 : B : BS
-1-2-0 : - : - 	1-2-1 : S : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : O 	2-0-2 : - : -
-2-1-0 : - : OO 	2-1-1 : - : - 	2-1-2 : - : -
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : O 	3-2-2 : - : -
-4-0-0 : - : B 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : B 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : B 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : B 	1-0-2 : - : - 	
+1-1-0 : BS : - 	1-1-1 : - : - 	1-1-2 : - : B 	
+1-2-0 : - : - 	1-2-1 : RT : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : OO 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : B 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : S 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : O 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : S 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : OB 	4-2-2 : - : S 	
+Adventurers Status : 
 Brawler - 0 Treasure(s) - 0 Damage
-Runner - 0 Treasure(s) - 1 Damage
-Thief - 1 Treasure(s) - 1 Damage
+Runner - 1 Treasure(s) - 0 Damage
+Thief - 1 Treasure(s) - 0 Damage
 Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 3 Remaining
+Creatures Status : 
+Seeker - 4 Remaining
 Blinker - 4 Remaining
 Orbiter - 4 Remaining
 
 Turn : 3
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : B 	1-0-1 : - : - 	1-0-2 : B : S
-1-1-0 : R : SB 	1-1-1 : S : - 	1-1-2 : - : -
-1-2-0 : T : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : B 	2-0-1 : - : B 	2-0-2 : - : O
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
-2-2-0 : - : SOO 	2-2-1 : - : - 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : O
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : B : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : - : B 	1-1-1 : S : - 	1-1-2 : - : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : T : B 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : OO 	
+2-1-0 : - : B 	2-1-1 : R : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : S 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : SO 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : SOB 	
+Adventurers Status : 
 Brawler - 0 Treasure(s) - 0 Damage
-Runner - 0 Treasure(s) - 2 Damage
-Thief - 1 Treasure(s) - 1 Damage
+Runner - 1 Treasure(s) - 0 Damage
+Thief - 2 Treasure(s) - 1 Damage
 Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 3 Remaining
+Creatures Status : 
+Seeker - 4 Remaining
 Blinker - 4 Remaining
 Orbiter - 4 Remaining
 
 Turn : 4
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : B : BS 	1-0-2 : - : -
-1-1-0 : RT : - 	1-1-1 : - : - 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
-2-1-0 : - : - 	2-1-1 : S : - 	2-1-2 : - : O
-2-2-0 : - : S 	2-2-1 : - : OBO 	2-2-2 : - : -
-3-0-0 : - : B 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : O
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 0 Treasure(s) - 0 Damage
-Runner - 0 Treasure(s) - 2 Damage
-Thief - 1 Treasure(s) - 1 Damage
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : B 	1-0-1 : BS : - 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : T : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : R : - 	2-1-2 : - : OO 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : S 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : O 	3-2-2 : - : S 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : B 	4-1-2 : - : OB 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 1 Treasure(s) - 0 Damage
+Thief - 2 Treasure(s) - 1 Damage
 Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
+Creatures Status : 
+Seeker - 4 Remaining
 Blinker - 3 Remaining
 Orbiter - 4 Remaining
 
 Turn : 5
-Board Status :
-0-1-1 : - : -
-1-0-0 : T : S 	1-0-1 : - : - 	1-0-2 : - : -
-1-1-0 : R : - 	1-1-1 : B : - 	1-1-2 : - : -
-1-2-0 : - : B 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
-2-1-0 : S : S 	2-1-1 : - : - 	2-1-2 : - : -
-2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : OOO
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : O
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : BB 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 0 Treasure(s) - 0 Damage
-Runner - 0 Treasure(s) - 2 Damage
-Thief - 2 Treasure(s) - 1 Damage
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : B : - 	1-0-1 : - : - 	1-0-2 : S : - 	
+1-1-0 : - : - 	1-1-1 : T : - 	1-1-2 : - : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : R : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : BO 	
+3-0-0 : - : - 	3-0-1 : - : S 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : O 	3-2-1 : - : - 	3-2-2 : - : S 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : O 	
+4-1-0 : - : - 	4-1-1 : - : B 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 1 Treasure(s) - 1 Damage
+Thief - 3 Treasure(s) - 1 Damage
 Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
-Blinker - 3 Remaining
-Orbiter - 4 Remaining
+Creatures Status : 
+Seeker - 4 Remaining
+Blinker - 2 Remaining
+Orbiter - 3 Remaining
 
 Turn : 6
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : T : S 	1-0-2 : - : -
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : B
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
-2-1-0 : - : - 	2-1-1 : BS : S 	2-1-2 : - : OO
-2-2-0 : - : - 	2-2-1 : - : O 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : O 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : - : B 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : B 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : B 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : BT : - 	1-1-1 : - : - 	1-1-2 : S : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : R : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : O 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : S 	3-0-2 : - : - 	
+3-1-0 : - : O 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : S 	
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : - 	
+4-1-0 : - : B 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
 Brawler - 1 Treasure(s) - 0 Damage
-Runner - 0 Treasure(s) - 3 Damage
-Thief - 2 Treasure(s) - 1 Damage
+Runner - 1 Treasure(s) - 1 Damage
+Thief - 3 Treasure(s) - 1 Damage
 Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
-Blinker - 3 Remaining
-Orbiter - 4 Remaining
+Creatures Status : 
+Seeker - 4 Remaining
+Blinker - 2 Remaining
+Orbiter - 3 Remaining
 
 Turn : 7
-Board Status :
-0-1-1 : - : -
-1-0-0 : T : - 	1-0-1 : - : - 	1-0-2 : - : -
-1-1-0 : - : - 	1-1-1 : B : S 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : S : S 	2-0-2 : - : OO
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
-2-2-0 : - : O 	2-2-1 : - : - 	2-2-2 : - : -
-3-0-0 : - : O 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : B 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : B 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : B 	4-2-2 : - : -
-Adventurers Status :
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : T : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : B : - 	1-1-2 : - : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : S : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : SO 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : O 	3-0-1 : R : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : S 	
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : B 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
 Brawler - 1 Treasure(s) - 0 Damage
-Runner - 0 Treasure(s) - 3 Damage
-Thief - 2 Treasure(s) - 1 Damage
+Runner - 1 Treasure(s) - 1 Damage
+Thief - 3 Treasure(s) - 1 Damage
 Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
-Blinker - 3 Remaining
-Orbiter - 4 Remaining
+Creatures Status : 
+Seeker - 3 Remaining
+Blinker - 1 Remaining
+Orbiter - 3 Remaining
 
 Turn : 8
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : B 	1-0-1 : B : S 	1-0-2 : - : -
-1-1-0 : T : - 	1-1-1 : - : - 	1-1-2 : - : B
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : OO 	2-0-2 : - : -
-2-1-0 : - : O 	2-1-1 : S : S 	2-1-2 : - : -
-2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : O 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : B 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : T : - 	1-1-1 : - : - 	1-1-2 : S : - 	
+1-2-0 : - : - 	1-2-1 : B : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : O 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : O 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : R : S 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
 Brawler - 1 Treasure(s) - 0 Damage
-Runner - 0 Treasure(s) - 3 Damage
+Runner - 1 Treasure(s) - 2 Damage
 Thief - 3 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
-Blinker - 3 Remaining
-Orbiter - 4 Remaining
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
+Seeker - 3 Remaining
+Blinker - 0 Remaining
+Orbiter - 3 Remaining
 
 Turn : 9
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : B : -
-1-1-0 : - : - 	1-1-1 : S : SS 	1-1-2 : - : -
-1-2-0 : T : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : OOO 	2-0-1 : - : BB 	2-0-2 : - : -
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : B
-2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : O 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : BTS : - 	1-1-2 : - : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : O 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : R : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : S 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
 Brawler - 1 Treasure(s) - 0 Damage
-Runner - 0 Treasure(s) - 3 Damage
+Runner - 1 Treasure(s) - 2 Damage
 Thief - 3 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
-Blinker - 3 Remaining
-Orbiter - 4 Remaining
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
+Seeker - 3 Remaining
+Blinker - 0 Remaining
+Orbiter - 2 Remaining
 
 Turn : 10
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : B : S 	1-0-2 : - : -
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : S : -
-1-2-0 : - : - 	1-2-1 : T : S 	1-2-2 : - : -
-2-0-0 : - : B 	2-0-1 : - : O 	2-0-2 : - : -
-2-1-0 : - : OO 	2-1-1 : - : - 	2-1-2 : - : -
-2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : OB 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : B
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : B : - 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : TS : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : O 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : S 	
+3-2-0 : - : - 	3-2-1 : R : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : S 	
+Adventurers Status : 
 Brawler - 1 Treasure(s) - 0 Damage
-Runner - 0 Treasure(s) - 3 Damage
-Thief - 4 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
-Blinker - 3 Remaining
-Orbiter - 4 Remaining
+Runner - 1 Treasure(s) - 2 Damage
+Thief - 3 Treasure(s) - 1 Damage
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
+Seeker - 3 Remaining
+Blinker - 0 Remaining
+Orbiter - 2 Remaining
 
 Turn : 11
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : - : B 	1-0-2 : B : S
-1-1-0 : - : - 	1-1-1 : TS : S 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : B 	2-0-1 : - : - 	2-0-2 : - : O
-2-1-0 : - : B 	2-1-1 : - : - 	2-1-2 : - : -
-2-2-0 : - : OO 	2-2-1 : - : - 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : O
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 2 Treasure(s) - 0 Damage
-Runner - 0 Treasure(s) - 3 Damage
-Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
-Blinker - 3 Remaining
-Orbiter - 4 Remaining
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : BT : - 	
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : S : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : O 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : S 	
+3-2-0 : - : - 	3-2-1 : R : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : SO 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 2 Treasure(s) - 2 Damage
+Thief - 4 Treasure(s) - 1 Damage
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
+Seeker - 3 Remaining
+Blinker - 0 Remaining
+Orbiter - 2 Remaining
 
 Turn : 12
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : B : S 	1-0-2 : - : -
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : T : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : B
-2-1-0 : - : - 	2-1-1 : S : S 	2-1-2 : - : O
-2-2-0 : - : - 	2-2-1 : - : OO 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : OB
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 2 Treasure(s) - 1 Damage
-Runner - 0 Treasure(s) - 3 Damage
-Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
-Blinker - 2 Remaining
-Orbiter - 4 Remaining
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : BT : - 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : S : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : O 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : S 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 2 Treasure(s) - 3 Damage
+Thief - 4 Treasure(s) - 1 Damage
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
+Seeker - 3 Remaining
+Blinker - 0 Remaining
+Orbiter - 2 Remaining
 
 Turn : 13
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : B : S
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : T : -
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
-2-2-0 : - : - 	2-2-1 : - : BB 	2-2-2 : - : OOO
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : O
-3-1-0 : - : - 	3-1-1 : S : S 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 2 Treasure(s) - 1 Damage
-Runner - 0 Treasure(s) - 3 Damage
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : B : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : T : - 	1-1-2 : - : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : S : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : O 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : S 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : O 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 2 Treasure(s) - 3 Damage
 Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
-Blinker - 2 Remaining
-Orbiter - 4 Remaining
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
+Seeker - 3 Remaining
+Blinker - 0 Remaining
+Orbiter - 2 Remaining
 
 Turn : 14
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : B : S 	1-0-2 : - : -
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : T : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : OO
-2-2-0 : - : - 	2-2-1 : - : O 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : S : OS 	3-0-2 : - : -
-3-1-0 : - : B 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : B
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 2 Treasure(s) - 1 Damage
-Runner - 0 Treasure(s) - 3 Damage
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : B : - 	1-1-1 : - : - 	1-1-2 : S : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : T : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : O 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : S 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 2 Treasure(s) - 3 Damage
 Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
-Blinker - 2 Remaining
-Orbiter - 4 Remaining
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
+Seeker - 3 Remaining
+Blinker - 0 Remaining
+Orbiter - 2 Remaining
 
 Turn : 15
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
-1-1-0 : - : - 	1-1-1 : B : S 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : T : B
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : OO
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
-2-2-0 : - : O 	2-2-1 : - : - 	2-2-2 : - : -
-3-0-0 : - : O 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : S : S 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : B 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 2 Treasure(s) - 1 Damage
-Runner - 0 Treasure(s) - 3 Damage
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : S : - 	1-1-2 : - : - 	
+1-2-0 : B : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : SO 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : T : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 2 Treasure(s) - 3 Damage
 Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
 Seeker - 2 Remaining
-Blinker - 2 Remaining
-Orbiter - 4 Remaining
+Blinker - 0 Remaining
+Orbiter - 2 Remaining
 
 Turn : 16
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : B : - 	1-0-2 : - : -
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : T : S 	1-2-2 : - : -
-2-0-0 : - : B 	2-0-1 : - : OBO 	2-0-2 : - : -
-2-1-0 : - : O 	2-1-1 : S : S 	2-1-2 : - : -
-2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : O 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 2 Treasure(s) - 1 Damage
-Runner - 0 Treasure(s) - 3 Damage
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : BS : - 	1-1-1 : - : - 	1-1-2 : - : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : O 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : O 	4-1-1 : T : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 2 Treasure(s) - 3 Damage
 Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
 Seeker - 2 Remaining
-Blinker - 2 Remaining
-Orbiter - 4 Remaining
+Blinker - 0 Remaining
+Orbiter - 2 Remaining
 
 Turn : 17
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
-1-1-0 : - : B 	1-1-1 : BT : S 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : OOO 	2-0-1 : - : - 	2-0-2 : - : -
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
-2-2-0 : - : - 	2-2-1 : S : S 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : O 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : B 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 2 Treasure(s) - 1 Damage
-Runner - 0 Treasure(s) - 3 Damage
-Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : BS : - 	1-1-2 : - : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : O 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : T : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 2 Treasure(s) - 3 Damage
+Thief - 5 Treasure(s) - 2 Damage
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
 Seeker - 2 Remaining
-Blinker - 2 Remaining
-Orbiter - 4 Remaining
+Blinker - 0 Remaining
+Orbiter - 1 Remaining
 
 Turn : 18
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
-1-1-0 : BT : - 	1-1-1 : - : - 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : O 	2-0-2 : - : -
-2-1-0 : - : OO 	2-1-1 : S : SS 	2-1-2 : - : -
-2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : OB 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 2 Treasure(s) - 1 Damage
-Runner - 0 Treasure(s) - 3 Damage
-Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : BS : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : O 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : T : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 2 Treasure(s) - 3 Damage
+Thief - 5 Treasure(s) - 2 Damage
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
 Seeker - 2 Remaining
-Blinker - 1 Remaining
-Orbiter - 4 Remaining
+Blinker - 0 Remaining
+Orbiter - 1 Remaining
 
 Turn : 19
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
-1-1-0 : - : - 	1-1-1 : BT : - 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : O
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
-2-2-0 : - : OO 	2-2-1 : - : - 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : S : SS 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : O
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : B 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 2 Treasure(s) - 1 Damage
-Runner - 0 Treasure(s) - 3 Damage
-Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : BS : - 	1-1-2 : - : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : O 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : T : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 2 Treasure(s) - 3 Damage
+Thief - 6 Treasure(s) - 2 Damage
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
 Seeker - 2 Remaining
-Blinker - 1 Remaining
-Orbiter - 4 Remaining
+Blinker - 0 Remaining
+Orbiter - 1 Remaining
 
 Turn : 20
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
-1-1-0 : B : B 	1-1-1 : - : - 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
-2-1-0 : - : - 	2-1-1 : T : S 	2-1-2 : - : O
-2-2-0 : - : - 	2-2-1 : - : OO 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : S : S 	3-0-2 : - : -
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : O
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 2 Treasure(s) - 1 Damage
-Runner - 0 Treasure(s) - 3 Damage
-Thief - 6 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : B : - 	1-1-1 : - : - 	1-1-2 : - : - 	
+1-2-0 : - : - 	1-2-1 : S : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : O 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : T : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 2 Treasure(s) - 3 Damage
+Thief - 6 Treasure(s) - 2 Damage
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
 Seeker - 2 Remaining
-Blinker - 1 Remaining
-Orbiter - 4 Remaining
+Blinker - 0 Remaining
+Orbiter - 1 Remaining
 
 Turn : 21
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
-1-1-0 : - : - 	1-1-1 : B : S 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
-2-2-0 : - : - 	2-2-1 : T : - 	2-2-2 : - : O
-3-0-0 : S : S 	3-0-1 : - : B 	3-0-2 : - : O
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 2 Treasure(s) - 1 Damage
-Runner - 0 Treasure(s) - 3 Damage
-Thief - 6 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
-Blinker - 1 Remaining
-Orbiter - 2 Remaining
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : - : - 	1-1-1 : S : - 	1-1-2 : - : - 	
+1-2-0 : B : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : O 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : T : - 	4-2-2 : - : - 	
+Adventurers Status : 
+Brawler - 1 Treasure(s) - 0 Damage
+Runner - 2 Treasure(s) - 3 Damage
+Thief - 6 Treasure(s) - 2 Damage
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
+Seeker - 1 Remaining
+Blinker - 0 Remaining
+Orbiter - 1 Remaining
 
 Turn : 22
-Board Status :
-0-1-1 : - : -
-1-0-0 : - : - 	1-0-1 : B : - 	1-0-2 : - : -
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
-2-1-0 : - : - 	2-1-1 : T : S 	2-1-2 : - : -
-2-2-0 : - : - 	2-2-1 : - : O 	2-2-2 : - : -
-3-0-0 : - : - 	3-0-1 : - : O 	3-0-2 : - : -
-3-1-0 : S : S 	3-1-1 : - : - 	3-1-2 : - : -
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
-4-1-0 : - : - 	4-1-1 : - : B 	4-1-2 : - : -
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
-Adventurers Status :
-Brawler - 2 Treasure(s) - 1 Damage
-Runner - 0 Treasure(s) - 3 Damage
-Thief - 7 Treasure(s) - 1 Damage
-Sneaker - 1 Treasure(s) - 0 Damage
-Creatures Status :
-Seeker - 2 Remaining
-Blinker - 1 Remaining
-Orbiter - 2 Remaining
+Board Status : 
+0-1-1 : - : - 
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
+1-1-0 : B : - 	1-1-1 : - : - 	1-1-2 : S : - 	
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
+2-2-0 : - : S 	2-2-1 : - : O 	2-2-2 : - : - 	
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : T : - 	
+Adventurers Status : 
+Brawler - 2 Treasure(s) - 0 Damage
+Runner - 2 Treasure(s) - 3 Damage
+Thief - 7 Treasure(s) - 2 Damage
+Sneaker - 0 Treasure(s) - 0 Damage
+Creatures Status : 
+Seeker - 1 Remaining
+Blinker - 0 Remaining
+Orbiter - 1 Remaining
 
-Adventurers win by finding 10 treasures
+Adventurers win by finding 11 treasures
 
 Process finished with exit code 0
