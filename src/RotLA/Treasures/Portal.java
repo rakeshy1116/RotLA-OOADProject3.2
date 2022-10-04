@@ -1,4 +1,4 @@
 package RotLA.Treasures;
 
-public class Portal {
+public class Portal extends Treasures{
 }

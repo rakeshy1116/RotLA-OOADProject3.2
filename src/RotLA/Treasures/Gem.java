@@ -1,4 +1,4 @@
 package RotLA.Treasures;
 
-public class Gem {
+public class Gem extends Treasures{
 }

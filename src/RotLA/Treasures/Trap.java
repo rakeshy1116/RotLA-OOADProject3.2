@@ -1,4 +1,4 @@
 package RotLA.Treasures;
 
-public class Trap {
+public class Trap extends Treasures{
 }

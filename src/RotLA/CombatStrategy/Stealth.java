@@ -1,7 +1,13 @@
 package RotLA.CombatStrategy;
 
-public class Stealth implements CombatStrategy {
-    public void fight() {
+import RotLA.Adventurers.Adventurer;
+import RotLA.Creatures.Creature;
+import RotLA.Dice;
 
+import java.util.List;
+
+public class Stealth extends CombatStrategy {
+    public boolean fight(Dice dice, Creature creature, Adventurer adv, int modifier) {
+        return super.fight(dice,creature,adv,modifier);
     }
 }

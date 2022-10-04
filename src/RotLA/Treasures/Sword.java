@@ -1,4 +1,4 @@
 package RotLA.Treasures;
 
-public class Sword {
+public class Sword extends Treasures{
 }

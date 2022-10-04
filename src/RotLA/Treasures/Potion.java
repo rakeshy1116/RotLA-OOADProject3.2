@@ -1,4 +1,4 @@
 package RotLA.Treasures;
 
-public class Potion {
+public class Potion extends Treasures {
 }

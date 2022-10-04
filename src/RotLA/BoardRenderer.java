@@ -4,9 +4,8 @@ import RotLA.Adventurers.Adventurer;
 import RotLA.Creatures.Blinker;
 import RotLA.Creatures.Creature;
 import RotLA.Creatures.Orbiter;
-import org.javatuples.Pair;
 import org.javatuples.Triplet;
-
+import org.javatuples.Pair;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

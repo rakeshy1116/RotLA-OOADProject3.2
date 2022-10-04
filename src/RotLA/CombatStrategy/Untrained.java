@@ -1,7 +1,14 @@
 package RotLA.CombatStrategy;
 
-public class Untrained implements CombatStrategy {
-    public void fight() {
+import RotLA.Adventurers.Adventurer;
+import RotLA.Creatures.Creature;
+import RotLA.Dice;
 
+import java.util.List;
+
+public class Untrained extends CombatStrategy {
+    int modifier=0;
+    public boolean fight(Dice dice, Creature creature, Adventurer adv, int modifier) {
+        return super.fight(dice,creature,adv,modifier);
     }
 }
