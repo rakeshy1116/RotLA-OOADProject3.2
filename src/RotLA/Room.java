@@ -2,6 +2,7 @@ package RotLA;
 
 import RotLA.Adventurers.Adventurer;
 import RotLA.Creatures.Creature;
+import RotLA.Treasures.Treasures;
 import org.javatuples.Triplet;
 
 import java.util.ArrayList;
@@ -17,6 +18,8 @@ public class Room {
     private List<Room> connectedRooms;
     //adventurers currently in room
     private ArrayList<Adventurer> adventurers;
+
+    ArrayList<Treasures> treasures;
 
     //creatures currently in room
     private ArrayList<Creature> creatures;
@@ -42,6 +45,17 @@ public class Room {
     // Adds adventurer to the room
     public void addAdventurer(Adventurer adventurer) {
         adventurers.add(adventurer);
+    }
+
+    public void addTreasure(Treasures treasure) {
+        treasures.add(treasure);
+    }
+
+    public void removeTreasure(Treasures treasure) {
+        for (int i = 0; i < treasures.size(); i++) {
+            if (treasures.get(i).equals(treasure))
+                treasures.remove(i);
+        }
     }
 
     // Adds creature to the room

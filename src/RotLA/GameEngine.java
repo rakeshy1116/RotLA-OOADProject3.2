@@ -12,6 +12,7 @@ import RotLA.Creatures.Seeker;
 import RotLA.SearchStrategy.Careful;
 import RotLA.SearchStrategy.Careless;
 import RotLA.SearchStrategy.Quick;
+import RotLA.Treasures.*;
 
 import java.util.ArrayList;
 
@@ -23,6 +24,7 @@ public class GameEngine {
     private BoardRenderer boardRenderer;
     private ArrayList<Adventurer> adventurers;
     private ArrayList<Creature> creatures;
+    private ArrayList<Treasures> treasures;
     private Dice dice;
 
     //Creates instances of all players, creatures, Board, Dice and initializes them
@@ -39,8 +41,19 @@ public class GameEngine {
             creatures.add(new Orbiter());
             creatures.add(new Seeker());
         }
+
+        this.treasures = new ArrayList<Treasures>();
+        for(int i=0;i<4;i++)
+        {
+            treasures.add(new Gem());
+            treasures.add(new Sword());
+            treasures.add(new Trap());
+            treasures.add(new Potion());
+            treasures.add(new Armor());
+            treasures.add(new Portal());
+        }
         this.boardRenderer = new BoardRenderer();
-        boardRenderer.initialiseBoardForGame(adventurers, creatures);
+        boardRenderer.initialiseBoardForGame(adventurers, creatures,treasures);
         this.dice = new Dice();
 
     }

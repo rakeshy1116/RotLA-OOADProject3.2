@@ -4,6 +4,7 @@ import RotLA.Adventurers.Adventurer;
 import RotLA.Creatures.Blinker;
 import RotLA.Creatures.Creature;
 import RotLA.Creatures.Orbiter;
+import RotLA.Treasures.Treasures;
 import org.javatuples.Triplet;
 import org.javatuples.Pair;
 import java.util.ArrayList;
@@ -20,6 +21,8 @@ public class BoardRenderer {
     private final List<Room> boardRoomList;
     private List<Adventurer> adventurers;
     private List<Creature> creatures;
+
+    private List<Treasures> treasures;
     private RoomFinder roomFinder;
 
     private int turnCounter = 0;
@@ -45,9 +48,10 @@ public class BoardRenderer {
 
     //-----------------------Publicly exposed methods--------------------------------
     // This method adds adventurers and creatures to board and sets their initial spawn positions
-    public void initialiseBoardForGame(List<Adventurer> adventurers, List<Creature> creatures) {
+    public void initialiseBoardForGame(List<Adventurer> adventurers, List<Creature> creatures, List<Treasures> treasures) {
         this.adventurers = adventurers;
         this.creatures = creatures;
+        this.treasures=treasures;
         //CONCEPT: POLYMORPHISM - Each type of Adventurer or Creature can be its type as well as its parent class type
         //i.e An Orbiter instance is an instance of both Orbiter and Creature
         //initializing spawn positions for adventurers, always start at 0-1-1
@@ -93,6 +97,16 @@ public class BoardRenderer {
             creature.setRoom(room);
             creature.setRoomFinder(roomFinder);
         });
+
+        treasures.forEach(treasure -> {
+            int level, verticalDir, horizontalDir;
+            level = GameUtility.getRandomInRange(TOPMOST_ROOM, BOTTOM_MOST_ROOM);
+            verticalDir = GameUtility.getRandomInRange(NORTHMOST_ROOM, SOUTHMOST_ROOM);
+            horizontalDir = GameUtility.getRandomInRange(WESTMOST_ROOM, EASTMOST_ROOM);
+            Room room = findRoom(new Triplet<>(level, verticalDir, horizontalDir));
+            room.addTreasure(treasure);
+        });
+
     }
 
     // Prints the status of the game after each turn
