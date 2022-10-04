@@ -1,10 +1,17 @@
 package RotLA;
 
 import RotLA.Adventurers.*;
+import RotLA.CombatStrategy.Expert;
+import RotLA.CombatStrategy.Stealth;
+import RotLA.CombatStrategy.Trained;
+import RotLA.CombatStrategy.Untrained;
 import RotLA.Creatures.Blinker;
 import RotLA.Creatures.Creature;
 import RotLA.Creatures.Orbiter;
 import RotLA.Creatures.Seeker;
+import RotLA.SearchStrategy.Careful;
+import RotLA.SearchStrategy.Careless;
+import RotLA.SearchStrategy.Quick;
 
 import java.util.ArrayList;
 
@@ -21,10 +28,10 @@ public class GameEngine {
     //Creates instances of all players, creatures, Board, Dice and initializes them
     public void initialize() {
         this.adventurers = new ArrayList<Adventurer>();
-        adventurers.add(new Brawler());
-        adventurers.add(new Runner());
-        adventurers.add(new Thief());
-        adventurers.add(new Sneaker());
+        adventurers.add(new Brawler(new Expert(),new Careless()));
+        adventurers.add(new Runner(new Untrained(),new Quick()));
+        adventurers.add(new Thief(new Trained(),new Careful()));
+        adventurers.add(new Sneaker(new Stealth(), new Quick()));
 
         this.creatures = new ArrayList<Creature>();
         for (int i = 0; i < 4; i++) {

@@ -1,15 +1,18 @@
 package RotLA.Adventurers;
 
+import RotLA.CombatStrategy.CombatStrategy;
 import RotLA.Creatures.Creature;
 import RotLA.Dice;
 import RotLA.GameUtility;
+import RotLA.SearchStrategy.SearchStrategy;
 
 import java.util.List;
 
 // CONCEPT INHERITANCE - Each of these subclasses inherit several instance variable and method implementations pertaining to adventurer behaviour
 public class Sneaker extends Adventurer {
 
-    public Sneaker() {
+    public Sneaker(CombatStrategy combatStrategy, SearchStrategy searchStrategy) {
+        super(combatStrategy,searchStrategy);
         this.noOfDamages = 0;
         this.abbrv = "S";
         this.adventurerName = "Sneaker";

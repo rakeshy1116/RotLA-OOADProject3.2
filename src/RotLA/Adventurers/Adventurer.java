@@ -34,8 +34,10 @@ abstract public class Adventurer {
         this.adventurerName = adventurerName;
     }
 
-    public Adventurer(CombatStrategy combatStrategy) {
+    public Adventurer(CombatStrategy combatStrategy,SearchStrategy searchStrategy) {
+
         this.combatStrategy = combatStrategy;
+        this.searchStrategy=searchStrategy;
     }
     public Adventurer() {
 
@@ -127,30 +129,27 @@ abstract public class Adventurer {
         celebrations.add("Spin");
 
         // ASSUMPTION: Fights creatures in the order of their room entry, i.e order of entry to the list creatures
-        for (Creature creature : copyCreatureList) {
-            for(int i=0;i<4;i++)
-            {
-                int temp= dice.getCelebrateRoll();
-                while(temp-->0) {
-                    if(celebrations.get(i).equals("Dance")){
-                        combatStrategy=new Dance(combatStrategy);
-                    }
-                    else if(celebrations.get(i).equals("Shout")){
-                        combatStrategy=new Shout(combatStrategy);
-                    }
-                    else if(celebrations.get(i).equals("Jump")){
-                        combatStrategy=new Jump(combatStrategy);
-                    }
-                    else if(celebrations.get(i).equals("Spin")){
-                        combatStrategy=new Spin(combatStrategy);
-                    }
-                    else {
+
+            for(int i=0;i<4;i++) {
+                int temp = dice.getCelebrateRoll();
+                while (temp-- > 0) {
+                    if (celebrations.get(i).equals("Dance")) {
+                        combatStrategy = new Dance(combatStrategy);
+                    } else if (celebrations.get(i).equals("Shout")) {
+                        combatStrategy = new Shout(combatStrategy);
+                    } else if (celebrations.get(i).equals("Jump")) {
+                        combatStrategy = new Jump(combatStrategy);
+                    } else if (celebrations.get(i).equals("Spin")) {
+                        combatStrategy = new Spin(combatStrategy);
+                    } else {
 
                     }
                 }
             }
-            combatStrategy.fight(dice, creature, this,0);
-        }
+                for (Creature creature : copyCreatureList) {
+                    combatStrategy.fight(dice, creature, this, 0);
+                }
+
     }
 
     //Performs find treasure operation, common default method for all subclasses

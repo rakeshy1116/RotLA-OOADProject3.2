@@ -16,7 +16,7 @@ public class Jump extends Celebration {
         boolean fightResult = combatStrategy.fight(dice,creature,adv,modifier);
         if(fightResult)
         {
-            celebrate(adv);
+            System.out.println(celebrate(adv));
         }
         return fightResult;
     }

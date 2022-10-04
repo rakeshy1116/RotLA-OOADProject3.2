@@ -17,13 +17,13 @@ public class Dance extends Celebration{
         boolean fightResult = combatStrategy.fight(dice,creature,adv,modifier);
         if(fightResult)
         {
-            celebrate(adv);
+            System.out.println(celebrate(adv));
         }
         return fightResult;
     }
 
     public String celebrate(Adventurer adv) {
 
-        return combatStrategy.celebrate(adv)+"dance,";
+        return combatStrategy.celebrate(adv)+" dance,";
     }
 }
