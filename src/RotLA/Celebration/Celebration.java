@@ -5,6 +5,7 @@ import RotLA.CombatStrategy.CombatStrategy;
 import RotLA.Creatures.Creature;
 import RotLA.Dice;
 
+//Pattern - Decorator
 public abstract class Celebration extends CombatStrategy {
     CombatStrategy combatStrategy;
 

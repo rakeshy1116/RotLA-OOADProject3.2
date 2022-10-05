@@ -8,6 +8,7 @@ import RotLA.Treasures.Gem;
 import RotLA.Treasures.Sword;
 import RotLA.Treasures.Treasures;
 
+//Pattern - STRATEGY
 public abstract class CombatStrategy {
 
     int modifier;
@@ -32,7 +33,7 @@ public abstract class CombatStrategy {
             // if adventurer wins, kill creature, remove from room
             creature.die();
             adv.getRoom().removeCreature(creature);
-            System.out.println("Adventurer wins the battle");
+            //System.out.println("Adventurer wins the battle");
             return adv.getAdventurerName();
         } else if (creatureRoll > adventurerRoll) {
             // if creature wins, make adventurer take damage

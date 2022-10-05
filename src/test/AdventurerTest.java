@@ -2,11 +2,8 @@ package test;
 
 import RotLA.Adventurers.Adventurer;
 import RotLA.Adventurers.Brawler;
-import RotLA.BoardRenderer;
 import RotLA.CombatStrategy.Expert;
-import RotLA.CombatStrategy.Stealth;
 import RotLA.Dice;
-import RotLA.GameEngine;
 import RotLA.Room;
 import RotLA.SearchStrategy.Careless;
 import RotLA.Treasures.Portal;
@@ -19,14 +16,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AdventurerTest {
 
-    Room room = new Room(1,2,2);
+    Room room = new Room(1, 2, 2);
 
     @Test
     void addTreasure() {
         //testing addTreasure method to check if the methods adds one treasure to adventures list of treasures or not.
         Adventurer brawler = new Brawler(new Expert(), new Careless());
         brawler.addTreasure(new Sword());
-        assertEquals(1,brawler.getTreasures().size());
+        assertEquals(1, brawler.getTreasures().size());
     }
 
     @Test
@@ -36,7 +33,7 @@ class AdventurerTest {
         brawler.addTreasure(new Sword());
         Treasures treasure = brawler.getTreasures().get(0);
         brawler.removeTreasure(treasure);
-        assertEquals(0,brawler.getTreasures().size());
+        assertEquals(0, brawler.getTreasures().size());
     }
 
     @Test

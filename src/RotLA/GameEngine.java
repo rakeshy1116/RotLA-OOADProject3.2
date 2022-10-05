@@ -13,6 +13,7 @@ import RotLA.SearchStrategy.Careful;
 import RotLA.SearchStrategy.Careless;
 import RotLA.SearchStrategy.Quick;
 import RotLA.Treasures.*;
+import org.javatuples.Pair;
 
 import java.util.ArrayList;
 
@@ -30,14 +31,33 @@ public class GameEngine {
     // Main function to start game simulation
     public static void main(String[] args) {
         GameEngine gm = new GameEngine();
+//        int advWin=0;
+//        int creWin=0;
+//        int advWinTreasure=0;
         gm.initialize();
         gm.startSimulation();
-        //Uncomment for multiple game run
+//        Uncomment for multiple game run
 //        for(int i=0;i<30;i++) {
 //            System.out.print("Run " + String.valueOf(i+1) + ": ");
 //            gm.initialize();
-//            gm.startSimulation();
+//            String result=gm.startSimulation();
+//            if(result.contains("10")) {
+//                advWinTreasure+=1;
+//            }
+//            else if(result.substring(0,3).equals("Adv"))
+//            {
+//                advWin+=1;
+//            }
+//            else {
+//                creWin+=1;
+//            }
 //        }
+//
+//        System.out.println("Summary of Runs:");
+//        System.out.println("Adventurers win by finding 10 treasures: " + advWinTreasure);
+//        System.out.println("Adventurers win by eliminating all creatures: " + advWin);
+//        System.out.println("Creatures win by eliminating all adventurers: " + creWin);
+
     }
 
     //Creates instances of all players, creatures, Board, Dice and initializes them
@@ -71,7 +91,7 @@ public class GameEngine {
     }
 
     // Starts turn simulation, simulation will end iftermination conditions are met
-    public void startSimulation() {
+    public String startSimulation() {
         //print initial turn 0 board status
         boardRenderer.printGameStatus();
         while (true) {
@@ -90,12 +110,15 @@ public class GameEngine {
             // print board status after both turns
             boardRenderer.printGameStatus();
             //check if termination conditions are met and stop
-            if (checkTermination()) break;
+            Pair<Boolean,String> result = checkTermination();
+            if (result.getValue0()) {
+                return result.getValue1();
+            }
         }
     }
 
     // performs checks of game termination consitions are met
-    public boolean checkTermination() {
+    public Pair<Boolean,String> checkTermination() {
         boolean isAdventurerAlive = false;
         boolean isCreatureAlive = false;
         int totalTreasure = 0;
@@ -110,15 +133,15 @@ public class GameEngine {
         //Game ends if Adventures found 10 treasures or Adventures killed all creatures or Creatures killed all adventurers
         if (totalTreasure >= TREASURES_WINNING_NUMBER) {
             System.out.println("Adventurers win by finding " + totalTreasure + " treasures");
-            return true;
+            return new Pair(true,"Adventurers win by finding " + totalTreasure + " treasures");
         } else if (isAdventurerAlive && !isCreatureAlive) {
             System.out.println("Adventurers win by eliminating all creatures");
-            return true;
+            return new Pair(true,"Adventurers win by eliminating all creatures");
         } else if (isCreatureAlive && !isAdventurerAlive) {
             System.out.println("Creatures win by eliminating all adventurers");
-            return true;
+            return new Pair(true,"Creatures win by eliminating all adventurers");
         } else {
-            return false;
+            return new Pair(false,"");
         }
     }
 }
