@@ -11,6 +11,7 @@ import RotLA.Treasures.Treasures;
 
 import java.util.ArrayList;
 
+//Pattern - STRATEGY
 public abstract class SearchStrategy {
     public void search(Adventurer adv, Dice dice, int minScore) {
         int diceRoll = dice.getDiceRoll();
@@ -44,7 +45,7 @@ public abstract class SearchStrategy {
             }
         } else {
             adv.addTreasure(currentTreasure);
-            if(currentTreasure instanceof Portal) {
+            if (currentTreasure instanceof Portal) {
                 adv.move();
             }
             if (currentTreasure instanceof Potion) {

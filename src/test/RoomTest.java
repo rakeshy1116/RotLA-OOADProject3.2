@@ -8,25 +8,26 @@ import RotLA.Room;
 import RotLA.SearchStrategy.Careless;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 class RoomTest {
 
-    Room room = new Room(1,1,1);
+    Room room = new Room(1, 1, 1);
 
 
     @Test
     void addAdventurer() {
         //testing if addAdventurer methods adds the adventure to rooms list of adventures
         room.addAdventurer(new Brawler(new Expert(), new Careless()));
-        assertEquals(1,room.getAdventurers().size());
+        assertEquals(1, room.getAdventurers().size());
     }
 
     @Test
     void addCreature() {
         //testing if addCreature methods adds the creature to rooms list of creatures
         room.addCreature(new Orbiter());
-        assertNotEquals(0,room.getCreatures().size());
+        assertNotEquals(0, room.getCreatures().size());
     }
 
     @Test

@@ -3,7 +3,7 @@ package test;
 import RotLA.Dice;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 class DiceTest {
 
@@ -13,6 +13,6 @@ class DiceTest {
         Dice dice = new Dice();
         int roll = dice.getDiceRoll();
         assertNotEquals(13, roll);
-        assertNotEquals(0,roll);
+        assertNotEquals(0, roll);
     }
 }
