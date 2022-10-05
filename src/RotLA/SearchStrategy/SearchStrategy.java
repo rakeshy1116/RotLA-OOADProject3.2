@@ -21,11 +21,11 @@ public abstract class SearchStrategy {
             int treasureChoice = GameUtility.getRandomInRange(0, currentTreasures.size() - 1);
             Treasures currentTreasure = currentTreasures.get(treasureChoice);
             if (!adv.checkTreasure(currentTreasure))
-                common(adv, currentRoom, currentTreasure);
+                collectTreasure(adv, currentRoom, currentTreasure);
         }
     }
 
-    public void common(Adventurer adv, Room room, Treasures currentTreasure) {
+    public void collectTreasure(Adventurer adv, Room room, Treasures currentTreasure) {
         ArrayList<Treasures> currentTreasures = room.getTreasures();
 
         for (int j = 0; j < currentTreasures.size(); j++) {

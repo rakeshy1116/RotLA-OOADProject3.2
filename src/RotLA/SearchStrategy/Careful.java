@@ -5,9 +5,7 @@ import RotLA.Dice;
 
 public class Careful extends SearchStrategy {
     int minScore = 7;
-
     public void search(Adventurer adv, Dice dice, int minScore) {
-
         super.search(adv, dice, this.minScore);
     }
 }
