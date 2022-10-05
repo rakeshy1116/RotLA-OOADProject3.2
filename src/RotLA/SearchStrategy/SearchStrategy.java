@@ -4,6 +4,7 @@ import RotLA.Adventurers.Adventurer;
 import RotLA.Dice;
 import RotLA.GameUtility;
 import RotLA.Room;
+import RotLA.Treasures.Portal;
 import RotLA.Treasures.Potion;
 import RotLA.Treasures.Trap;
 import RotLA.Treasures.Treasures;
@@ -43,6 +44,9 @@ public abstract class SearchStrategy {
             }
         } else {
             adv.addTreasure(currentTreasure);
+            if(currentTreasure instanceof Portal) {
+                adv.move();
+            }
             if (currentTreasure instanceof Potion) {
                 adv.setMaxDamages(adv.getMaxDamages() + 1);
             }

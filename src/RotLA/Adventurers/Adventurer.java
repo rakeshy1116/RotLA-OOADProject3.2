@@ -178,7 +178,7 @@ abstract public class Adventurer {
     }
 
     //Performs find treasure operation, common default method for all subclasses
-    protected void findTreasure(Dice dice) {
+    public void findTreasure(Dice dice) {
         if (this.room.getTreasures().size() > 0) {
             searchStrategy.search(this, dice, 0);
         }
@@ -190,7 +190,7 @@ abstract public class Adventurer {
     }
 
     //Performs move operation, common default behaviour for all subclasses
-    protected void move() {
+    public void move() {
 
         boolean hasPortal = false;
         for (Treasures treasures : this.getTreasures()) {
