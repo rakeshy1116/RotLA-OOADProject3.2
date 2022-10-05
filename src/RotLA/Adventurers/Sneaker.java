@@ -6,13 +6,17 @@ import RotLA.Dice;
 import RotLA.GameUtility;
 import RotLA.SearchStrategy.SearchStrategy;
 
+import java.util.ArrayList;
 import java.util.List;
 
 // CONCEPT INHERITANCE - Each of these subclasses inherit several instance variable and method implementations pertaining to adventurer behaviour
 public class Sneaker extends Adventurer {
 
     public Sneaker(CombatStrategy combatStrategy, SearchStrategy searchStrategy) {
-        super(combatStrategy,searchStrategy);
+        this.combatStrategy = combatStrategy;
+        this.searchStrategy = searchStrategy;
+        maxDamages = 3;
+        treasures = new ArrayList<>();
         this.noOfDamages = 0;
         this.abbrv = "S";
         this.adventurerName = "Sneaker";

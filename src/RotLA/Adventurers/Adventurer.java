@@ -6,6 +6,10 @@ import RotLA.Celebration.Shout;
 import RotLA.Celebration.Spin;
 import RotLA.CombatStrategy.CombatStrategy;
 import RotLA.Creatures.Creature;
+import RotLA.Dice;
+import RotLA.GameUtility;
+import RotLA.Room;
+import RotLA.RoomFinder;
 import RotLA.SearchStrategy.SearchStrategy;
 import RotLA.Treasures.Portal;
 import RotLA.Treasures.Treasures;
@@ -14,8 +18,6 @@ import org.javatuples.Triplet;
 import java.util.ArrayList;
 import java.util.List;
 
-import static RotLA.GameUtility.getAllCelebrations;
-import static RotLA.GameUtility.getRandomInRange;
 import static RotLA.GameUtility.*;
 
 //Adventurer is an abstract class, it is extended by different subclass types - Brawler, Runner, Sneaker, Thief
@@ -33,6 +35,7 @@ abstract public class Adventurer {
     protected CombatStrategy combatStrategy;
     protected SearchStrategy searchStrategy;
     protected ArrayList<Treasures> treasures;
+    int maxDamages;
 
     public void setRoomFinder(RoomFinder roomFinder) {
         this.roomFinder = roomFinder;
@@ -46,8 +49,6 @@ abstract public class Adventurer {
         this.maxDamages = maxDamages;
     }
 
-    int maxDamages;
-
     public String getAdventurerName() {
         return adventurerName;
     }
@@ -56,28 +57,15 @@ abstract public class Adventurer {
         this.adventurerName = adventurerName;
     }
 
-    public Adventurer(CombatStrategy combatStrategy, SearchStrategy searchStrategy) {
-
-        this.combatStrategy = combatStrategy;
-        this.searchStrategy = searchStrategy;
-        this.setMaxDamages(3);
-        this.setTreasures(new ArrayList<>());
-    }
-
-    public Adventurer() {
-
-    }
-
 
     //------------------------------Getter/Setter Methods--------------------------------------
 
-    //A setter method for the room instance
-    public void setRoom(Room room) {
-        this.room = room;
-    }
-
     public ArrayList<Treasures> getTreasures() {
         return treasures;
+    }
+
+    public void setTreasures(ArrayList<Treasures> treasures) {
+        this.treasures = treasures;
     }
 
     public void addTreasure(Treasures treasure) {
@@ -92,12 +80,13 @@ abstract public class Adventurer {
         }
     }
 
-    public void setTreasures(ArrayList<Treasures> treasures) {
-        this.treasures = treasures;
-    }
-
     public Room getRoom() {
         return room;
+    }
+
+    //A setter method for the room instance
+    public void setRoom(Room room) {
+        this.room = room;
     }
 
     // a getter method for the no of treasures found by the Adventurer
@@ -205,8 +194,10 @@ abstract public class Adventurer {
 
         boolean hasPortal = false;
         for (Treasures treasures : this.getTreasures()) {
-            if (treasures instanceof Portal)
+            if (treasures instanceof Portal) {
                 hasPortal = true;
+                break;
+            }
         }
         Room newRoom;
         Room oldRoom = this.room;
@@ -238,12 +229,12 @@ abstract public class Adventurer {
 
     public boolean checkTreasure(Treasures currentTreasure) {
 
-            for (int i = 0; i < this.getTreasures().size(); i++) {
-                Treasures treasure = this.getTreasures().get(i);
-                if (treasure.getClass() == currentTreasure.getClass()) {
-                    return true;
-                }
+        for (int i = 0; i < this.getTreasures().size(); i++) {
+            Treasures treasure = this.getTreasures().get(i);
+            if (treasure.getClass() == currentTreasure.getClass()) {
+                return true;
             }
+        }
         return false;
 
     }

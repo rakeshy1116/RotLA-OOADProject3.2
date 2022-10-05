@@ -7,7 +7,7 @@ import RotLA.GameUtility;
 
 public class Stealth extends CombatStrategy {
 
-    Stealth() {
+    public Stealth() {
         modifier = 0;
     }
 
