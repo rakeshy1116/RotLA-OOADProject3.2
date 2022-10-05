@@ -27,12 +27,25 @@ public class GameEngine {
     private ArrayList<Treasures> treasures;
     private Dice dice;
 
+    // Main function to start game simulation
+    public static void main(String[] args) {
+        GameEngine gm = new GameEngine();
+        gm.initialize();
+        gm.startSimulation();
+        //Uncomment for multiple game run
+//        for(int i=0;i<30;i++) {
+//            System.out.print("Run " + String.valueOf(i+1) + ": ");
+//            gm.initialize();
+//            gm.startSimulation();
+//        }
+    }
+
     //Creates instances of all players, creatures, Board, Dice and initializes them
     public void initialize() {
         this.adventurers = new ArrayList<Adventurer>();
-        adventurers.add(new Brawler(new Expert(),new Careless()));
-        adventurers.add(new Runner(new Untrained(),new Quick()));
-        adventurers.add(new Thief(new Trained(),new Careful()));
+        adventurers.add(new Brawler(new Expert(), new Careless()));
+        adventurers.add(new Runner(new Untrained(), new Quick()));
+        adventurers.add(new Thief(new Trained(), new Careful()));
         adventurers.add(new Sneaker(new Stealth(), new Quick()));
 
         this.creatures = new ArrayList<Creature>();
@@ -43,8 +56,7 @@ public class GameEngine {
         }
 
         this.treasures = new ArrayList<Treasures>();
-        for(int i=0;i<4;i++)
-        {
+        for (int i = 0; i < 4; i++) {
             treasures.add(new Gem());
             treasures.add(new Sword());
             treasures.add(new Trap());
@@ -53,7 +65,7 @@ public class GameEngine {
             treasures.add(new Portal());
         }
         this.boardRenderer = new BoardRenderer();
-        boardRenderer.initialiseBoardForGame(adventurers, creatures,treasures);
+        boardRenderer.initialiseBoardForGame(adventurers, creatures, treasures);
         this.dice = new Dice();
 
     }
@@ -97,7 +109,7 @@ public class GameEngine {
 
         //Game ends if Adventures found 10 treasures or Adventures killed all creatures or Creatures killed all adventurers
         if (totalTreasure >= TREASURES_WINNING_NUMBER) {
-            System.out.println("Adventurers win by finding " + String.valueOf(totalTreasure) + " treasures");
+            System.out.println("Adventurers win by finding " + totalTreasure + " treasures");
             return true;
         } else if (isAdventurerAlive && !isCreatureAlive) {
             System.out.println("Adventurers win by eliminating all creatures");
@@ -108,18 +120,5 @@ public class GameEngine {
         } else {
             return false;
         }
-    }
-
-    // Main function to start game simulation
-    public static void main(String[] args) {
-        GameEngine gm = new GameEngine();
-        gm.initialize();
-        gm.startSimulation();
- //Uncomment for multiple game run
-//        for(int i=0;i<30;i++) {
-//            System.out.print("Run " + String.valueOf(i+1) + ": ");
-//            gm.initialize();
-//            gm.startSimulation();
-//        }
     }
 }

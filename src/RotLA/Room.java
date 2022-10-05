@@ -13,16 +13,14 @@ public class Room {
 
     //CONCEPT: ENCAPSULATION - All variables are encapsulated with private modifier. They are accesible through getter and setter methods
     //A coordinate triplet (ref:https://www.javatuples.org/apidocs/org/javatuples/Triplet.html) of level (z), vertical (x) , horizontal (y) that represents rooms location in the board
-    private Triplet<Integer, Integer, Integer> roomCoordinates;
+    private final Triplet<Integer, Integer, Integer> roomCoordinates;
+    //adventurers currently in room
+    private final ArrayList<Adventurer> adventurers;
+    //creatures currently in room
+    private final ArrayList<Creature> creatures;
+    ArrayList<Treasures> treasures;
     //connecting rooms of the room in board
     private List<Room> connectedRooms;
-    //adventurers currently in room
-    private ArrayList<Adventurer> adventurers;
-
-    ArrayList<Treasures> treasures;
-
-    //creatures currently in room
-    private ArrayList<Creature> creatures;
 
     public Room(int level, int verticalDir, int horizontalDir) {
         this.roomCoordinates = new Triplet<>(level, verticalDir, horizontalDir);
@@ -31,12 +29,12 @@ public class Room {
         treasures = new ArrayList<>();
     }
 
-    public void setConnectedRooms(List<Room> connectedRooms) {
-        this.connectedRooms = connectedRooms;
-    }
-
     public List<Room> getConnectedRooms() {
         return connectedRooms;
+    }
+
+    public void setConnectedRooms(List<Room> connectedRooms) {
+        this.connectedRooms = connectedRooms;
     }
 
     public Triplet<Integer, Integer, Integer> getRoomCoordinates() {

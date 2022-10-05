@@ -4,11 +4,16 @@ import RotLA.CombatStrategy.CombatStrategy;
 import RotLA.Dice;
 import RotLA.SearchStrategy.SearchStrategy;
 
+import java.util.ArrayList;
+
 // CONCEPT: INHERITANCE - A type of Adventurer that inherits variables and behaviour from Adventurer
 public class Thief extends Adventurer {
 
     public Thief(CombatStrategy combatStrategy, SearchStrategy searchStrategy) {
-        super(combatStrategy,searchStrategy);
+        this.combatStrategy = combatStrategy;
+        this.searchStrategy = searchStrategy;
+        maxDamages = 3;
+        treasures = new ArrayList<>();
         this.noOfDamages = 0;
         this.abbrv = "T";
         this.adventurerName = "Thief";

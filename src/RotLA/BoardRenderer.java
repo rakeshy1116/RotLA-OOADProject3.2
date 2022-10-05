@@ -5,8 +5,9 @@ import RotLA.Creatures.Blinker;
 import RotLA.Creatures.Creature;
 import RotLA.Creatures.Orbiter;
 import RotLA.Treasures.Treasures;
-import org.javatuples.Triplet;
 import org.javatuples.Pair;
+import org.javatuples.Triplet;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -19,12 +20,10 @@ public class BoardRenderer {
 
     //CONCEPT: ENCAPSULATION - All variables are encapsulated with private modifier.
     private final List<Room> boardRoomList;
+    private final RoomFinder roomFinder;
     private List<Adventurer> adventurers;
     private List<Creature> creatures;
-
     private List<Treasures> treasures;
-    private RoomFinder roomFinder;
-
     private int turnCounter = 0;
 
     public BoardRenderer() {
@@ -51,7 +50,7 @@ public class BoardRenderer {
     public void initialiseBoardForGame(List<Adventurer> adventurers, List<Creature> creatures, List<Treasures> treasures) {
         this.adventurers = adventurers;
         this.creatures = creatures;
-        this.treasures=treasures;
+        this.treasures = treasures;
         //CONCEPT: POLYMORPHISM - Each type of Adventurer or Creature can be its type as well as its parent class type
         //i.e An Orbiter instance is an instance of both Orbiter and Creature
         //initializing spawn positions for adventurers, always start at 0-1-1
@@ -139,7 +138,7 @@ public class BoardRenderer {
                 creatureStatus.computeIfPresent(creature.getName(), (key, value) -> value + 1);
             }
         });
-        creatureStatus.forEach((key, value) -> System.out.println(key + " - " + String.valueOf(value) + " Remaining"));
+        creatureStatus.forEach((key, value) -> System.out.println(key + " - " + value + " Remaining"));
         System.out.println();
     }
 

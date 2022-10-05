@@ -9,11 +9,4 @@ public class Dice {
         int die2Roll = GameUtility.getRandomInRange(1, 6);
         return die2Roll + die1Roll;
     }
-
-    public int getCelebrateRoll() {
-        int die1Roll = GameUtility.getRandomInRange(0, 2);
-        return die1Roll;
-    }
-
-
 }
