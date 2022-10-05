@@ -13,14 +13,14 @@ public class Spin extends Celebration {
         this.combatStrategy=strategy;
     }
 
-    public boolean fight(Dice dice, Creature creature, Adventurer adv, int modifier) {
-        boolean fightResult = combatStrategy.fight(dice,creature,adv,modifier);
-        if(fightResult)
-        {
-            System.out.println(celebrate(adv));
-        }
-        return fightResult;
-    }
+//    public String fight(Dice dice, Creature creature, Adventurer adv, int modifier) {
+//        String fightResult = combatStrategy.fight(dice,creature,adv,modifier);
+//        if(fightResult.length()>4)
+//        {
+//            return celebrate(adv);
+//        }
+//        return fightResult;
+//    }
 
     public String celebrate(Adventurer adv) {
 

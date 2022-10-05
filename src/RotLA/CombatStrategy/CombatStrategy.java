@@ -12,7 +12,7 @@ import java.util.List;
 
 public abstract class CombatStrategy {
     int modifier;
-    public boolean fight(Dice dice,Creature creature, Adventurer adv,int modifier) {
+    public String fight(Dice dice,Creature creature, Adventurer adv,int modifier) {
         // ASSUMPTION: Fights creatures in the order of their room entry, i.e order of entry to the list creatures
         //get adventurer's roll
         int changeAdvRoll=0;
@@ -40,7 +40,7 @@ public abstract class CombatStrategy {
             creature.die();
             adv.getRoom().removeCreature(creature);
             System.out.println("Adventurer wins the battle");
-            return true;
+            return celebrate(adv);
         } else if (creatureRoll > adventurerRoll) {
             // if creature wins, make adventurer take damage
             adv.takeDamage();
@@ -48,12 +48,12 @@ public abstract class CombatStrategy {
                 // if adventurer is dead remove from room and end the fights
                 adv.getRoom().removeAdventurer(adv);
             }
-            return false;
+            return "lost";
         } else {
             // if both roll the same, then nothing happens
 
         }
-        return true;
+        return celebrate(adv);
 
     }
 

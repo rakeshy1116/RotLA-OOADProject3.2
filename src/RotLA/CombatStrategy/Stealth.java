@@ -7,7 +7,7 @@ import RotLA.Dice;
 import java.util.List;
 
 public class Stealth extends CombatStrategy {
-    public boolean fight(Dice dice, Creature creature, Adventurer adv, int modifier) {
+    public String fight(Dice dice, Creature creature, Adventurer adv, int modifier) {
         return super.fight(dice,creature,adv,modifier);
     }
 }

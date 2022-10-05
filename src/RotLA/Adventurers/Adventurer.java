@@ -25,6 +25,15 @@ abstract public class Adventurer {
     protected String abbrv;  // Abbreviation of Adventurer type, for eg: B for Brawler
     protected String adventurerName; // Type of the Adventurer
 
+    public int getMaxDamages() {
+        return maxDamages;
+    }
+
+    public void setMaxDamages(int maxDamages) {
+        this.maxDamages = maxDamages;
+    }
+
+    int maxDamages;
 
     public String getAdventurerName() {
         return adventurerName;
@@ -38,6 +47,8 @@ abstract public class Adventurer {
 
         this.combatStrategy = combatStrategy;
         this.searchStrategy=searchStrategy;
+        this.setMaxDamages(3);
+        this.setTreasures(new ArrayList<>());
     }
     public Adventurer() {
 
@@ -56,6 +67,18 @@ abstract public class Adventurer {
 
     public List<Treasures> getTreasures() {
         return treasures;
+    }
+
+    public void addTreasure(Treasures treasure) {
+        treasures.add(treasure);
+       this.noOfTreasure=treasures.size();
+    }
+
+    public void removeTreasure(Treasures treasure) {
+        for (int i = 0; i < treasures.size(); i++) {
+            if (treasures.get(i).equals(treasure))
+                treasures.remove(i);
+        }
     }
 
     public void setTreasures(List<Treasures> treasures) {
@@ -86,7 +109,7 @@ abstract public class Adventurer {
 
     // Checks if the Adventurer is alive, alive if adventurer has suffered a max damage of 2
     public boolean isAlive() {
-        return noOfDamages < 3;
+        return noOfDamages < maxDamages;
     }
 
     // Performs all the operations of an Adventurer in a turn, like move, fight or find treasure
@@ -147,17 +170,23 @@ abstract public class Adventurer {
                 }
             }
                 for (Creature creature : copyCreatureList) {
-                    combatStrategy.fight(dice, creature, this, 0);
+
+                    String celebrateMessage = combatStrategy.fight(dice, creature, this, 0);
+                    System.out.println(celebrateMessage);
                 }
 
     }
 
     //Performs find treasure operation, common default method for all subclasses
     protected void findTreasure(Dice dice) {
-        int currentDiceVal = rollDiceTreasure(dice);
-        //increment treasures if rolled higher
-        if (currentDiceVal >= TREASURES_MIN_ROLL)
-            noOfTreasure++;
+        if(this.room.getTreasures().size()>0) {
+            searchStrategy.search(this,dice,0);
+        }
+
+//        int currentDiceVal = rollDiceTreasure(dice);
+//        //increment treasures if rolled higher
+//        if (currentDiceVal >= TREASURES_MIN_ROLL)
+//            noOfTreasure++;
     }
 
     //Performs move operation, common default behaviour for all subclasses

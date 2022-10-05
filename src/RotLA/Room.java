@@ -28,6 +28,7 @@ public class Room {
         this.roomCoordinates = new Triplet<>(level, verticalDir, horizontalDir);
         adventurers = new ArrayList<>();
         creatures = new ArrayList<>();
+        treasures = new ArrayList<>();
     }
 
     public void setConnectedRooms(List<Room> connectedRooms) {
@@ -90,6 +91,10 @@ public class Room {
     // returns all creatures currently in room
     public ArrayList<Creature> getCreatures() {
         return creatures;
+    }
+
+    public ArrayList<Treasures> getTreasures() {
+        return treasures;
     }
 
     // Returns a String of roomDetails, including its location and adventurers and creatures in it

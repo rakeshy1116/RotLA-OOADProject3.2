@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Expert extends CombatStrategy {
     int modifier=2;
-    public boolean fight(Dice dice,Creature creature, Adventurer adv,int modifier) {
+    public String fight(Dice dice,Creature creature, Adventurer adv,int modifier) {
         return super.fight(dice,creature,adv,modifier);
     }
 }
