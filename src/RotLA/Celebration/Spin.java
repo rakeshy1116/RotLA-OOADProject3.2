@@ -22,8 +22,16 @@ public class Spin extends Celebration {
 //        return fightResult;
 //    }
 
-    public String celebrate(Adventurer adv) {
+//    public String celebrate(Adventurer adv) {
+//
+//        return combatStrategy.celebrate(adv)+" spin,";
+//    }
 
-        return combatStrategy.celebrate(adv)+" spin,";
+    public String fight(Dice dice, Creature creature, Adventurer adv, int modifier) {
+        String result = combatStrategy.fight(dice,creature,adv,modifier);
+        if(result.length()>4)
+            return result+" spin,";
+        else
+            return "";
     }
 }

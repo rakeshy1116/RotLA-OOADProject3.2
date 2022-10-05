@@ -17,21 +17,21 @@ public abstract class CombatStrategy {
         //get adventurer's roll
         int changeAdvRoll=0;
         int changeCreRoll=0;
-//        List<Treasures> treasures=adv.getTreasures();
-//        for(Treasures treasure : treasures) {
-//            if(treasure instanceof Sword) { //Sword provides the Adventurer holding it with a +1 bonus to all combat rolls against Creatures
-//                changeAdvRoll+=1;
-//            }
-//            else if(treasure instanceof Gem) {
-//                changeCreRoll+=1;
-//            }
-//            else if(treasure instanceof Armor) {
-//                changeCreRoll-=1;
-//            }
-//            else {
-//
-//            }
-//        }
+        List<Treasures> treasures=adv.getTreasures();
+        for(Treasures treasure : treasures) {
+            if(treasure instanceof Sword) { //Sword provides the Adventurer holding it with a +1 bonus to all combat rolls against Creatures
+                changeAdvRoll+=1;
+            }
+            else if(treasure instanceof Gem) {
+                changeCreRoll+=1;
+            }
+            else if(treasure instanceof Armor) {
+                changeCreRoll-=1;
+            }
+            else {
+
+            }
+        }
         int adventurerRoll = dice.getDiceRoll()+modifier + changeAdvRoll;
         //get creature's roll
         int creatureRoll = creature.rollDice(dice) + changeCreRoll;
@@ -40,7 +40,7 @@ public abstract class CombatStrategy {
             creature.die();
             adv.getRoom().removeCreature(creature);
             System.out.println("Adventurer wins the battle");
-            return celebrate(adv);
+            return adv.getAdventurerName() + " celebrate: ";
         } else if (creatureRoll > adventurerRoll) {
             // if creature wins, make adventurer take damage
             adv.takeDamage();
@@ -53,12 +53,12 @@ public abstract class CombatStrategy {
             // if both roll the same, then nothing happens
 
         }
-        return celebrate(adv);
-
-    }
-
-    public String celebrate(Adventurer adv) {
-
         return adv.getAdventurerName() + " celebrate: ";
+
     }
+
+//    public String celebrate(Adventurer adv) {
+//
+//        return adv.getAdventurerName() + " celebrate: ";
+//    }
 }

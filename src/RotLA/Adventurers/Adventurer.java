@@ -1,18 +1,18 @@
 package RotLA.Adventurers;
 
+import RotLA.*;
 import RotLA.Celebration.*;
 import RotLA.CombatStrategy.CombatStrategy;
 import RotLA.Creatures.Creature;
-import RotLA.Dice;
-import RotLA.GameUtility;
-import RotLA.Room;
 import RotLA.SearchStrategy.SearchStrategy;
+import RotLA.Treasures.Portal;
 import RotLA.Treasures.Treasures;
+import org.javatuples.Triplet;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static RotLA.GameUtility.TREASURES_MIN_ROLL;
+import static RotLA.GameUtility.*;
 
 //Adventurer is an abstract class, it is extended by different subclass types - Brawler, Runner, Sneaker, Thief
 // CONCEPT INHERITANCE, COHESION - Each of these subclasses inherit several instance variable and method implementations pertaining to adventurer behaviour
@@ -24,6 +24,15 @@ abstract public class Adventurer {
     protected int noOfTreasure; //total number of treasures found by an Adventurer
     protected String abbrv;  // Abbreviation of Adventurer type, for eg: B for Brawler
     protected String adventurerName; // Type of the Adventurer
+
+    protected RoomFinder roomFinder;
+    protected CombatStrategy combatStrategy;
+    protected SearchStrategy searchStrategy;
+    protected ArrayList<Treasures> treasures;
+
+    public void setRoomFinder(RoomFinder roomFinder) {
+        this.roomFinder = roomFinder;
+    }
 
     public int getMaxDamages() {
         return maxDamages;
@@ -43,20 +52,18 @@ abstract public class Adventurer {
         this.adventurerName = adventurerName;
     }
 
-    public Adventurer(CombatStrategy combatStrategy,SearchStrategy searchStrategy) {
+    public Adventurer(CombatStrategy combatStrategy, SearchStrategy searchStrategy) {
 
         this.combatStrategy = combatStrategy;
-        this.searchStrategy=searchStrategy;
+        this.searchStrategy = searchStrategy;
         this.setMaxDamages(3);
         this.setTreasures(new ArrayList<>());
     }
+
     public Adventurer() {
 
     }
 
-    protected CombatStrategy combatStrategy;
-    protected SearchStrategy searchStrategy;
-    protected List<Treasures> treasures;
 
     //------------------------------Getter/Setter Methods--------------------------------------
 
@@ -65,13 +72,13 @@ abstract public class Adventurer {
         this.room = room;
     }
 
-    public List<Treasures> getTreasures() {
+    public ArrayList<Treasures> getTreasures() {
         return treasures;
     }
 
     public void addTreasure(Treasures treasure) {
-        treasures.add(treasure);
-       this.noOfTreasure=treasures.size();
+        this.treasures.add(treasure);
+        this.noOfTreasure = this.treasures.size();
     }
 
     public void removeTreasure(Treasures treasure) {
@@ -81,7 +88,7 @@ abstract public class Adventurer {
         }
     }
 
-    public void setTreasures(List<Treasures> treasures) {
+    public void setTreasures(ArrayList<Treasures> treasures) {
         this.treasures = treasures;
     }
 
@@ -152,35 +159,34 @@ abstract public class Adventurer {
         celebrations.add("Spin");
 
         // ASSUMPTION: Fights creatures in the order of their room entry, i.e order of entry to the list creatures
+        CombatStrategy localRefCombatStrategy = combatStrategy;
+        for (int i = 0; i < 4; i++) {
+            int temp = dice.getCelebrateRoll();
+            while (temp-- > 0) {
+                if (celebrations.get(i).equals("Dance")) {
+                    localRefCombatStrategy = new Dance(localRefCombatStrategy);
+                } else if (celebrations.get(i).equals("Shout")) {
+                    localRefCombatStrategy = new Shout(localRefCombatStrategy);
+                } else if (celebrations.get(i).equals("Jump")) {
+                    localRefCombatStrategy = new Jump(localRefCombatStrategy);
+                } else if (celebrations.get(i).equals("Spin")) {
+                    localRefCombatStrategy = new Spin(localRefCombatStrategy);
+                } else {
 
-            for(int i=0;i<4;i++) {
-                int temp = dice.getCelebrateRoll();
-                while (temp-- > 0) {
-                    if (celebrations.get(i).equals("Dance")) {
-                        combatStrategy = new Dance(combatStrategy);
-                    } else if (celebrations.get(i).equals("Shout")) {
-                        combatStrategy = new Shout(combatStrategy);
-                    } else if (celebrations.get(i).equals("Jump")) {
-                        combatStrategy = new Jump(combatStrategy);
-                    } else if (celebrations.get(i).equals("Spin")) {
-                        combatStrategy = new Spin(combatStrategy);
-                    } else {
-
-                    }
                 }
             }
-                for (Creature creature : copyCreatureList) {
-
-                    String celebrateMessage = combatStrategy.fight(dice, creature, this, 0);
-                    System.out.println(celebrateMessage);
-                }
+        }
+        for (Creature creature : copyCreatureList) {
+            String celebrateMessage = localRefCombatStrategy.fight(dice, creature, this, 0);
+            System.out.println(celebrateMessage);
+        }
 
     }
 
     //Performs find treasure operation, common default method for all subclasses
     protected void findTreasure(Dice dice) {
-        if(this.room.getTreasures().size()>0) {
-            searchStrategy.search(this,dice,0);
+        if (this.room.getTreasures().size() > 0) {
+            searchStrategy.search(this, dice, 0);
         }
 
 //        int currentDiceVal = rollDiceTreasure(dice);
@@ -191,18 +197,50 @@ abstract public class Adventurer {
 
     //Performs move operation, common default behaviour for all subclasses
     protected void move() {
+
+        boolean hasPortal = false;
+        for (Treasures treasures : this.getTreasures()) {
+            if (treasures instanceof Portal)
+                hasPortal = true;
+        }
+        Room newRoom;
         Room oldRoom = this.room;
-        List<Room> rooms = oldRoom.getConnectedRooms();
-        int noOfConnectedRooms = rooms.size();
-        // Get a random room from the connected rooms
-        int movement = GameUtility.getRandomInRange(0, noOfConnectedRooms - 1);
-        Room newRoom = rooms.get(movement);
+
+        if (hasPortal) {
+            int level, verticalDir, horizontalDir;
+            level = GameUtility.getRandomInRange(TOPMOST_ROOM, BOTTOM_MOST_ROOM);
+            verticalDir = GameUtility.getRandomInRange(NORTHMOST_ROOM, SOUTHMOST_ROOM);
+            horizontalDir = GameUtility.getRandomInRange(WESTMOST_ROOM, EASTMOST_ROOM);
+            newRoom = roomFinder.findRoom(new Triplet<>(level, verticalDir, horizontalDir));
+
+        } else {
+
+            List<Room> rooms = oldRoom.getConnectedRooms();
+            int noOfConnectedRooms = rooms.size();
+            // Get a random room from the connected rooms
+            int movement = GameUtility.getRandomInRange(0, noOfConnectedRooms - 1);
+            newRoom = rooms.get(movement);
+        }
+
+
         // remove adventurer from old room
         oldRoom.removeAdventurer(this);
         // add adventurer to new room
         newRoom.addAdventurer(this);
         // update new room in Adventurer
         this.room = newRoom;
+    }
+
+    public boolean checkTreasure(Treasures currentTreasure) {
+
+            for (int i = 0; i < this.getTreasures().size(); i++) {
+                Treasures treasure = this.getTreasures().get(i);
+                if (treasure.getClass() == currentTreasure.getClass()) {
+                    return true;
+                }
+            }
+        return false;
+
     }
 }
 

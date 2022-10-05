@@ -22,8 +22,16 @@ public class Shout extends Celebration {
 //        return fightResult;
 //    }
 
-    public String celebrate(Adventurer adv) {
+//    public String celebrate(Adventurer adv) {
+//
+//        return combatStrategy.celebrate(adv)+" shout,";
+//    }
 
-        return combatStrategy.celebrate(adv)+" shout,";
+    public String fight(Dice dice, Creature creature, Adventurer adv, int modifier) {
+        String result = combatStrategy.fight(dice,creature,adv,modifier);
+        if(result.length()>4)
+            return result+" shout,";
+        else
+            return "";
     }
 }

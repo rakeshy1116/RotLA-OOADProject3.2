@@ -10,7 +10,7 @@ public class GameUtility {
     public static final int TOPMOST_ROOM = 1;
     public static final int BOTTOM_MOST_ROOM = 4;
     public static final int TREASURES_MIN_ROLL = 10;
-    public static final int TREASURES_WINNING_NUMBER = 100;
+    public static final int TREASURES_WINNING_NUMBER = 10;
 
     public static int getRandomInRange(int min, int max) {
         return (int) Math.floor(Math.random() * (max - min + 1) + min);
