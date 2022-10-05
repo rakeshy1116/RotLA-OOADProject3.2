@@ -145,7 +145,7 @@ public class BoardRenderer {
     // ---------------------------------Private methods------------------------------------------
 
     // Finds and sets the neighbors for a particular room
-    private void getNeighbours(Room room) {
+    public void getNeighbours(Room room) {
         ArrayList<Room> neighbors = new ArrayList<>();
         // for a room listing all possible coordinates of its neighbours
         Triplet<Integer, Integer, Integer> roomCoordinates = room.getRoomCoordinates();
@@ -186,7 +186,7 @@ public class BoardRenderer {
     }
 
     //returns a room given its coordinates
-    private Room findRoom(Triplet<Integer, Integer, Integer> roomID) {
+    public Room findRoom(Triplet<Integer, Integer, Integer> roomID) {
         return boardRoomList.stream()
                 .filter(room -> room.getRoomCoordinates().compareTo(roomID) == 0)
                 .findFirst()
