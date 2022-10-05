@@ -1,9 +1,13 @@
 package RotLA.Adventurers;
 
+import RotLA.Celebration.*;
+import RotLA.CombatStrategy.CombatStrategy;
 import RotLA.Creatures.Creature;
 import RotLA.Dice;
 import RotLA.GameUtility;
 import RotLA.Room;
+import RotLA.SearchStrategy.SearchStrategy;
+import RotLA.Treasures.Treasures;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,11 +25,68 @@ abstract public class Adventurer {
     protected String abbrv;  // Abbreviation of Adventurer type, for eg: B for Brawler
     protected String adventurerName; // Type of the Adventurer
 
+    public int getMaxDamages() {
+        return maxDamages;
+    }
+
+    public void setMaxDamages(int maxDamages) {
+        this.maxDamages = maxDamages;
+    }
+
+    int maxDamages;
+
+    public String getAdventurerName() {
+        return adventurerName;
+    }
+
+    public void setAdventurerName(String adventurerName) {
+        this.adventurerName = adventurerName;
+    }
+
+    public Adventurer(CombatStrategy combatStrategy,SearchStrategy searchStrategy) {
+
+        this.combatStrategy = combatStrategy;
+        this.searchStrategy=searchStrategy;
+        this.setMaxDamages(3);
+        this.setTreasures(new ArrayList<>());
+    }
+    public Adventurer() {
+
+    }
+
+    protected CombatStrategy combatStrategy;
+    protected SearchStrategy searchStrategy;
+    protected List<Treasures> treasures;
+
     //------------------------------Getter/Setter Methods--------------------------------------
 
     //A setter method for the room instance
     public void setRoom(Room room) {
         this.room = room;
+    }
+
+    public List<Treasures> getTreasures() {
+        return treasures;
+    }
+
+    public void addTreasure(Treasures treasure) {
+        treasures.add(treasure);
+       this.noOfTreasure=treasures.size();
+    }
+
+    public void removeTreasure(Treasures treasure) {
+        for (int i = 0; i < treasures.size(); i++) {
+            if (treasures.get(i).equals(treasure))
+                treasures.remove(i);
+        }
+    }
+
+    public void setTreasures(List<Treasures> treasures) {
+        this.treasures = treasures;
+    }
+
+    public Room getRoom() {
+        return room;
     }
 
     // a getter method for the no of treasures found by the Adventurer
@@ -48,7 +109,7 @@ abstract public class Adventurer {
 
     // Checks if the Adventurer is alive, alive if adventurer has suffered a max damage of 2
     public boolean isAlive() {
-        return noOfDamages < 3;
+        return noOfDamages < maxDamages;
     }
 
     // Performs all the operations of an Adventurer in a turn, like move, fight or find treasure
@@ -84,36 +145,48 @@ abstract public class Adventurer {
         // Fight all creatures in the room
         // Creating copy to avoid concurrent updates in room and skipping fight concerns
         List<Creature> copyCreatureList = new ArrayList<>(creatures);
+        List<String> celebrations = new ArrayList<>();
+        celebrations.add("Dance");
+        celebrations.add("Shout");
+        celebrations.add("Jump");
+        celebrations.add("Spin");
+
         // ASSUMPTION: Fights creatures in the order of their room entry, i.e order of entry to the list creatures
-        for (Creature creature : copyCreatureList) {
-            //get adventurer's roll
-            int adventurerRoll = rollDiceFight(dice);
-            //get creature's roll
-            int creatureRoll = creature.rollDice(dice);
-            if (adventurerRoll > creatureRoll) {
-                // if adventurer wins, kill creature, remove from room
-                creature.die();
-                this.room.removeCreature(creature);
-            } else if (creatureRoll > adventurerRoll) {
-                // if creature wins, make adventurer take damage
-                takeDamage();
-                if (!isAlive()) {
-                    // if adventurer is dead remove from room and end the fights
-                    this.room.removeAdventurer(this);
-                    break;
+
+            for(int i=0;i<4;i++) {
+                int temp = dice.getCelebrateRoll();
+                while (temp-- > 0) {
+                    if (celebrations.get(i).equals("Dance")) {
+                        combatStrategy = new Dance(combatStrategy);
+                    } else if (celebrations.get(i).equals("Shout")) {
+                        combatStrategy = new Shout(combatStrategy);
+                    } else if (celebrations.get(i).equals("Jump")) {
+                        combatStrategy = new Jump(combatStrategy);
+                    } else if (celebrations.get(i).equals("Spin")) {
+                        combatStrategy = new Spin(combatStrategy);
+                    } else {
+
+                    }
                 }
-            } else {
-                // if both roll the same, then nothing happens
             }
-        }
+                for (Creature creature : copyCreatureList) {
+
+                    String celebrateMessage = combatStrategy.fight(dice, creature, this, 0);
+                    System.out.println(celebrateMessage);
+                }
+
     }
 
     //Performs find treasure operation, common default method for all subclasses
     protected void findTreasure(Dice dice) {
-        int currentDiceVal = rollDiceTreasure(dice);
-        //increment treasures if rolled higher
-        if (currentDiceVal >= TREASURES_MIN_ROLL)
-            noOfTreasure++;
+        if(this.room.getTreasures().size()>0) {
+            searchStrategy.search(this,dice,0);
+        }
+
+//        int currentDiceVal = rollDiceTreasure(dice);
+//        //increment treasures if rolled higher
+//        if (currentDiceVal >= TREASURES_MIN_ROLL)
+//            noOfTreasure++;
     }
 
     //Performs move operation, common default behaviour for all subclasses

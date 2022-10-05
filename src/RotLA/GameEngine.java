@@ -1,10 +1,18 @@
 package RotLA;
 
 import RotLA.Adventurers.*;
+import RotLA.CombatStrategy.Expert;
+import RotLA.CombatStrategy.Stealth;
+import RotLA.CombatStrategy.Trained;
+import RotLA.CombatStrategy.Untrained;
 import RotLA.Creatures.Blinker;
 import RotLA.Creatures.Creature;
 import RotLA.Creatures.Orbiter;
 import RotLA.Creatures.Seeker;
+import RotLA.SearchStrategy.Careful;
+import RotLA.SearchStrategy.Careless;
+import RotLA.SearchStrategy.Quick;
+import RotLA.Treasures.*;
 
 import java.util.ArrayList;
 
@@ -16,15 +24,16 @@ public class GameEngine {
     private BoardRenderer boardRenderer;
     private ArrayList<Adventurer> adventurers;
     private ArrayList<Creature> creatures;
+    private ArrayList<Treasures> treasures;
     private Dice dice;
 
     //Creates instances of all players, creatures, Board, Dice and initializes them
     public void initialize() {
         this.adventurers = new ArrayList<Adventurer>();
-        adventurers.add(new Brawler());
-        adventurers.add(new Runner());
-        adventurers.add(new Thief());
-        adventurers.add(new Sneaker());
+        adventurers.add(new Brawler(new Expert(),new Careless()));
+        adventurers.add(new Runner(new Untrained(),new Quick()));
+        adventurers.add(new Thief(new Trained(),new Careful()));
+        adventurers.add(new Sneaker(new Stealth(), new Quick()));
 
         this.creatures = new ArrayList<Creature>();
         for (int i = 0; i < 4; i++) {
@@ -32,8 +41,19 @@ public class GameEngine {
             creatures.add(new Orbiter());
             creatures.add(new Seeker());
         }
+
+        this.treasures = new ArrayList<Treasures>();
+        for(int i=0;i<4;i++)
+        {
+            treasures.add(new Gem());
+            treasures.add(new Sword());
+            treasures.add(new Trap());
+            treasures.add(new Potion());
+            treasures.add(new Armor());
+            treasures.add(new Portal());
+        }
         this.boardRenderer = new BoardRenderer();
-        boardRenderer.initialiseBoardForGame(adventurers, creatures);
+        boardRenderer.initialiseBoardForGame(adventurers, creatures,treasures);
         this.dice = new Dice();
 
     }
