@@ -21,8 +21,16 @@ public class Jump extends Celebration {
 //        return fightResult;
 //    }
 
-    public String celebrate(Adventurer adv) {
+//    public String celebrate(Adventurer adv) {
+//
+//        return combatStrategy.celebrate(adv)+ " jump,";
+//    }
 
-        return combatStrategy.celebrate(adv)+ " jump,";
+    public String fight(Dice dice, Creature creature, Adventurer adv, int modifier) {
+        String result = combatStrategy.fight(dice,creature,adv,modifier);
+        if(result.length()>4)
+            return result+" jump,";
+        else
+            return "";
     }
 }

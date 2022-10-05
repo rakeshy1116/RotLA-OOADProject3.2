@@ -58,6 +58,7 @@ public class BoardRenderer {
         Room starterRoom = boardRoomList.get(0);
         adventurers.forEach(adventurer -> {
             adventurer.setRoom(starterRoom);
+            adventurer.setRoomFinder(roomFinder);
             starterRoom.addAdventurer(adventurer);
         });
 
