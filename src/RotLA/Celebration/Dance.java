@@ -8,30 +8,12 @@ import RotLA.Dice;
 
 public class Dance extends Celebration{
 
-    CombatStrategy combatStrategy;
     public Dance(CombatStrategy strategy) {
         this.combatStrategy=strategy;
     }
 
-//    public String fight(Dice dice, Creature creature, Adventurer adv, int modifier) {
-//        String fightResult = combatStrategy.fight(dice,creature,adv,modifier);
-//        if(fightResult.length()>4)
-//        {
-//            return celebrate(adv);
-//        }
-//        return fightResult;
-//    }
-
-//    public String celebrate(Adventurer adv) {
-//
-//        return combatStrategy.celebrate(adv)+" dance,";
-//    }
-
-    public String fight(Dice dice, Creature creature, Adventurer adv, int modifier) {
-        String result = combatStrategy.fight(dice,creature,adv,modifier);
-        if(result.length()>4)
-        return result+" dance,";
-        else
-            return "";
+   @Override
+   protected String celebrate() {
+        return " dance";
     }
 }

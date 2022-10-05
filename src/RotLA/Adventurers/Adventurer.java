@@ -1,7 +1,9 @@
 package RotLA.Adventurers;
 
-import RotLA.*;
-import RotLA.Celebration.*;
+import RotLA.Celebration.Dance;
+import RotLA.Celebration.Jump;
+import RotLA.Celebration.Shout;
+import RotLA.Celebration.Spin;
 import RotLA.CombatStrategy.CombatStrategy;
 import RotLA.Creatures.Creature;
 import RotLA.SearchStrategy.SearchStrategy;
@@ -12,6 +14,8 @@ import org.javatuples.Triplet;
 import java.util.ArrayList;
 import java.util.List;
 
+import static RotLA.GameUtility.getAllCelebrations;
+import static RotLA.GameUtility.getRandomInRange;
 import static RotLA.GameUtility.*;
 
 //Adventurer is an abstract class, it is extended by different subclass types - Brawler, Runner, Sneaker, Thief
@@ -157,30 +161,31 @@ abstract public class Adventurer {
         celebrations.add("Shout");
         celebrations.add("Jump");
         celebrations.add("Spin");
-
         // ASSUMPTION: Fights creatures in the order of their room entry, i.e order of entry to the list creatures
-        CombatStrategy localRefCombatStrategy = combatStrategy;
-        for (int i = 0; i < 4; i++) {
-            int temp = dice.getCelebrateRoll();
-            while (temp-- > 0) {
-                if (celebrations.get(i).equals("Dance")) {
-                    localRefCombatStrategy = new Dance(localRefCombatStrategy);
-                } else if (celebrations.get(i).equals("Shout")) {
-                    localRefCombatStrategy = new Shout(localRefCombatStrategy);
-                } else if (celebrations.get(i).equals("Jump")) {
-                    localRefCombatStrategy = new Jump(localRefCombatStrategy);
-                } else if (celebrations.get(i).equals("Spin")) {
-                    localRefCombatStrategy = new Spin(localRefCombatStrategy);
-                } else {
+        for (Creature creature : copyCreatureList) {
+            CombatStrategy modifiedCombat = prepareCelebrations();
+            String celebrateMessage = modifiedCombat.fight(dice, creature, this);
+            System.out.println(celebrateMessage);
+        }
+    }
 
+    private CombatStrategy prepareCelebrations() {
+        CombatStrategy modifiedCombat = combatStrategy;
+        for (String celebration : getAllCelebrations()) {
+            int repeat = getRandomInRange(0, 2);
+            while (repeat-- > 0) {
+                if (celebration.equalsIgnoreCase("Dance")) {
+                    modifiedCombat = new Dance(modifiedCombat);
+                } else if (celebration.equalsIgnoreCase("Spin")) {
+                    modifiedCombat = new Spin(modifiedCombat);
+                } else if (celebration.equalsIgnoreCase("Jump")) {
+                    modifiedCombat = new Jump(modifiedCombat);
+                } else if (celebration.equalsIgnoreCase("Shout")) {
+                    modifiedCombat = new Shout(modifiedCombat);
                 }
             }
         }
-        for (Creature creature : copyCreatureList) {
-            String celebrateMessage = localRefCombatStrategy.fight(dice, creature, this, 0);
-            System.out.println(celebrateMessage);
-        }
-
+        return modifiedCombat;
     }
 
     //Performs find treasure operation, common default method for all subclasses
