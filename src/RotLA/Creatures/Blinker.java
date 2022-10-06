@@ -1,12 +1,16 @@
 package RotLA.Creatures;
 
+import RotLA.Events.Event;
 import RotLA.GameUtility;
 import RotLA.Room;
 import org.javatuples.Triplet;
 
+import java.util.concurrent.SubmissionPublisher;
+
 // CONCEPT: INHERITANCE - A type of Creature that inherits variables and behaviour from Creature
 public class Blinker extends Creature {
-    public Blinker() {
+    public Blinker(SubmissionPublisher<Event> publisher) {
+        this.publisher = publisher;
         this.alive = true;
         this.abbrv = "B";
         this.name = "Blinker";
@@ -23,5 +27,6 @@ public class Blinker extends Creature {
         newRoom.addCreature(this);
         this.setRoom(newRoom);
         oldRoom.removeCreature(this);  //creature is removed from the old room and gets added to new room
+        publisher.submit(new Event.GameObjectEnters(name + System.identityHashCode(this), room.getRoomName()));
     }
 }

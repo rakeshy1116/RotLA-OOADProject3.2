@@ -10,6 +10,6 @@ public class Dance extends Celebration {
 
     @Override
     protected String celebrate() {
-        return " dance";
+        return " dance,";
     }
 }

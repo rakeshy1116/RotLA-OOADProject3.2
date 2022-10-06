@@ -9,6 +9,6 @@ public class Shout extends Celebration {
     }
 
     protected String celebrate() {
-        return " shout";
+        return " shout,";
     }
 }

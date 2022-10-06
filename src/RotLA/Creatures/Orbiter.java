@@ -1,8 +1,11 @@
 package RotLA.Creatures;
 
+import RotLA.Events.Event;
 import RotLA.GameUtility;
 import RotLA.Room;
 import org.javatuples.Triplet;
+
+import java.util.concurrent.SubmissionPublisher;
 
 import static RotLA.GameUtility.*;
 
@@ -11,11 +14,12 @@ public class Orbiter extends Creature {
 
     Boolean isClockWise;
 
-    public Orbiter() {
+    public Orbiter(SubmissionPublisher<Event> publisher) {
         this.alive = true;
         isClockWise = GameUtility.getRandomInRange(0, 1) == 1; //each orbiter during instantization are
         // assigned clockwise-or-anticlockwise initially
         abbrv = "O";
+        this.publisher = publisher;
         this.name = "Orbiter";
     }
 
@@ -32,6 +36,7 @@ public class Orbiter extends Creature {
         oldRoom.removeCreature(this);
         newRoom.addCreature(this);
         this.room = newRoom;
+        publisher.submit(new Event.GameObjectEnters(name + System.identityHashCode(this), room.getRoomName()));
     }
 
     // returns coordinates of next room in clockwise direction, given rooms coordinates

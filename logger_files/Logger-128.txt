@@ -1,0 +1,6 @@
+Brawler enters room 4-0-0
+Sneaker enters room 2-1-1
+Orbiter2094548358 enters room 4-0-0
+Brawler wins a combat
+Orbiter2094548358 loses a combat
+Orbiter2094548358 removed from game

@@ -1,0 +1,13 @@
+Brawler enters room 1-2-0
+Thief enters room 4-2-1
+Orbiter2094548358 wins a combat
+Thief loses a combat
+Thief has suffered 2 Damage(s)
+Sneaker enters room 2-0-1
+Orbiter2094548358 wins a combat
+Thief loses a combat
+Thief has suffered 3 Damage(s)
+Orbiter396873410 enters room 4-2-1
+Thief wins a combat
+Orbiter396873410 loses a combat
+Orbiter396873410 removed from game

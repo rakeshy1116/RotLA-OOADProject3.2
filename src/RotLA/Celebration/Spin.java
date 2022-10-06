@@ -10,6 +10,6 @@ public class Spin extends Celebration {
 
     @Override
     protected String celebrate() {
-        return " spin";
+        return " spin,";
     }
 }

@@ -10,6 +10,6 @@ public class Jump extends Celebration {
 
     @Override
     protected String celebrate() {
-        return " jump";
+        return " jump,";
     }
 }
