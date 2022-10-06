@@ -5,7 +5,6 @@ import RotLA.Dice;
 import RotLA.Events.Event;
 import RotLA.GameUtility;
 import RotLA.Room;
-import RotLA.Treasures.Portal;
 import RotLA.Treasures.Potion;
 import RotLA.Treasures.Trap;
 import RotLA.Treasures.Treasures;

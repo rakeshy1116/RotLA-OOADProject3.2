@@ -62,7 +62,7 @@ public abstract class Creature {
     }
 
     public String getInstanceName() {
-        return name + String.valueOf(System.identityHashCode(this));
+        return name + System.identityHashCode(this);
     }
 
     // sets roomfinder message callback to find rooms

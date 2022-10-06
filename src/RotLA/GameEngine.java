@@ -41,33 +41,29 @@ public class GameEngine {
     // Main function to start game simulation
     public static void main(String[] args) {
         GameEngine gm = new GameEngine();
-//        int advWin=0;
-//        int creWin=0;
-//        int advWinTreasure=0;
         gm.initialize();
         gm.startSimulation();
 //        Uncomment for multiple game run
-//        for(int i=0;i<30;i++) {
-//            System.out.print("Run " + String.valueOf(i+1) + ": ");
+//        int advWin = 0;
+//        int creWin = 0;
+//        int advWinTreasure = 0;
+//        for (int i = 0; i < 30; i++) {
+//            System.out.print("Run " + (i + 1) + ": ");
 //            gm.initialize();
-//            String result=gm.startSimulation();
-//            if(result.contains("10")) {
-//                advWinTreasure+=1;
-//            }
-//            else if(result.substring(0,3).equals("Adv"))
-//            {
-//                advWin+=1;
-//            }
-//            else {
-//                creWin+=1;
+//            String result = gm.startSimulation();
+//            if (result.contains(String.valueOf(TREASURES_WINNING_NUMBER))) {
+//                advWinTreasure += 1;
+//            } else if (result.startsWith("Adv")) {
+//                advWin += 1;
+//            } else {
+//                creWin += 1;
 //            }
 //        }
 //
 //        System.out.println("Summary of Runs:");
-//        System.out.println("Adventurers win by finding 10 treasures: " + advWinTreasure);
+//        System.out.println("Adventurers win by finding all 20 treasures: " + advWinTreasure);
 //        System.out.println("Adventurers win by eliminating all creatures: " + advWin);
 //        System.out.println("Creatures win by eliminating all adventurers: " + creWin);
-
     }
 
     //Creates instances of all players, creatures, Board, Dice and initializes them
@@ -113,7 +109,7 @@ public class GameEngine {
     }
 
     // Starts turn simulation, simulation will end if termination conditions are met
-    public void startSimulation() {
+    public String startSimulation() {
         int turn = 0;
         while (true) {
             ++turn;
@@ -138,16 +134,17 @@ public class GameEngine {
             tracker.printStatus();
             logger.stopSubscription();
             //check if termination conditions are met and stop
-            Pair<Boolean,String> result = checkTermination();
+            // Pair represents <did game terminate, how did game terminate>
+            Pair<Boolean, String> result = checkTermination();
             if (result.getValue0()) {
+                tracker.stopSubscription();
                 return result.getValue1();
             }
         }
-        tracker.stopSubscription();
     }
 
-    // performs checks of game termination consitions are met
-    public Pair<Boolean,String> checkTermination() {
+    // performs checks of game termination conditions are met
+    public Pair<Boolean, String> checkTermination() {
         boolean isAdventurerAlive = false;
         boolean isCreatureAlive = false;
         int totalTreasure = 0;
@@ -162,15 +159,15 @@ public class GameEngine {
         //Game ends if Adventures found 10 treasures or Adventures killed all creatures or Creatures killed all adventurers
         if (totalTreasure >= TREASURES_WINNING_NUMBER) {
             System.out.println("Adventurers win by finding " + totalTreasure + " treasures");
-            return new Pair(true,"Adventurers win by finding " + totalTreasure + " treasures");
+            return new Pair(true, "Adventurers win by finding " + totalTreasure + " treasures");
         } else if (isAdventurerAlive && !isCreatureAlive) {
             System.out.println("Adventurers win by eliminating all creatures");
-            return new Pair(true,"Adventurers win by eliminating all creatures");
+            return new Pair(true, "Adventurers win by eliminating all creatures");
         } else if (isCreatureAlive && !isAdventurerAlive) {
             System.out.println("Creatures win by eliminating all adventurers");
-            return new Pair(true,"Creatures win by eliminating all adventurers");
+            return new Pair(true, "Creatures win by eliminating all adventurers");
         } else {
-            return new Pair(false,"");
+            return new Pair(false, "");
         }
     }
 

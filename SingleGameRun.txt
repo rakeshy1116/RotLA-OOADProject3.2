@@ -1,578 +1,1779 @@
-Turn : 0
-Board Status : 
-0-1-1 : BRTS : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : OO 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : SO 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : S 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : O 	4-1-1 : - : B 	4-1-2 : - : B 	
-4-2-0 : - : B 	4-2-1 : - : B 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 0 Treasure(s) - 0 Damage
-Runner - 0 Treasure(s) - 0 Damage
-Thief - 0 Treasure(s) - 0 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 4 Remaining
-Blinker - 4 Remaining
-Orbiter - 4 Remaining
-
 Turn : 1
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : BB 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : BTS : - 	1-1-2 : - : - 	
-1-2-0 : - : - 	1-2-1 : R : - 	1-2-2 : - : - 	
-2-0-0 : - : OO 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : S 	3-0-2 : - : O 	
-3-1-0 : - : - 	3-1-1 : - : B 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : S 	
-4-0-0 : - : - 	4-0-1 : - : B 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 0 Treasure(s) - 0 Damage
-Runner - 1 Treasure(s) - 0 Damage
-Thief - 1 Treasure(s) - 0 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 4 Remaining
-Blinker - 4 Remaining
-Orbiter - 4 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : O 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : BTS : - 	1-1-2 : R : -
+1-2-0 : - : B 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : O 	2-0-1 : - : S 	2-0-2 : - : -
+2-1-0 : - : S 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : B 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : B 	3-1-1 : - : - 	3-1-2 : - : B
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S
+
+Tracker: Turn 1
+Active Adventurers: 4
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-1		0
+Runner		1-1-2		0
+Thief		1-1-1		0
+Sneaker		1-1-1		0
+
+Active Creatures: 12
+Creatures			Room
+Orbiter205797316		4-0-2
+Orbiter1296064247		4-0-0
+Seeker1637070917		2-0-1
+Blinker1066516207		2-2-1
+Orbiter1996181658		1-0-0
+Orbiter443308702		2-0-0
+Blinker1896277646		3-1-2
+Seeker806353501		2-1-0
+Blinker780237624		3-1-0
+Blinker521645586		1-2-0
+Seeker935044096		4-2-2
+Seeker1128032093		3-0-0
 
 Turn : 2
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : B 	1-0-2 : - : - 	
-1-1-0 : BS : - 	1-1-1 : - : - 	1-1-2 : - : B 	
-1-2-0 : - : - 	1-2-1 : RT : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : OO 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : B 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : S 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : O 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : S 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : OB 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 0 Treasure(s) - 0 Damage
-Runner - 1 Treasure(s) - 0 Damage
-Thief - 1 Treasure(s) - 0 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 4 Remaining
-Blinker - 4 Remaining
-Orbiter - 4 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : S : - 	1-0-2 : - : -
+1-1-0 : - : O 	1-1-1 : - : - 	1-1-2 : BR : -
+1-2-0 : - : - 	1-2-1 : T : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : S 	2-0-2 : - : -
+2-1-0 : - : SO 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : B 	2-2-2 : - : -
+3-0-0 : - : SB 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : OB
+4-2-0 : - : B 	4-2-1 : - : - 	4-2-2 : - : S
+
+Tracker: Turn 2
+Active Adventurers: 4
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-2		0
+Runner		1-1-2		0
+Thief		1-2-1		0		Armor
+Sneaker		1-0-1		0
+
+Active Creatures: 12
+Creatures			Room
+Orbiter205797316		4-1-2
+Orbiter1296064247		4-0-1
+Seeker1637070917		2-0-1
+Blinker1066516207		4-1-2
+Orbiter1996181658		1-1-0
+Orbiter443308702		2-1-0
+Blinker1896277646		3-0-0
+Seeker806353501		2-1-0
+Blinker780237624		2-2-1
+Blinker521645586		4-2-0
+Seeker935044096		4-2-2
+Seeker1128032093		3-0-0
 
 Turn : 3
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : B : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : - : B 	1-1-1 : S : - 	1-1-2 : - : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : T : B 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : OO 	
-2-1-0 : - : B 	2-1-1 : R : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : S 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : SO 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : SOB 	
-Adventurers Status : 
-Brawler - 0 Treasure(s) - 0 Damage
-Runner - 1 Treasure(s) - 0 Damage
-Thief - 2 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 4 Remaining
-Blinker - 4 Remaining
-Orbiter - 4 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : S : -
+1-1-0 : - : - 	1-1-1 : T : - 	1-1-2 : R : -
+1-2-0 : - : O 	1-2-1 : - : - 	1-2-2 : B : -
+2-0-0 : - : - 	2-0-1 : - : SB 	2-0-2 : - : -
+2-1-0 : - : S 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : O 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : B 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : B 	4-2-2 : - : SO
+
+Tracker: Turn 3
+Active Adventurers: 4
+Adventurers	Room	Damage	Treasures
+Brawler		1-2-2		0
+Runner		1-1-2		0
+Thief		1-1-1		0		Armor
+Sneaker		1-0-2		0
+
+Active Creatures: 11
+Creatures			Room
+Orbiter205797316		4-2-2
+Orbiter1296064247		4-0-2
+Seeker1637070917		2-0-1
+Blinker1066516207		2-0-1
+Orbiter1996181658		1-2-0
+Orbiter443308702		2-2-0
+Blinker1896277646		4-2-1
+Seeker806353501		2-1-0
+Blinker780237624		4-1-0
+Seeker935044096		4-2-2
+Seeker1128032093		3-0-0
 
 Turn : 4
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : B 	1-0-1 : BS : - 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : T : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : R : - 	2-1-2 : - : OO 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : S 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : O 	3-2-2 : - : S 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : B 	4-1-2 : - : OB 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 1 Treasure(s) - 0 Damage
-Thief - 2 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 4 Remaining
-Blinker - 3 Remaining
-Orbiter - 4 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : S : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : BT : -
+1-2-0 : - : - 	1-2-1 : R : O 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : S 	2-0-2 : - : -
+2-1-0 : - : S 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : O 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : B 	3-2-1 : - : - 	3-2-2 : - : B
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : SB
+
+Tracker: Turn 4
+Active Adventurers: 4
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-2		0
+Runner		1-2-1		1
+Thief		1-1-2		0		Armor
+Sneaker		1-0-1		0
+
+Active Creatures: 11
+Creatures			Room
+Orbiter205797316		4-2-1
+Orbiter1296064247		4-1-2
+Seeker1637070917		2-0-1
+Blinker1066516207		3-2-2
+Orbiter1996181658		1-2-1
+Orbiter443308702		2-2-1
+Blinker1896277646		4-2-2
+Seeker806353501		2-1-0
+Blinker780237624		3-2-0
+Seeker935044096		4-2-2
+Seeker1128032093		3-0-0
 
 Turn : 5
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : B : - 	1-0-1 : - : - 	1-0-2 : S : - 	
-1-1-0 : - : - 	1-1-1 : T : - 	1-1-2 : - : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : R : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : BO 	
-3-0-0 : - : - 	3-0-1 : - : S 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : O 	3-2-1 : - : - 	3-2-2 : - : S 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : O 	
-4-1-0 : - : - 	4-1-1 : - : B 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 1 Treasure(s) - 1 Damage
-Thief - 3 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 4 Remaining
-Blinker - 2 Remaining
-Orbiter - 3 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : B : -
+1-1-0 : R : - 	1-1-1 : TS : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : O
+2-0-0 : - : - 	2-0-1 : - : S 	2-0-2 : - : -
+2-1-0 : - : SB 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : B 	2-2-1 : - : - 	2-2-2 : - : O
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : B 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : SO
+
+Tracker: Turn 5
+Active Adventurers: 4
+Adventurers	Room	Damage	Treasures
+Brawler		1-0-2		0		Armor
+Runner		1-1-0		1		Sword
+Thief		1-1-1		0		Armor
+Sneaker		1-1-1		0
+
+Active Creatures: 11
+Creatures			Room
+Orbiter205797316		4-2-0
+Orbiter1296064247		4-2-2
+Seeker1637070917		2-0-1
+Blinker1066516207		2-1-0
+Orbiter1996181658		1-2-2
+Orbiter443308702		2-2-2
+Blinker1896277646		2-2-0
+Seeker806353501		2-1-0
+Blinker780237624		3-1-1
+Seeker935044096		4-2-2
+Seeker1128032093		3-0-0
 
 Turn : 6
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : B 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : BT : - 	1-1-1 : - : - 	1-1-2 : S : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : R : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : O 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : S 	3-0-2 : - : - 	
-3-1-0 : - : O 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : S 	
-4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : - 	
-4-1-0 : - : B 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 1 Treasure(s) - 1 Damage
-Thief - 3 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 4 Remaining
-Blinker - 2 Remaining
-Orbiter - 3 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : B : - 	1-0-2 : - : -
+1-1-0 : R : - 	1-1-1 : - : - 	1-1-2 : S : -
+1-2-0 : - : - 	1-2-1 : T : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : S 	2-0-2 : - : -
+2-1-0 : - : S 	2-1-1 : - : - 	2-1-2 : - : O
+2-2-0 : - : B 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : B
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : S
+
+Tracker: Turn 6
+Active Adventurers: 4
+Adventurers	Room	Damage	Treasures
+Brawler		1-0-1		0		Armor
+Runner		1-1-0		1		Sword
+Thief		1-2-1		0		Armor
+Sneaker		1-1-2		0
+
+Active Creatures: 9
+Creatures			Room
+Orbiter205797316		4-1-0
+Orbiter1296064247		4-2-1
+Seeker1637070917		2-0-1
+Blinker1066516207		4-1-2
+Orbiter443308702		2-1-2
+Seeker806353501		2-1-0
+Blinker780237624		2-2-0
+Seeker935044096		4-2-2
+Seeker1128032093		3-0-0
 
 Turn : 7
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : T : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : B : - 	1-1-2 : - : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : S : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : SO 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : O 	3-0-1 : R : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : S 	
-4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : B 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 1 Treasure(s) - 1 Damage
-Thief - 3 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 3 Remaining
-Blinker - 1 Remaining
-Orbiter - 3 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : B : - 	1-0-1 : - : - 	1-0-2 : S : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : T : - 	1-2-1 : R : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : S 	2-0-2 : - : O
+2-1-0 : - : S 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : B
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : S
+
+Tracker: Turn 7
+Active Adventurers: 4
+Adventurers	Room	Damage	Treasures
+Brawler		1-0-0		0		Armor
+Runner		1-2-1		1		Sword
+Thief		1-2-0		0		Armor,Portal
+Sneaker		1-0-2		1
+
+Active Creatures: 8
+Creatures			Room
+Orbiter205797316		4-0-0
+Orbiter1296064247		4-2-0
+Seeker1637070917		2-0-1
+Blinker1066516207		3-1-2
+Orbiter443308702		2-0-2
+Seeker806353501		2-1-0
+Seeker935044096		4-2-2
+Seeker1128032093		3-0-0
 
 Turn : 8
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : T : - 	1-1-1 : - : - 	1-1-2 : S : - 	
-1-2-0 : - : - 	1-2-1 : B : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : O 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : O 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : R : S 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 1 Treasure(s) - 2 Damage
-Thief - 3 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 3 Remaining
-Blinker - 0 Remaining
-Orbiter - 3 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : B : - 	1-1-1 : - : - 	1-1-2 : S : -
+1-2-0 : - : - 	1-2-1 : RT : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : SO 	2-0-2 : - : -
+2-1-0 : - : S 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : -
+4-1-0 : - : OB 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S
+
+Tracker: Turn 8
+Active Adventurers: 4
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-0		0		Armor
+Runner		1-2-1		1		Sword,Armor
+Thief		1-2-1		0		Armor,Portal
+Sneaker		1-1-2		1
+
+Active Creatures: 8
+Creatures			Room
+Orbiter205797316		4-0-1
+Orbiter1296064247		4-1-0
+Seeker1637070917		2-0-1
+Blinker1066516207		4-1-0
+Orbiter443308702		2-0-1
+Seeker806353501		2-1-0
+Seeker935044096		4-2-2
+Seeker1128032093		3-0-0
 
 Turn : 9
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : BTS : - 	1-1-2 : - : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : O 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : R : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : S 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 1 Treasure(s) - 2 Damage
-Thief - 3 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 3 Remaining
-Blinker - 0 Remaining
-Orbiter - 2 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : S : -
+1-1-0 : - : - 	1-1-1 : B : - 	1-1-2 : - : -
+1-2-0 : T : - 	1-2-1 : R : - 	1-2-2 : - : -
+2-0-0 : - : O 	2-0-1 : - : S 	2-0-2 : - : -
+2-1-0 : - : S 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : B 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S
+
+Tracker: Turn 9
+Active Adventurers: 4
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-1		0		Armor
+Runner		1-2-1		1		Sword,Armor
+Thief		1-2-0		0		Armor,Portal
+Sneaker		1-0-2		1
+
+Active Creatures: 8
+Creatures			Room
+Orbiter205797316		4-0-2
+Orbiter1296064247		4-0-0
+Seeker1637070917		2-0-1
+Blinker1066516207		3-2-0
+Orbiter443308702		2-0-0
+Seeker806353501		2-1-0
+Seeker935044096		4-2-2
+Seeker1128032093		3-0-0
 
 Turn : 10
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : B : - 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : TS : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : O 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : S 	
-3-2-0 : - : - 	3-2-1 : R : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 1 Treasure(s) - 2 Damage
-Thief - 3 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 3 Remaining
-Blinker - 0 Remaining
-Orbiter - 2 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : BS : -
+1-2-0 : - : - 	1-2-1 : R : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : S 	2-0-2 : - : -
+2-1-0 : - : SO 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : OB 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : T : S 	4-2-2 : - : -
+
+Tracker: Turn 10
+Active Adventurers: 4
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-2		0		Armor
+Runner		1-2-1		1		Sword,Armor
+Thief		4-2-1		1		Armor,Portal
+Sneaker		1-1-2		1
+
+Active Creatures: 8
+Creatures			Room
+Orbiter205797316		4-1-2
+Orbiter1296064247		4-0-1
+Seeker1637070917		2-0-1
+Blinker1066516207		4-0-1
+Orbiter443308702		2-1-0
+Seeker806353501		2-1-0
+Seeker935044096		4-2-1
+Seeker1128032093		3-0-0
 
 Turn : 11
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : BT : - 	
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : S : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : O 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : S 	
-3-2-0 : - : - 	3-2-1 : R : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : SO 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 2 Treasure(s) - 2 Damage
-Thief - 4 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 3 Remaining
-Blinker - 0 Remaining
-Orbiter - 2 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : S : -
+1-1-0 : R : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : B : -
+2-0-0 : - : - 	2-0-1 : - : S 	2-0-2 : - : -
+2-1-0 : - : S 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : O 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : B 	4-1-1 : T : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : O
+
+Tracker: Turn 11
+Active Adventurers: 4
+Adventurers	Room	Damage	Treasures
+Brawler		1-2-2		0		Armor
+Runner		1-1-0		1		Sword,Armor
+Thief		4-1-1		1		Armor,Portal
+Sneaker		1-0-2		1
+
+Active Creatures: 7
+Creatures			Room
+Orbiter205797316		4-2-2
+Orbiter1296064247		4-0-2
+Seeker1637070917		2-0-1
+Blinker1066516207		4-1-0
+Orbiter443308702		2-2-0
+Seeker806353501		2-1-0
+Seeker1128032093		3-0-0
 
 Turn : 12
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : BT : - 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : S : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : O 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : S 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 2 Treasure(s) - 3 Damage
-Thief - 4 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 3 Remaining
-Blinker - 0 Remaining
-Orbiter - 2 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : S : -
+1-2-0 : - : - 	1-2-1 : BR : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : S 	2-0-2 : - : B
+2-1-0 : - : S 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : O 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : T : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : -
+
+Tracker: Turn 12
+Active Adventurers: 4
+Adventurers	Room	Damage	Treasures
+Brawler		1-2-1		0		Armor
+Runner		1-2-1		1		Sword,Armor
+Thief		3-0-2		1		Armor,Portal
+Sneaker		1-1-2		1
+
+Active Creatures: 7
+Creatures			Room
+Orbiter205797316		4-2-1
+Orbiter1296064247		4-1-2
+Seeker1637070917		2-0-1
+Blinker1066516207		2-0-2
+Orbiter443308702		2-2-1
+Seeker806353501		2-1-0
+Seeker1128032093		3-0-0
 
 Turn : 13
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : B : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : T : - 	1-1-2 : - : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : S : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : O 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : S 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : O 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 2 Treasure(s) - 3 Damage
-Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 3 Remaining
-Blinker - 0 Remaining
-Orbiter - 2 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : B : - 	1-1-2 : - : -
+1-2-0 : T : - 	1-2-1 : - : - 	1-2-2 : S : -
+2-0-0 : - : - 	2-0-1 : - : B 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : SS 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : O
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : O
+
+Tracker: Turn 13
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		1-2-0		1		Armor,Portal
+Sneaker		1-2-2		1
+
+Active Creatures: 7
+Creatures			Room
+Orbiter205797316		4-2-0
+Orbiter1296064247		4-2-2
+Seeker1637070917		2-1-1
+Blinker1066516207		2-0-1
+Orbiter443308702		2-2-2
+Seeker806353501		2-1-1
+Seeker1128032093		3-0-0
 
 Turn : 14
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : B : - 	1-1-1 : - : - 	1-1-2 : S : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : T : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : O 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : S 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 2 Treasure(s) - 3 Damage
-Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 3 Remaining
-Blinker - 0 Remaining
-Orbiter - 2 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : T : - 	1-1-1 : - : - 	1-1-2 : BS : -
+1-2-0 : - : - 	1-2-1 : - : B 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : SS 	2-1-2 : - : O
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : -
+
+Tracker: Turn 14
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-2		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		1-1-0		1		Armor,Portal,Gem
+Sneaker		1-1-2		1
+
+Active Creatures: 7
+Creatures			Room
+Orbiter205797316		4-1-0
+Orbiter1296064247		4-2-1
+Seeker1637070917		2-1-1
+Blinker1066516207		1-2-1
+Orbiter443308702		2-1-2
+Seeker806353501		2-1-1
+Seeker1128032093		3-0-0
 
 Turn : 15
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : S : - 	1-1-2 : - : - 	
-1-2-0 : B : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : SO 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : T : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 2 Treasure(s) - 3 Damage
-Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 2 Remaining
-Blinker - 0 Remaining
-Orbiter - 2 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : S : -
+1-1-0 : - : - 	1-1-1 : T : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : B : -
+2-0-0 : - : - 	2-0-1 : - : B 	2-0-2 : - : O
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 15
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-2-2		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		1-1-1		1		Armor,Portal,Gem
+Sneaker		1-0-2		1
+
+Active Creatures: 5
+Creatures			Room
+Orbiter205797316		4-0-0
+Orbiter1296064247		4-2-0
+Blinker1066516207		2-0-1
+Orbiter443308702		2-0-2
+Seeker1128032093		3-0-0
 
 Turn : 16
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : BS : - 	1-1-1 : - : - 	1-1-2 : - : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : O 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : O 	4-1-1 : T : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 2 Treasure(s) - 3 Damage
-Thief - 5 Treasure(s) - 1 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 2 Remaining
-Blinker - 0 Remaining
-Orbiter - 2 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : TS : -
+1-2-0 : - : - 	1-2-1 : B : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : O 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : -
+4-1-0 : - : OB 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 16
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-2-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		1-1-2		1		Armor,Portal,Gem
+Sneaker		1-1-2		1
+
+Active Creatures: 5
+Creatures			Room
+Orbiter205797316		4-0-1
+Orbiter1296064247		4-1-0
+Blinker1066516207		4-1-0
+Orbiter443308702		2-0-1
+Seeker1128032093		3-0-0
 
 Turn : 17
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : BS : - 	1-1-2 : - : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : O 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : T : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 2 Treasure(s) - 3 Damage
-Thief - 5 Treasure(s) - 2 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 2 Remaining
-Blinker - 0 Remaining
-Orbiter - 1 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : T : - 	1-1-2 : - : -
+1-2-0 : B : - 	1-2-1 : - : - 	1-2-2 : S : -
+2-0-0 : - : O 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : B 	4-0-2 : - : O
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 17
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-2-0		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		1-1-1		1		Armor,Portal,Gem
+Sneaker		1-2-2		1
+
+Active Creatures: 5
+Creatures			Room
+Orbiter205797316		4-0-2
+Orbiter1296064247		4-0-0
+Blinker1066516207		4-0-1
+Orbiter443308702		2-0-0
+Seeker1128032093		3-0-0
 
 Turn : 18
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : BS : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : O 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : T : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 2 Treasure(s) - 3 Damage
-Thief - 5 Treasure(s) - 2 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 2 Remaining
-Blinker - 0 Remaining
-Orbiter - 1 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : S : -
+1-2-0 : - : - 	1-2-1 : B : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : B
+2-1-0 : - : O 	2-1-1 : T : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 18
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-2-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-1-1		1		Armor,Portal,Gem
+Sneaker		1-1-2		1
+
+Active Creatures: 5
+Creatures			Room
+Orbiter205797316		4-1-2
+Orbiter1296064247		4-0-1
+Blinker1066516207		2-0-2
+Orbiter443308702		2-1-0
+Seeker1128032093		3-0-0
 
 Turn : 19
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : BS : - 	1-1-2 : - : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : O 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : T : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 2 Treasure(s) - 3 Damage
-Thief - 6 Treasure(s) - 2 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 2 Remaining
-Blinker - 0 Remaining
-Orbiter - 1 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : BS : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : O 	2-2-1 : T : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : O
+
+Tracker: Turn 19
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-2-1		1		Armor,Portal,Gem
+Sneaker		1-1-1		1
+
+Active Creatures: 4
+Creatures			Room
+Orbiter205797316		4-2-2
+Orbiter1296064247		4-0-2
+Orbiter443308702		2-2-0
+Seeker1128032093		3-0-0
 
 Turn : 20
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : B : - 	1-1-1 : - : - 	1-1-2 : - : - 	
-1-2-0 : - : - 	1-2-1 : S : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : O 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : T : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : S 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 2 Treasure(s) - 3 Damage
-Thief - 6 Treasure(s) - 2 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 2 Remaining
-Blinker - 0 Remaining
-Orbiter - 1 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : B : - 	1-1-1 : - : - 	1-1-2 : S : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : T : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : O 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : -
+
+Tracker: Turn 20
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-0		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-1-1		1		Armor,Portal,Gem
+Sneaker		1-1-2		1
+
+Active Creatures: 4
+Creatures			Room
+Orbiter205797316		4-2-1
+Orbiter1296064247		4-1-2
+Orbiter443308702		2-2-1
+Seeker1128032093		3-0-0
 
 Turn : 21
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : - : - 	1-1-1 : S : - 	1-1-2 : - : - 	
-1-2-0 : B : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : - 	2-2-2 : - : O 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : T : - 	4-2-2 : - : - 	
-Adventurers Status : 
-Brawler - 1 Treasure(s) - 0 Damage
-Runner - 2 Treasure(s) - 3 Damage
-Thief - 6 Treasure(s) - 2 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 1 Remaining
-Blinker - 0 Remaining
-Orbiter - 1 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : BS : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : O
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : T : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : O
+
+Tracker: Turn 21
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		3-1-2		1		Armor,Portal,Gem,Potion
+Sneaker		1-1-1		1
+
+Active Creatures: 4
+Creatures			Room
+Orbiter205797316		4-2-0
+Orbiter1296064247		4-2-2
+Orbiter443308702		2-2-2
+Seeker1128032093		3-0-0
 
 Turn : 22
-Board Status : 
-0-1-1 : - : - 
-1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : - 	
-1-1-0 : B : - 	1-1-1 : - : - 	1-1-2 : S : - 	
-1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : - 	
-2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : - 	
-2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : - 	
-2-2-0 : - : S 	2-2-1 : - : O 	2-2-2 : - : - 	
-3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : - 	
-3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : - 	
-3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : - 	
-4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : - 	
-4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : - 	
-4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : T : - 	
-Adventurers Status : 
-Brawler - 2 Treasure(s) - 0 Damage
-Runner - 2 Treasure(s) - 3 Damage
-Thief - 7 Treasure(s) - 2 Damage
-Sneaker - 0 Treasure(s) - 0 Damage
-Creatures Status : 
-Seeker - 1 Remaining
-Blinker - 0 Remaining
-Orbiter - 1 Remaining
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : BS : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : O
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : T : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : -
 
-Adventurers win by finding 11 treasures
+Tracker: Turn 22
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-2		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		3-0-2		1		Armor,Portal,Gem,Potion
+Sneaker		1-1-2		1
+
+Active Creatures: 4
+Creatures			Room
+Orbiter205797316		4-1-0
+Orbiter1296064247		4-2-1
+Orbiter443308702		2-1-2
+Seeker1128032093		3-0-0
+
+Turn : 23
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : S : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : B : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : O
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : S 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : T : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 23
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-2-2		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		3-2-0		1		Armor,Portal,Gem,Potion
+Sneaker		1-1-1		1
+
+Active Creatures: 4
+Creatures			Room
+Orbiter205797316		4-0-0
+Orbiter1296064247		4-2-0
+Orbiter443308702		2-0-2
+Seeker1128032093		3-0-0
+
+Turn : 24
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : S : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : B : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : O 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : T : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : -
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 24
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-2-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		3-0-1		1		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-0		1
+
+Active Creatures: 3
+Creatures			Room
+Orbiter205797316		4-0-1
+Orbiter1296064247		4-1-0
+Orbiter443308702		2-0-1
+
+Turn : 25
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : BS : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : O 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : T : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 25
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		3-0-0		1		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-1		1
+
+Active Creatures: 3
+Creatures			Room
+Orbiter205797316		4-0-2
+Orbiter1296064247		4-0-0
+Orbiter443308702		2-0-0
+
+Turn : 26
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : B : - 	1-1-1 : - : - 	1-1-2 : S : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : O 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : T : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 26
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-0		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		3-0-1		1		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-2		1
+
+Active Creatures: 3
+Creatures			Room
+Orbiter205797316		4-1-2
+Orbiter1296064247		4-0-1
+Orbiter443308702		2-1-0
+
+Turn : 27
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : B : - 	1-2-1 : - : - 	1-2-2 : S : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : O 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : T : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : O
+
+Tracker: Turn 27
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-2-0		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		3-0-2		1		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-2-2		1
+
+Active Creatures: 3
+Creatures			Room
+Orbiter205797316		4-2-2
+Orbiter1296064247		4-0-2
+Orbiter443308702		2-2-0
+
+Turn : 28
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : B : - 	1-1-1 : - : - 	1-1-2 : S : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : O 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : T : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : -
+
+Tracker: Turn 28
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-0		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		3-0-1		1		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-2		1
+
+Active Creatures: 3
+Creatures			Room
+Orbiter205797316		4-2-1
+Orbiter1296064247		4-1-2
+Orbiter443308702		2-2-1
+
+Turn : 29
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : S : - 	1-1-2 : - : -
+1-2-0 : B : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : O
+3-0-0 : T : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : O
+
+Tracker: Turn 29
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-2-0		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		3-0-0		1		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-1		1
+
+Active Creatures: 3
+Creatures			Room
+Orbiter205797316		4-2-0
+Orbiter1296064247		4-2-2
+Orbiter443308702		2-2-2
+
+Turn : 30
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : BS : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : T : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : -
+
+Tracker: Turn 30
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-0		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-2-2		1		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-0		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-1-0
+Orbiter1296064247		4-2-1
+
+Turn : 31
+Board Status :
+0-1-1 : - : -
+1-0-0 : B : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : S : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : T : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 31
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-0-0		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-1-2		1		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-2-0		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-0-0
+Orbiter1296064247		4-2-0
+
+Turn : 32
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : B : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : S : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : T : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : -
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 32
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-0-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-0-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-2-1		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-0-1
+Orbiter1296064247		4-1-0
+
+Turn : 33
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : B : - 	1-1-2 : - : -
+1-2-0 : S : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : T : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 33
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-1-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-2-0		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-0-2
+Orbiter1296064247		4-0-0
+
+Turn : 34
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : S : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : B : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : T : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 34
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-1-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-2-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-0		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-1-2
+Orbiter1296064247		4-0-1
+
+Turn : 35
+Board Status :
+0-1-1 : - : -
+1-0-0 : S : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : T : -
+2-2-0 : - : - 	2-2-1 : B : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : O
+
+Tracker: Turn 35
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-2-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-1-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-0-0		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-2-2
+Orbiter1296064247		4-0-2
+
+Turn : 36
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : S : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : BT : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : -
+
+Tracker: Turn 36
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-2-2		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-2-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-0-1		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-2-1
+Orbiter1296064247		4-1-2
+
+Turn : 37
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : S : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : BT : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : O
+
+Tracker: Turn 37
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-1-2		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-1-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-0-2		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-2-0
+Orbiter1296064247		4-2-2
+
+Turn : 38
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : S : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : B : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : T : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : -
+
+Tracker: Turn 38
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-1-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-2-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-2		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-1-0
+Orbiter1296064247		4-2-1
+
+Turn : 39
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : S : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : T : -
+2-2-0 : - : - 	2-2-1 : B : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 39
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-2-1		0		Armor
+Runner		2-1-1		3		Sword,Armor
+Thief		2-1-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-2-2		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-0-0
+Orbiter1296064247		4-2-0
+
+Turn : 40
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : S : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : T : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : B : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : -
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 40
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-2-0		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		2-0-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-2-1		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-0-1
+Orbiter1296064247		4-1-0
+
+Turn : 41
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : S : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : T : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : B : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 41
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-2-1		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		2-0-1		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-2-0		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-0-2
+Orbiter1296064247		4-0-0
+
+Turn : 42
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : TS : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : B : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 42
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-1-1		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		1-2-1		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-2-1		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-1-2
+Orbiter1296064247		4-0-1
+
+Turn : 43
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : BS : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : T : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : O
+
+Tracker: Turn 43
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		1-1-1		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		3-1-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-1		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-2-2
+Orbiter1296064247		4-0-2
+
+Turn : 44
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : S : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : B : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : T : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : -
+
+Tracker: Turn 44
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-1-1		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		3-0-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-0-1		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-2-1
+Orbiter1296064247		4-1-2
+
+Turn : 45
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : T : - 	1-1-1 : S : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : B : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : O
+
+Tracker: Turn 45
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-0-1		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		1-1-0		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-1		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-2-0
+Orbiter1296064247		4-2-2
+
+Turn : 46
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : S : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : T : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : B : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : -
+
+Tracker: Turn 46
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-0-2		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		1-2-0		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-0-1		1
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-1-0
+Orbiter1296064247		4-2-1
+
+Turn : 47
+Board Status :
+0-1-1 : - : -
+1-0-0 : S : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : B : - 	2-0-2 : T : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 47
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-0-1		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		2-0-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-0-0		1		Sword
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-0-0
+Orbiter1296064247		4-2-0
+
+Turn : 48
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : S : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : B : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : T : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : -
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 48
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-1-1		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		3-2-0		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-0-1		1		Sword
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-0-1
+Orbiter1296064247		4-1-0
+
+Turn : 49
+Board Status :
+0-1-1 : - : -
+1-0-0 : S : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : B : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : T : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 49
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-2-1		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		3-2-1		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-0-0		1		Sword
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-0-2
+Orbiter1296064247		4-0-0
+
+Turn : 50
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : S : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : B : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : T : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : O 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 50
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-2-2		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		3-1-1		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-0		1		Sword
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-1-2
+Orbiter1296064247		4-0-1
+
+Turn : 51
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : S : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : T : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : B : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : O
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : O
+
+Tracker: Turn 51
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-2-1		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		2-1-1		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-2-0		1		Sword
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-2-2
+Orbiter1296064247		4-0-2
+
+Turn : 52
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : S : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : B : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : T : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : O
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : -
+
+Tracker: Turn 52
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-1-1		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		2-2-1		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-0		1		Sword
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-2-1
+Orbiter1296064247		4-1-2
+
+Turn : 53
+Board Status :
+0-1-1 : - : -
+1-0-0 : S : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : T : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : B : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : O
+
+Tracker: Turn 53
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-1-2		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		1-1-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-0-0		1		Sword
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-2-0
+Orbiter1296064247		4-2-2
+
+Turn : 54
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : S : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : T : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : B : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : O 	4-2-2 : - : -
+
+Tracker: Turn 54
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-1-1		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		1-2-2		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-0		1		Sword
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-1-0
+Orbiter1296064247		4-2-1
+
+Turn : 55
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : S : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : B : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : T : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : O 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : O 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 55
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-1-2		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		3-0-0		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		1-1-1		1		Sword
+
+Active Creatures: 2
+Creatures			Room
+Orbiter205797316		4-0-0
+Orbiter1296064247		4-2-0
+
+Turn : 56
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : - : - 	2-0-2 : B : -
+2-1-0 : - : - 	2-1-1 : S : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : - : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : T : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : - : O 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 56
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-0-2		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		4-0-0		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		2-1-1		1		Sword
+
+Active Creatures: 1
+Creatures			Room
+Orbiter1296064247		4-1-0
+
+Turn : 57
+Board Status :
+0-1-1 : - : -
+1-0-0 : - : - 	1-0-1 : - : - 	1-0-2 : - : -
+1-1-0 : - : - 	1-1-1 : - : - 	1-1-2 : - : -
+1-2-0 : - : - 	1-2-1 : - : - 	1-2-2 : - : -
+2-0-0 : - : - 	2-0-1 : B : - 	2-0-2 : - : -
+2-1-0 : - : - 	2-1-1 : - : - 	2-1-2 : - : -
+2-2-0 : - : - 	2-2-1 : - : - 	2-2-2 : - : -
+3-0-0 : - : - 	3-0-1 : - : - 	3-0-2 : - : -
+3-1-0 : - : - 	3-1-1 : S : - 	3-1-2 : - : -
+3-2-0 : - : - 	3-2-1 : - : - 	3-2-2 : - : -
+4-0-0 : - : - 	4-0-1 : - : - 	4-0-2 : - : -
+4-1-0 : T : - 	4-1-1 : - : - 	4-1-2 : - : -
+4-2-0 : - : - 	4-2-1 : - : - 	4-2-2 : - : -
+
+Tracker: Turn 57
+Active Adventurers: 3
+Adventurers	Room	Damage	Treasures
+Brawler		2-0-1		0		Armor,Gem
+Runner		2-1-1		3		Sword,Armor
+Thief		4-1-0		2		Armor,Portal,Gem,Potion,Sword
+Sneaker		3-1-1		1		Sword
+
+Active Creatures: 0
+Creatures			Room
+
+Adventurers win by eliminating all creatures
 
 Process finished with exit code 0

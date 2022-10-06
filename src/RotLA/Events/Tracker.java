@@ -14,7 +14,7 @@ import java.util.concurrent.Flow;
 public class Tracker implements Flow.Subscriber<Event> {
 
     private int turnCount;
-    private HashMap<String, GameObjectStatus> statusMap;
+    private final HashMap<String, GameObjectStatus> statusMap;
     private Flow.Subscription subscription;
 
     public Tracker(List<String> adventurers, List<String> creatures) {
@@ -55,8 +55,8 @@ public class Tracker implements Flow.Subscriber<Event> {
     public void printStatus() {
         int[] gameObjectCounts = new int[2];
         Arrays.fill(gameObjectCounts, 0);
-        StringBuilder adventurerStatus = new StringBuilder("");
-        StringBuilder creatureStatus = new StringBuilder("");
+        StringBuilder adventurerStatus = new StringBuilder();
+        StringBuilder creatureStatus = new StringBuilder();
         statusMap.forEach(
                 (objectName, objectStatus) -> {
                     if (objectStatus instanceof GameObjectStatus.AdventurerStatusObject) {
@@ -70,13 +70,13 @@ public class Tracker implements Flow.Subscriber<Event> {
                     }
                 }
         );
-        System.out.println("Tracker: Turn " + String.valueOf(turnCount));
+        System.out.println("Tracker: Turn " + turnCount);
         System.out.println("Active Adventurers: " + gameObjectCounts[0]);
         System.out.println("Adventurers\tRoom\tDamage\tTreasures");
-        System.out.println(adventurerStatus.toString());
+        System.out.println(adventurerStatus);
         System.out.println("Active Creatures: " + gameObjectCounts[1]);
         System.out.println("Creatures\t\t\tRoom");
-        System.out.println(creatureStatus.toString());
+        System.out.println(creatureStatus);
     }
 
     @Override

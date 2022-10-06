@@ -1,13 +1,15 @@
 Brawler enters room 1-2-1
-Runner enters room 2-1-0
-Runner enters room 2-1-1
-Thief enters room 1-1-0
-Sneaker enters room 1-2-1
-Orbiter2094548358 enters room 4-1-2
-Orbiter1323165413 enters room 4-2-1
-Seeker1198108795 enters room 2-1-1
-Seeker1198108795 wins a combat
-Runner loses a combat
-Runner has suffered 3 Damage(s)
-Runner removed from game
-Orbiter396873410 enters room 4-0-2
+Runner enters room 2-2-1
+Runner enters room 2-2-2
+Thief enters room 3-0-1
+Sneaker enters room 1-0-2
+Orbiter548246552 enters room 4-1-0
+Orbiter492228202 enters room 2-0-1
+Orbiter772777427 enters room 4-1-0
+Seeker83954662 enters room 3-0-1
+Seeker83954662 wins a combat
+Thief loses a combat
+Thief has suffered 3 Damage(s)
+Thief removed from game
+Orbiter2108649164 enters room 4-2-1
+Seeker777874839 enters room 4-0-1
