@@ -13,6 +13,7 @@
 
 ## Assumptions
 
+- We are using our code from Project 2.2 to add more patterns in this project - https://github.com/rakeshy1116/RotLA-OOADProject2.2
 - Portal item: On every move, Adventurers who possess it have a 25% chance to use it
 - To add more details to the creatures while printing the status, we have added Creature's identity hash with the name
   in status. This will help track the correct creature instances.
