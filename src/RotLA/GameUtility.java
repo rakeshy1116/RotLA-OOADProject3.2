@@ -13,7 +13,7 @@ public class GameUtility {
     public static final int TOPMOST_ROOM = 1;
     public static final int BOTTOM_MOST_ROOM = 4;
     public static final int TREASURES_MIN_ROLL = 10;
-    public static final int TREASURES_WINNING_NUMBER = 10;
+    public static final int TREASURES_WINNING_NUMBER = 20;
 
     public static List<String> getAllCelebrations() {
         return Arrays.asList("Dance", "Jump", "Shout", "Spin");

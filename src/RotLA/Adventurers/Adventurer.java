@@ -7,6 +7,7 @@ import RotLA.Celebration.Spin;
 import RotLA.CombatStrategy.CombatStrategy;
 import RotLA.Creatures.Creature;
 import RotLA.Dice;
+import RotLA.Events.Event;
 import RotLA.GameUtility;
 import RotLA.Room;
 import RotLA.RoomFinder;
@@ -17,6 +18,7 @@ import org.javatuples.Triplet;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.SubmissionPublisher;
 
 import static RotLA.GameUtility.*;
 
@@ -35,7 +37,8 @@ abstract public class Adventurer {
     protected CombatStrategy combatStrategy;
     protected SearchStrategy searchStrategy;
     protected ArrayList<Treasures> treasures;
-    int maxDamages;
+    protected int maxDamages;
+    protected SubmissionPublisher<Event> publisher;
 
     public void setRoomFinder(RoomFinder roomFinder) {
         this.roomFinder = roomFinder;
@@ -53,11 +56,6 @@ abstract public class Adventurer {
         return adventurerName;
     }
 
-    public void setAdventurerName(String adventurerName) {
-        this.adventurerName = adventurerName;
-    }
-
-
     //------------------------------Getter/Setter Methods--------------------------------------
 
     public ArrayList<Treasures> getTreasures() {
@@ -71,13 +69,6 @@ abstract public class Adventurer {
     public void addTreasure(Treasures treasure) {
         this.treasures.add(treasure);
         this.noOfTreasure = this.treasures.size();
-    }
-
-    public void removeTreasure(Treasures treasure) {
-        for (int i = 0; i < treasures.size(); i++) {
-            if (treasures.get(i).equals(treasure))
-                treasures.remove(i);
-        }
     }
 
     public Room getRoom() {
@@ -105,6 +96,7 @@ abstract public class Adventurer {
     // a default behaviour for all adventurers, hence not abstract method
     public void takeDamage() {
         noOfDamages++;
+        publisher.submit(new Event.AdventurerDamage(getAdventurerName(), String.valueOf(noOfDamages)));
     }
 
     // Checks if the Adventurer is alive, alive if adventurer has suffered a max damage of 2
@@ -145,21 +137,18 @@ abstract public class Adventurer {
         // Fight all creatures in the room
         // Creating copy to avoid concurrent updates in room and skipping fight concerns
         List<Creature> copyCreatureList = new ArrayList<>(creatures);
-        List<String> celebrations = new ArrayList<>();
-        celebrations.add("Dance");
-        celebrations.add("Shout");
-        celebrations.add("Jump");
-        celebrations.add("Spin");
         // ASSUMPTION: Fights creatures in the order of their room entry, i.e order of entry to the list creatures
         for (Creature creature : copyCreatureList) {
             CombatStrategy modifiedCombat = prepareCelebrations();
-            String celebrateMessage = modifiedCombat.fight(dice, creature, this);
-            System.out.println(celebrateMessage);
+            String celebrateMessage = modifiedCombat.fight(dice, creature, this, publisher);
+            if (celebrateMessage != null && celebrateMessage.contains(adventurerName))
+                publisher.submit(new Event.AdventurerCelebrates(adventurerName, celebrateMessage));
         }
     }
 
     private CombatStrategy prepareCelebrations() {
         CombatStrategy modifiedCombat = combatStrategy;
+        // get a random count of celebrations for every celebration and wrap strategy
         for (String celebration : getAllCelebrations()) {
             int repeat = getRandomInRange(0, 2);
             while (repeat-- > 0) {
@@ -180,19 +169,14 @@ abstract public class Adventurer {
     //Performs find treasure operation, common default method for all subclasses
     public void findTreasure(Dice dice) {
         if (this.room.getTreasures().size() > 0) {
-            searchStrategy.search(this, dice, 0);
+            searchStrategy.search(this, dice, publisher);
         }
-
-//        int currentDiceVal = rollDiceTreasure(dice);
-//        //increment treasures if rolled higher
-//        if (currentDiceVal >= TREASURES_MIN_ROLL)
-//            noOfTreasure++;
     }
 
     //Performs move operation, common default behaviour for all subclasses
-    public void move() {
-
+    protected void move() {
         boolean hasPortal = false;
+        boolean usePortal = false;
         for (Treasures treasures : this.getTreasures()) {
             if (treasures instanceof Portal) {
                 hasPortal = true;
@@ -202,33 +186,35 @@ abstract public class Adventurer {
         Room newRoom;
         Room oldRoom = this.room;
 
+        //ASSUMPTION: If Adventures posseses a Portal, then he has a 25% chance to use it in every move
         if (hasPortal) {
+            int chance = GameUtility.getRandomInRange(1, 4);
+            if (chance == 1) usePortal = true;
+        }
+
+        if (hasPortal && usePortal) {
             int level, verticalDir, horizontalDir;
             level = GameUtility.getRandomInRange(TOPMOST_ROOM, BOTTOM_MOST_ROOM);
             verticalDir = GameUtility.getRandomInRange(NORTHMOST_ROOM, SOUTHMOST_ROOM);
             horizontalDir = GameUtility.getRandomInRange(WESTMOST_ROOM, EASTMOST_ROOM);
             newRoom = roomFinder.findRoom(new Triplet<>(level, verticalDir, horizontalDir));
-
         } else {
-
             List<Room> rooms = oldRoom.getConnectedRooms();
             int noOfConnectedRooms = rooms.size();
             // Get a random room from the connected rooms
             int movement = GameUtility.getRandomInRange(0, noOfConnectedRooms - 1);
             newRoom = rooms.get(movement);
         }
-
-
         // remove adventurer from old room
         oldRoom.removeAdventurer(this);
         // add adventurer to new room
         newRoom.addAdventurer(this);
         // update new room in Adventurer
         this.room = newRoom;
+        publisher.submit(new Event.GameObjectEnters(adventurerName, room.getRoomName()));
     }
 
-    public boolean checkTreasure(Treasures currentTreasure) {
-
+    public boolean hasTreasure(Treasures currentTreasure) {
         for (int i = 0; i < this.getTreasures().size(); i++) {
             Treasures treasure = this.getTreasures().get(i);
             if (treasure.getClass() == currentTreasure.getClass()) {
@@ -236,7 +222,6 @@ abstract public class Adventurer {
             }
         }
         return false;
-
     }
 }
 

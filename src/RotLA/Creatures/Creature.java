@@ -2,11 +2,13 @@ package RotLA.Creatures;
 
 import RotLA.Adventurers.Adventurer;
 import RotLA.Dice;
+import RotLA.Events.Event;
 import RotLA.Room;
 import RotLA.RoomFinder;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.SubmissionPublisher;
 
 //Adventurer is an abstract class, it is extended by different subclass types - Orbiter, Seeker, Blinker
 // CONCEPT INHERITANCE, COHESION - Each of these subclasses inherit several instance variable and method implementations pertaining to creature behaviour
@@ -18,6 +20,7 @@ public abstract class Creature {
     protected RoomFinder roomFinder; //roomFinder is used to find a particular room from boardList
     protected String abbrv; // name abbrivation of a creature type
     protected String name; // name of a creature type
+    protected SubmissionPublisher<Event> publisher;
 
     // ----------------------- Public methods -----------------------------------------
 
@@ -58,6 +61,10 @@ public abstract class Creature {
         return name;
     }
 
+    public String getInstanceName() {
+        return name + System.identityHashCode(this);
+    }
+
     // sets roomfinder message callback to find rooms
     public void setRoomFinder(RoomFinder roomFinder) {
         this.roomFinder = roomFinder;
@@ -85,14 +92,20 @@ public abstract class Creature {
             int creatureRolls = this.rollDice(dice);
             if (adventureRolls > creatureRolls) {
                 //if adventurer wins die and remove from room
+                publisher.submit(new Event.GameObjectCombat(adventurer.getAdventurerName(), "wins"));
+                publisher.submit(new Event.GameObjectCombat(getInstanceName(), "loses"));
                 die();
                 room.removeCreature(this);
+                publisher.submit(new Event.GameObjectDefeated(getInstanceName()));
                 break;
             } else if (creatureRolls > adventureRolls) {
                 //if creature wins, adventurers take damage and get removed from room if they die
+                publisher.submit(new Event.GameObjectCombat(getInstanceName(), "wins"));
+                publisher.submit(new Event.GameObjectCombat(adventurer.getAdventurerName(), "loses"));
                 adventurer.takeDamage();
                 if (!adventurer.isAlive()) {
                     room.removeAdventurer(adventurer); // loser gets removed from the room
+                    publisher.submit(new Event.GameObjectDefeated(adventurer.getAdventurerName()));
                 }
             } else {
                 //in case of tie, do nothing

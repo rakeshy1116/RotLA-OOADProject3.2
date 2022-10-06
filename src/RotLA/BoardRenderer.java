@@ -9,7 +9,6 @@ import org.javatuples.Pair;
 import org.javatuples.Triplet;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import static RotLA.GameUtility.*;
@@ -24,7 +23,7 @@ public class BoardRenderer {
     private List<Adventurer> adventurers;
     private List<Creature> creatures;
     private List<Treasures> treasures;
-    private int turnCounter = 0;
+    private int turnCounter = 1;
 
     public BoardRenderer() {
         roomFinder = this::findRoom;
@@ -124,21 +123,22 @@ public class BoardRenderer {
                 System.out.println();
             }
         }
-        // Printing status of all adventurers
-        System.out.println("Adventurers Status : ");
-        for (Adventurer adventurer : adventurers) {
-            System.out.println(adventurer.getAdventurerStatus());
-        }
-        // Printing status of all creatures, creating a hashmap to track no of instances
-        System.out.println("Creatures Status : ");
-        HashMap<String, Integer> creatureStatus = new HashMap<>();
-        creatures.forEach(creature -> {
-            creatureStatus.putIfAbsent(creature.getName(), 0);
-            if (creature.isAlive()) {
-                creatureStatus.computeIfPresent(creature.getName(), (key, value) -> value + 1);
-            }
-        });
-        creatureStatus.forEach((key, value) -> System.out.println(key + " - " + value + " Remaining"));
+        // Gameobject status now printed by Tracker
+//        // Printing status of all adventurers
+//        System.out.println("Adventurers Status : ");
+//        for (Adventurer adventurer : adventurers) {
+//            System.out.println(adventurer.getAdventurerStatus());
+//        }
+//        // Printing status of all creatures, creating a hashmap to track no of instances
+//        System.out.println("Creatures Status : ");
+//        HashMap<String, Integer> creatureStatus = new HashMap<>();
+//        creatures.forEach(creature -> {
+//            creatureStatus.putIfAbsent(creature.getName(), 0);
+//            if (creature.isAlive()) {
+//                creatureStatus.computeIfPresent(creature.getName(), (key, value) -> value + 1);
+//            }
+//        });
+//        creatureStatus.forEach((key, value) -> System.out.println(key + " - " + value + " Remaining"));
         System.out.println();
     }
 

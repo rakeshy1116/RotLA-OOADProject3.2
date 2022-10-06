@@ -51,10 +51,11 @@ public class Room {
     }
 
     public void removeTreasure(Treasures treasure) {
-        for (int i = 0; i < treasures.size(); i++) {
-            if (treasures.get(i).equals(treasure))
-                treasures.remove(i);
-        }
+        treasures.remove(treasure);
+//        for (int i = 0; i < treasures.size(); i++) {
+//            if (treasures.get(i).equals(treasure))
+//                treasures.remove(i);
+//        }
     }
 
     // Adds creature to the room
@@ -109,5 +110,9 @@ public class Room {
         if (creatureString.isBlank()) creatureString = "-";
 
         return roomLocationString + " : " + adventurerString + " : " + creatureString + " ";
+    }
+
+    public String getRoomName() {
+        return roomCoordinates.getValue0() + "-" + getRoomCoordinates().getValue1() + "-" + getRoomCoordinates().getValue2();
     }
 }

@@ -1,36 +1,36 @@
 Run 1: Creatures win by eliminating all adventurers
-Run 2: Adventurers win by finding 10 treasures
+Run 2: Creatures win by eliminating all adventurers
 Run 3: Adventurers win by eliminating all creatures
-Run 4: Adventurers win by finding 10 treasures
-Run 5: Adventurers win by finding 11 treasures
+Run 4: Adventurers win by eliminating all creatures
+Run 5: Adventurers win by eliminating all creatures
 Run 6: Adventurers win by eliminating all creatures
 Run 7: Adventurers win by eliminating all creatures
-Run 8: Creatures win by eliminating all adventurers
+Run 8: Adventurers win by eliminating all creatures
 Run 9: Adventurers win by eliminating all creatures
-Run 10: Adventurers win by eliminating all creatures
+Run 10: Creatures win by eliminating all adventurers
 Run 11: Adventurers win by eliminating all creatures
-Run 12: Creatures win by eliminating all adventurers
-Run 13: Adventurers win by finding 10 treasures
-Run 14: Creatures win by eliminating all adventurers
+Run 12: Adventurers win by eliminating all creatures
+Run 13: Adventurers win by eliminating all creatures
+Run 14: Adventurers win by eliminating all creatures
 Run 15: Creatures win by eliminating all adventurers
-Run 16: Adventurers win by eliminating all creatures
-Run 17: Adventurers win by eliminating all creatures
-Run 18: Creatures win by eliminating all adventurers
+Run 16: Creatures win by eliminating all adventurers
+Run 17: Creatures win by eliminating all adventurers
+Run 18: Adventurers win by eliminating all creatures
 Run 19: Adventurers win by eliminating all creatures
 Run 20: Adventurers win by eliminating all creatures
 Run 21: Adventurers win by eliminating all creatures
 Run 22: Adventurers win by eliminating all creatures
-Run 23: Adventurers win by finding 10 treasures
+Run 23: Adventurers win by eliminating all creatures
 Run 24: Adventurers win by eliminating all creatures
 Run 25: Adventurers win by eliminating all creatures
 Run 26: Adventurers win by eliminating all creatures
 Run 27: Adventurers win by eliminating all creatures
 Run 28: Adventurers win by eliminating all creatures
 Run 29: Adventurers win by eliminating all creatures
-Run 30: Adventurers win by eliminating all creatures
+Run 30: Creatures win by eliminating all adventurers
 Summary of Runs:
-Adventurers win by finding 10 treasures: 4
-Adventurers win by eliminating all creatures: 20
-Creatures win by eliminating all adventurers: 6
+Adventurers win by finding all 20 treasures: 0
+Adventurers win by eliminating all creatures: 23
+Creatures win by eliminating all adventurers: 7
 
 Process finished with exit code 0

@@ -1,17 +1,20 @@
 package RotLA.Creatures;
 
+import RotLA.Events.Event;
 import RotLA.GameUtility;
 import RotLA.Room;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.SubmissionPublisher;
 
 // CONCEPT: INHERITANCE - A type of Creature that inherits variables and behaviour from Creature
 public class Seeker extends Creature {
 
-    public Seeker() {
+    public Seeker(SubmissionPublisher<Event> publisher) {
         this.alive = true;
         this.abbrv = "S";
+        this.publisher = publisher;
         this.name = "Seeker";
     }
 
@@ -34,6 +37,7 @@ public class Seeker extends Creature {
             newRoom.addCreature(this); //adding seeker to new room
             this.room = newRoom;
         }
+        publisher.submit(new Event.GameObjectEnters(getInstanceName(), room.getRoomName()));
     }
 }
 

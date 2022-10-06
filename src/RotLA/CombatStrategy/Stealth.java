@@ -3,7 +3,10 @@ package RotLA.CombatStrategy;
 import RotLA.Adventurers.Adventurer;
 import RotLA.Creatures.Creature;
 import RotLA.Dice;
+import RotLA.Events.Event;
 import RotLA.GameUtility;
+
+import java.util.concurrent.SubmissionPublisher;
 
 public class Stealth extends CombatStrategy {
 
@@ -12,9 +15,9 @@ public class Stealth extends CombatStrategy {
     }
 
     @Override
-    public String fight(Dice dice, Creature creature, Adventurer adv) {
+    public String fight(Dice dice, Creature creature, Adventurer adv, SubmissionPublisher<Event> publisher) {
         if (GameUtility.getRandomInRange(0, 1) == 1) {
-            return super.fight(dice, creature, adv);
+            return super.fight(dice, creature, adv, publisher);
         } else {
             return null;
         }
